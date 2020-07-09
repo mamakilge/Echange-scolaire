@@ -7,3 +7,5 @@ Contributeurs :
     - Gérard
     - Marisa
     - Emma 
+	
+Cordialement la direction.
