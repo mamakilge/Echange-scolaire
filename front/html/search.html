@@ -17,84 +17,166 @@
 
 <body>
     <header>
-        <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!--logo cliquable pour revenir sur la page d'accueil-->
+            <a href="#">
+                <img src>
+                <!--inclure image logo-->
+            </a>
+            <a class="navbar-brand" href="index.html">Nom du site</a>
+            <!--Nom du site cliquable pour revenir sur accueil-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <div> <!--logo cliquable pour revenir sur la page d'accueil-->
-                <a href="#">
-                    <img src> <!--inclure image logo-->
-                </a>
-            </div>
-
-            <div> <!--Nom du site aussi cliquable pour revenir sur l'accueil-->
-                <a href="#">
-                    Nom du site
-                </a>
-            </div>
-
-            <div> <!--Barre de recherche-->
-                <form>
-
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active btn-group" role="group">
+                        <button type="button" class="btn btn-secondary">Inscription</button>
+                        <button type="button" class="btn btn-secondary">Connexion</button>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <!--Menu hamburger-->
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+
             </div>
+        </nav>
 
-            <div> <!--Boutons incriptions/conexion-->
-
-            </div>
-
-            <div> <!-- Menu hamburger -->
-
-            </div>
-
-        </div>
     </header>
 
     <main>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Recherches</li>
+            </ol>
+          </nav>
         <div class="container">
-            <h1>Titre de la recherche</h1>
-            <div> <!--Menu recherche accordeon-->
+            <h1>Titre de la recherche</h1> 
+            <div>
+                <!--Menu recherche accordeon-->
 
             </div>
 
-            <div> <!--Annonces cliquables-->
+            <div>
+                <!--Annonces cliquables-->
                 <div class="row">
                     <div class="col-6">
-                        <div class="item">
-                            <figure class="annonce">
-                                <img>
-                            </figure>
-                            <a class="btn-voirplus" href="#">Voir plus</a>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="..." class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="item">
-                            <figure class="annonce">
-                                <img>
-                            </figure>
-                            <a class="btn-voirplus" href="#">Voir plus</a>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="..." class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="item">
-                            <figure class="annonce">
-                                <img>
-                            </figure>
-                            <a class="btn-voirplus" href="#">Voir plus</a>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="..." class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="item">
-                            <figure class="annonce">
-                                <img>
-                            </figure>
-                            <a class="btn-voirplus" href="#">Voir plus</a>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="..." class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <nav class="d-flex justify-items-center" aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
             </div>
 
         </div>
+
     </main>
 
     <footer>
