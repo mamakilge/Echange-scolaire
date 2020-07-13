@@ -1,3 +1,87 @@
-*{
-    border-bottom: 0em;
+/*//////////
+NAVBAR
+/////////*/
+nav img{
+    width: 60px;
+}
+
+/*///////////
+HEADER
+/////////// */
+h1{
+    padding: 60px 0 0 80px;
+}
+
+#recherche{
+    background-image: url(img/recherche.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#recherche form{
+    border-radius: 15px;
+    background-color: rgba(112, 128, 144, 0.7);
+}
+
+#pays, #voyage, #entite{
+    width: 100%;
+}
+
+.btnRecherche{
+    background-color: #e76f51;
+}
+
+#pays, #voyage, #entite, #btnRecherche{
+    border-radius: 5px;
+}
+
+/*//////////
+MAIN SECTION INSCRIPTION
+//////////// */
+.inscrivez p{
+    width: 75%;
+    text-align: center;
+}
+
+#btnInscription{
+    background-color: #e76f51;
+    margin-right: 20%;
+}
+
+#trait{
+    border: 1px solid black;
+    width: 100%;
+}
+
+/*//////////
+MAIN SECTION ACTU
+//////////// */
+.actu article{
+    width: 50px;
+}
+
+.post{
+    display: flex;
+    justify-content: space-between;
+}
+
+.voirActu{
+    margin-right: 15%;
+    font-size: 1.2rem;
+}
+
+/*//////////
+FOOTER 
+//////////// */
+.propos p, .mentions p{
+    width: 75%;
+}
+
+/*/////////
+MEDIA QUERIES
+///////////*/
+
+@media screen and (max-width: 576px){
+
 }
