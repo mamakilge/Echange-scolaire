@@ -66,24 +66,100 @@
             </ol>
         </nav>
         <div class="container">
-            <h1>Ton échange scolaire sur mésure</h1>
+            <h1 class="pt-2 pb-5">Ton échange scolaire sur mésure</h1>
             <div>
                 <!--Menu recherche accordeon-->
                 <p>
-                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Affiner ma recherche
-                    </a>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Trier par
-                    </button>
+                    <a class="btn btn-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button"
+                        aria-expanded="false" aria-controls="multiCollapseExample1">Affiner ma recherche</a>
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse"
+                        data-target="#multiCollapseExample2" aria-expanded="false"
+                        aria-controls="multiCollapseExample2">Trier par</button>
                 </p>
-                <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                        proident.
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body">
+                                <div class="choix">
+                                    <label>Je cherche : </label>
+                                    <span class="input-group">
+                                        <input type="radio" name="bac" id="optionaccueil" value="accueil">
+                                        <label class="ml-3 mt-2" for="optionaccueil">Accueillir élèves</label>
+                                    </span>
+                                    <span class="input-group">
+                                        <input type="radio" name="bac" id="optionpartir" value="partir">
+                                        <label class="ml-3 mt-2" for="optionpartir">Partir en voyage</label>
+                                    </span>
+                                    <span class="input-group">
+                                        <input type="radio" name="bac" id="optionlesdeux" value="les deux">
+                                        <label class="ml-3 mt-2" for="optionlesdeux">Les deux</label>
+                                    </span>
+                                </div>
+                                <div class="langue my-3">
+                                    <label class="mr-2" for="">Choisissez la langue</label>
+                                    <select class="option-langue">
+                                        <option value="français">Français</option>
+                                        <option value="espagnol">Español</option>
+                                        <option value="anglais">English</option>
+                                    </select>
+                                </div>
+                                <div class="pays my-3">
+                                    <label class="mr-2" for="">Choisissez le pays</label>
+                                    <select class="option-langue">
+                                        <option value="france">France</option>
+                                        <option value="mayotte">Mayotte</option>
+                                        <option value="espagne">España</option>
+                                        <option value="ecuateur">Ecuador</option>
+                                        <option value="irlande">Ireland</option>
+                                        <option value="angleterre">England</option>
+                                    </select>
+                                </div>
+                                <div class="nombre-eleves my-3">
+                                    <label>Nombre d'élèves : </label>
+                                    <span class="input-group">
+                                        <input type="radio" name="bac" id="option30" value="30">
+                                        <label class="ml-3 mt-2" for="option30">Moins de 30 élèves</label>
+                                    </span>
+                                    <span class="input-group">
+                                        <input type="radio" name="bac" id="option30-40" value="30-40">
+                                        <label class="ml-3 mt-2" for="option30-40">Entre 30 et 40 élèves</label>
+                                    </span>
+                                    <span class="input-group">
+                                        <input type="radio" name="bac" id="option40" value="40">
+                                        <label class="ml-3 mt-2" for="option40">Plus de 40 élèves</label>
+                                    </span>
+                                </div>
+                                <div class="niveau-eleves my-3">
+                                    <label>Niveau des élèves :</label>
+                                    <div class="input-niveau">
+                                        <label for="optioncollege">Collège</label>
+                                        <input type="checkbox" id="optioncollege" value="college">
+                                    </div>
+                                    <div class="input-niveau">
+                                        <label for="optionlycee">Lycée</label>
+                                        <input type="checkbox" id="optionlycée" value="lycee">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 mb-5">
+                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <div class="trier">
+                                <span class="input-group">
+                                    <input type="radio" name="bac" id="option1" value="1">
+                                    <label class="ml-3 mt-2" for="option1">Nombre d'élèves</label>
+                                </span>
+                                <span class="input-group">
+                                    <input type="radio" name="bac" id="option2" value="2">
+                                    <label class="ml-3 mt-2" for="option2">Niveau d'élèves</label>
+                                </span>
+                                <span class="input-group">
+                                    <input type="radio" name="bac" id="option3" value="3">
+                                    <label class="ml-3 mt-2" for="option3">Mieux noté </label>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
