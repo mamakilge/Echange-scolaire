@@ -10,7 +10,7 @@
         integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="navbar">
-                    <a href=""><img src="img/logo.png" alt="logo" id="logo"></a>
+                    <a href=""><img src="../img/logo.png" alt="logo" id="logo"></a>
                     <a class="navbar-brand pl-3" href="#">Mamakilgé</a>
                 </div>
 
@@ -55,13 +55,13 @@
     </header>
 
     <main>
-        <section class="container">
+        <section class="container recherche">
             <header id="recherche">
                 <h1 class="text-light w-50">Recherchez le voyage scolaire qui vous correspond !</h1>
                 <div class="row">
-                    <form action="" class="p-3 mb-3 mx-auto">
-                        <div class="option pb-2 ">
-                            <select name="pays" id="pays">
+                    <form action="" class="p-3 mb-3">
+                        <div class="option pb-2">
+                            <select name="pays" class="pays w-100 rounded">
                                 <option value="pays">Pays</option>
                                 <option value="france">France</option>
                                 <option value="angleterre">Angleterre</option>
@@ -70,7 +70,7 @@
                         </div>
 
                         <div class="option pb-2">
-                            <select name="voyage" id="voyage">
+                            <select name="voyage" class="voyage w-100 rounded">
                                 <option value="sejour">Séjour</option>
                                 <option value="accueillir">Accueillir</option>
                                 <option value="voyager">Voyager</option>
@@ -79,7 +79,7 @@
                         </div>
 
                         <div class="option pb-3">
-                            <select name="entite" id="entite">
+                            <select name="entite" class="entite w-100 rounded">
                                 <option value="entite">Entité</option>
                                 <option value="etablissement">Etablissement</option>
                                 <option value="professeur">Professeur</option>
@@ -94,13 +94,22 @@
             </header>
         </section>
 
-        <section class="container">
+        <section class="container inscription">
             <article class="inscrivez">
                 <h2 class="text-center p-4">Inscrivez-vous</h2>
 
                 <div class="d-flex justify-content-center pb-4">
-                    <p >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nisi reprehenderit repudiandae iure unde expedita quisquam nam, cum nesciunt facilis dolor ratione reiciendis eligendi. Iure, sapiente officiis. Sapiente, possimus quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quam debitis reprehenderit magni eaque voluptatem nobis expedita, illo vitae ipsa autem corporis accusamus quaerat assumenda est, qui, quia enim quisquam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto iure enim fugiat dolor illum architecto saepe repudiandae tempora! Voluptate pariatur vitae voluptatum! Eaque omnis molestiae deleniti odio? Explicabo, sint neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat non inventore recusandae culpa ab alias quasi vel natus omnis necessitatibus maxime eum placeat, id architecto, doloribus ea ad laborum dolores?
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nisi reprehenderit repudiandae
+                        iure unde expedita quisquam nam, cum nesciunt facilis dolor ratione reiciendis eligendi. Iure,
+                        sapiente officiis. Sapiente, possimus quibusdam? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Praesentium quam debitis reprehenderit magni eaque voluptatem nobis expedita,
+                        illo vitae ipsa autem corporis accusamus quaerat assumenda est, qui, quia enim quisquam! Lorem,
+                        ipsum dolor sit amet consectetur adipisicing elit. Iusto iure enim fugiat dolor illum architecto
+                        saepe repudiandae tempora! Voluptate pariatur vitae voluptatum! Eaque omnis molestiae deleniti
+                        odio? Explicabo, sint neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                        non inventore recusandae culpa ab alias quasi vel natus omnis necessitatibus maxime eum placeat,
+                        id architecto, doloribus ea ad laborum dolores?
                     </p>
                 </div>
             </article>
@@ -108,72 +117,103 @@
             <div class="d-flex justify-content-end pb-3">
                 <button type="submit" style="width: 150px; height: 45px;" id="btnInscription">Inscription</button>
             </div>
-            <div id="trait"></div>
+            <hr>
         </section>
 
         <section class="container actu bg-light">
             <h2 class="text-center py-4">Actualités</h2>
-            <div class="row post mx-n1">
-                <article class="col-sm-12 col-md-6 border border-secondary rounded text-center pt-3">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus sequi officia at nobis ipsum!
-                        Odio est recusandae corrupti non delectus adipisci, dolorum dolores sint dignissimos, mollitia,
-                        natus aut repellendus atque!
-                    </p>
-                    <a href="">Lire</a>
-                </article>
-
-                <article class="col-sm-12 col-md-6 border border-secondary rounded text-center pt-3">
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem excepturi nostrum minima
-                        ducimus veniam consequuntur aut deserunt repellat corrupti harum ratione aliquid impedit
-                        repellendus, quaerat libero quam animi amet nulla.
-                    </p>
-                    <a href="">Lire</a>
-                </article>
-
-                <article class="col-sm-12 col-md-6 border border-secondary rounded text-center pt-3">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam ducimus, neque ab
-                        pariatur veritatis suscipit sapiente possimus maiores cumque impedit ex nesciunt aspernatur
-                        consequatur minus! Porro quaerat ipsum cumque!
-                    </p>
-                    <a href="">Lire</a>
-                </article>
-
-                <article class="col-sm-12 col-md-6 d-none d-md-block border border-secondary rounded text-center pt-3">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam ducimus, neque ab
-                        pariatur veritatis suscipit sapiente possimus maiores cumque impedit ex nesciunt aspernatur
-                        consequatur minus! Porro quaerat ipsum cumque!
-                    </p>
-                    <a href="">Lire</a>
-                </article>
-
-                <article class="col-sm-12 col-md-6 d-none d-md-block border border-secondary rounded text-center pt-3">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam ducimus, neque ab
-                        pariatur veritatis suscipit sapiente possimus maiores cumque impedit ex nesciunt aspernatur
-                        consequatur minus! Porro quaerat ipsum cumque!
-                    </p>
-                    <a href="">Lire</a>
-                </article>
-
-                <article class="col-sm-12 col-md-6 d-none d-md-block border border-secondary rounded text-center pt-3">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam ducimus, neque ab
-                        pariatur veritatis suscipit sapiente possimus maiores cumque impedit ex nesciunt aspernatur
-                        consequatur minus! Porro quaerat ipsum cumque!
-                    </p>
-                    <a href="">Lire</a>
-                </article>
+            <div class="row post">
+                <div class="col-sm-12 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Grégoire Bourdette</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
+                                molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
+                                itaque saepe velit delectus.
+                            </p>
+                            <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 my-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Corinne Bourassa</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
+                                molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
+                                itaque saepe velit delectus.
+                            </p>
+                            <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 my-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Valérie Arpin</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
+                                molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
+                                itaque saepe velit delectus.
+                            </p>
+                            <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 my-2">
+                    <div class="card">
+                        <div class="collapse multi-collapse" id="post4">
+                        <div class="card-body">
+                            <h3 class="card-title">Raymond Villeneuve</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
+                                molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
+                                itaque saepe velit delectus.
+                            </p>
+                            <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 my-2">
+                    <div class="card">
+                        <div class="collapse multi-collapse" id="post5">
+                            <div class="card-body">
+                                <h3 class="card-title">Camille Corbin</h3>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum
+                                    modi molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis,
+                                    eos ut quos itaque saepe velit delectus.
+                                </p>
+                                <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 my-2">
+                    <div class="card">
+                        <div class="collapse multi-collapse" id="post6">
+                            <div class="card-body">
+                                <h3 class="card-title">Martin Des Meaux</h3>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum
+                                    modi molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis,
+                                    eos ut quos itaque saepe velit delectus.
+                                </p>
+                                <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="voirActu d-flex justify-content-end py-4">
-                <button type="submit" class="border-0 text-primary bg-light">Voir plus d'actualités</button>
+            <div class="d-flex justify-content-end py-4">
+                <button class="btn btn-primary voirActu" type="button" data-toggle="collapse" data-target=".multi-collapse"
+                aria-expanded="false" aria-controls="post4 post5 post6">Voir plus d'actualités</button>
             </div>
-
-            <div id="trait"></div>
+            <hr>
         </section>
     </main>
 
@@ -188,7 +228,7 @@
                 </div>
             </article>
 
-            <div id="trait"></div>
+            <hr>
         </div>
 
         <div class="container bg-light">
@@ -203,7 +243,7 @@
                     </p>
                 </div>
             </article>
-            <div id="trait"></div>
+            <hr>
         </div>
 
         <div class="container">
@@ -217,9 +257,9 @@
                     </p>
                 </div>
             </article>
-            <div id="trait"></div>
+            <hr>
         </div>
-        
+
         <div class="container bg-light">
             <article class="mentions text-center py-4">
                 <h2>Mentions légales</h2>
@@ -245,7 +285,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-
-<script src="script.js"></script>
+<script src="../js/script.js"></script>
 
 </html>

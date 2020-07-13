@@ -9,11 +9,12 @@ nav img{
 HEADER
 /////////// */
 h1{
-    padding: 60px 0 0 80px;
+    padding: 40px 0 0 80px;
+    text-align: center;
 }
 
 #recherche{
-    background-image: url(img/recherche.jpg);
+    background-image: url(../img/recherche.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,18 +23,12 @@ h1{
 #recherche form{
     border-radius: 15px;
     background-color: rgba(112, 128, 144, 0.7);
-}
-
-#pays, #voyage, #entite{
-    width: 100%;
+    margin: 40px 0 0 250px;
 }
 
 .btnRecherche{
     background-color: #e76f51;
-}
-
-#pays, #voyage, #entite, #btnRecherche{
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 /*//////////
@@ -47,23 +42,21 @@ MAIN SECTION INSCRIPTION
 #btnInscription{
     background-color: #e76f51;
     margin-right: 20%;
+    border-radius: 5px;
 }
 
-#trait{
+hr{
     border: 1px solid black;
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 
 /*//////////
 MAIN SECTION ACTU
 //////////// */
-.actu article{
-    width: 50px;
-}
-
 .post{
-    display: flex;
-    justify-content: space-between;
+    width: 75%;
+    margin: auto;
 }
 
 .voirActu{
@@ -78,10 +71,33 @@ FOOTER
     width: 75%;
 }
 
+
+
 /*/////////
 MEDIA QUERIES
 ///////////*/
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 720px min-width: 720px){
+    h1{
+        text-align: start;
+        padding: 20px 0 0 20px;
+        font-size: 2rem;
+    }
 
+    #recherche form{
+        margin: 20px 0 0 50px;
+    }
 }
+
+@media screen and (max-width: 960px){
+    h1{
+        text-align: start;
+        padding: 20px 0 0 20px;
+        font-size: 2rem;
+    }
+
+    #recherche form{
+        margin: 20px 0 0 70px;
+    }
+}
+
