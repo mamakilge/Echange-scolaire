@@ -8,6 +8,7 @@ HEADER NAV
 
 .icon-hamburger{
     width: 35px;
+    display: none;
 }
 
 
@@ -36,7 +37,9 @@ MEDIA QUERIES
 
 /*LARGE*/
 @media screen and (min-width:992px){
-
+    .icon-hamburger{
+        display: inline;
+    }
 }
 
 /*EXTRA LARGE*/
