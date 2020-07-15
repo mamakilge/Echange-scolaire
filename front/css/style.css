@@ -54,7 +54,7 @@ hr{
 /*//////////
 MAIN SECTION ACTU
 //////////// */
-.post{
+.posts{
     width: 75%;
     margin: auto;
 }
@@ -67,24 +67,22 @@ MAIN SECTION ACTU
 /*//////////
 FOOTER 
 //////////// */
-.propos p, .mentions p{
-    width: 75%;
-}
 
 footer hr{
     width: 100%;
 }
 
 
-
 /*/////////
 MEDIA QUERIES
 ///////////*/
-@media screen and (max-width: 576px){
-    #post4{
-        
+@media screen and (max-width: 720px){
+    .commentaire{
+        display: none;
     }
 }
+
+/*
 
 @media screen and (max-width: 720px){
     h1{
@@ -110,3 +108,4 @@ MEDIA QUERIES
     }
 }
 
+*/

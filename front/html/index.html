@@ -2,363 +2,367 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <title>Mamakilgé</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-        integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Mamakilgé</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <header class="bg-light">
-        <nav class="container navbar navbar-expand-lg navbar-light d-flex justify-content-center">
-            <!--logo cliquable pour revenir sur la page d'accueil-->
-            <a href="#">
-                <img src="../img/logo.png" alt="logo">
-            </a>
-            <a class="navbar-brand" href="index.html">Nom du site</a>
-            <!--Nom du site cliquable pour revenir sur accueil-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <header class="bg-light">
+    <nav class="container navbar navbar-expand-lg navbar-light d-flex justify-content-center">
+      <!--logo cliquable pour revenir sur la page d'accueil-->
+      <a href="#">
+        <img src="../img/logo.png" alt="logo">
+      </a>
+      <a class="navbar-brand" href="index.html">Nom du site</a>
+      <!--Nom du site cliquable pour revenir sur accueil-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
 
-                <div class="nav-item active btn-group ml-3" role="group">
-                    <button type="button" class="btn btn-outline-dark">Inscription</button>
-                    <button type="button" class="btn btn-secondary">Connexion</button>
-                </div>
-
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Profil</a>
-                        <a class="dropdown-item" href="#">Contact</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">À propos</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="container recherche">
-            <header id="recherche">
-                <h1 class="text-light w-50">Recherchez le voyage scolaire qui vous correspond !</h1>
-                <div class="row">
-                    <form action="" class="p-3 mb-3">
-                        <div class="option pb-2">
-                            <select name="pays" class="pays w-100 rounded">
-                                <option value="pays">Pays</option>
-                                <option value="france">France</option>
-                                <option value="angleterre">Angleterre</option>
-                                <option value="espagne">Espagne</option>
-                            </select>
-                        </div>
-
-                        <div class="option pb-2">
-                            <select name="voyage" class="voyage w-100 rounded">
-                                <option value="sejour">Séjour</option>
-                                <option value="accueillir">Accueillir</option>
-                                <option value="voyager">Voyager</option>
-                                <option value="echanger">Echanger</option>
-                            </select>
-                        </div>
-
-                        <div class="option pb-3">
-                            <select name="entite" class="entite w-100 rounded">
-                                <option value="entite">Entité</option>
-                                <option value="etablissement">Etablissement</option>
-                                <option value="professeur">Professeur</option>
-                                <option value="instituteur">Instituteur</option>
-                            </select>
-                        </div>
-
-                        <button type="submit" class="btnRecherche w-100" style="height: 40px;">Rechercher</button>
-                    </form>
-                </div>
-
-            </header>
-        </section>
-
-        <section class="container inscription">
-            <article class="inscrivez">
-                <h2 class="text-center p-4">Inscrivez-vous</h2>
-
-                <div class="d-flex justify-content-center pb-4">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nisi reprehenderit repudiandae
-                        iure unde expedita quisquam nam, cum nesciunt facilis dolor ratione reiciendis eligendi. Iure,
-                        sapiente officiis. Sapiente, possimus quibusdam? Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Praesentium quam debitis reprehenderit magni eaque voluptatem nobis expedita,
-                        illo vitae ipsa autem corporis accusamus quaerat assumenda est, qui, quia enim quisquam! Lorem,
-                        ipsum dolor sit amet consectetur adipisicing elit. Iusto iure enim fugiat dolor illum architecto
-                        saepe repudiandae tempora! Voluptate pariatur vitae voluptatum! Eaque omnis molestiae deleniti
-                        odio? Explicabo, sint neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                        non inventore recusandae culpa ab alias quasi vel natus omnis necessitatibus maxime eum placeat,
-                        id architecto, doloribus ea ad laborum dolores?
-                    </p>
-                </div>
-            </article>
-
-            <div class="d-flex justify-content-end pb-3">
-                <button type="submit" style="width: 150px; height: 45px;" id="btnInscription">Inscription</button>
-            </div>
-            <hr>
-        </section>
-
-        <section class="container actu bg-light">
-            <h2 class="text-center py-4">Actualités</h2>
-            <div class="row post">
-
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Grégoire Bourdette</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
-                                molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
-                                itaque saepe velit delectus.
-                            </p>
-                            <a href="#" class="btn btn-primary">Afficher le commentaire</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Corinne Bourassa</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
-                                molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
-                                itaque saepe velit delectus.
-                            </p>
-                            <a href="#" class="btn btn-primary">Afficher le commentaire</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Valérie Arpin</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
-                                molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
-                                itaque saepe velit delectus.
-                            </p>
-                            <a href="#" class="btn btn-primary">Afficher le commentaire</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="card">
-                        <div class="" id="post4"></div>
-                        <div class="card-body">
-                            <h3 class="card-title">Raymond Villeneuve</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
-                                molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
-                                itaque saepe velit delectus.
-                            </p>
-                            <a href="#" class="btn btn-primary">Afficher le commentaire</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="card">
-                        <div class="collapse multi-collapse" id="post5">
-                            <div class="card-body">
-                                <h3 class="card-title">Camille Corbin</h3>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum
-                                    modi molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis,
-                                    eos ut quos itaque saepe velit delectus.
-                                </p>
-                                <a href="#" class="btn btn-primary">Afficher le commentaire</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 my-2">
-                    <div class="card">
-                        <div class="collapse multi-collapse" id="post6">
-                            <div class="card-body">
-                                <h3 class="card-title">Martin Des Meaux</h3>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum
-                                    modi molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis,
-                                    eos ut quos itaque saepe velit delectus.
-                                </p>
-                                <a href="#" class="btn btn-primary">Afficher le commentaire</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-end py-4">
-                <button class="btn btn-primary voirActu" type="button" data-toggle="collapse"
-                    data-target=".multi-collapse" aria-expanded="false" aria-controls="post5 post6">Voir plus
-                    d'actualités</button>
-            </div>
-            <hr>
-        </section>
-    </main>
-
-    <footer class="page-footer font-small mdb-color pt-4">
-
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left">
-      
-          <!-- Footer links -->
-          <div class="row text-center text-md-left mt-3 pb-3">
-      
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">Mamakilgé</h6>
-              <p>Mamakilgé est un site indépendant lancé en 2020 pour facilité l'échange scolaire en ligne. Grâce à un bouche-à-oreille constant, il sera peut être en 2022 le principal site d'échange scolaire. </p>
-            </div>
-            <!-- Grid column -->
-      
-            <hr class="w-100 clearfix d-md-none">
-      
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">Informations Légales</h6>
-              <p>
-                <a href="#!">Mentions Légales</a>
-              </p>
-              <p>
-                <a href="#!">Vie privée</a>
-              </p>
-              <p>
-                <a href="#!">Vos droits et obligations</a>
-              </p>
-              <p>
-                <a href="#!">Publicité</a>
-              </p>
-            </div>
-            <!-- Grid column -->
-      
-            <hr class="w-100 clearfix d-md-none">
-      
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">À Propos</h6>
-              <p>
-                <a href="#!">Qui sommes-nous ?</a>
-              </p>
-              <p>
-                <a href="#!">Avis</a>
-              </p>
-              <p>
-                <a href="#!">Nous rejoindre</a>
-              </p>
-              <p>
-                <a href="#!">Aide</a>
-              </p>
-            </div>
-      
-            <!-- Grid column -->
-            <hr class="w-100 clearfix d-md-none">
-      
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-              <p>
-                <i class="fas fa-home mr-3"></i> 18 Rue Geoffroy l'Asnier, 75004 Paris</p>
-              <p>
-                <i class="fas fa-envelope mr-3"></i> mamakilge@gmail.com</p>
-              <p>
-                <i class="fas fa-phone mr-3"></i> 01 42 58 75 88</p>
-              <p>
-                <i class="fas fa-print mr-3"></i> 01 42 58 75 89</p>
-            </div>
-            <!-- Grid column -->
-      
-          </div>
-          <!-- Footer links -->
-      
-          <hr>
-      
-          <!-- Grid row -->
-          <div class="row d-flex align-items-center">
-      
-            <!-- Grid column -->
-            <div class="col-md-7 col-lg-8">
-      
-              <!--Copyright-->
-              <p class="text-center text-md-left">© 2020 Copyright:
-                <a href="https://mamakilgé.fr/">
-                  <strong> Mamakilgé.fr</strong>
-                </a>
-              </p>
-      
-            </div>
-            <!-- Grid column -->
-      
-            <!-- Grid column -->
-            <div class="col-md-5 col-lg-4 ml-lg-0">
-      
-              <!-- Social buttons -->
-              <div class="text-center text-md-right">
-                <ul class="list-unstyled list-inline">
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fab fa-google-plus-g"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-      
-            </div>
-            <!-- Grid column -->
-      
-          </div>
-          <!-- Grid row -->
-      
+        <div class="nav-item active btn-group ml-3" role="group">
+          <button type="button" class="btn btn-outline-dark">Inscription</button>
+          <button type="button" class="btn btn-secondary">Connexion</button>
         </div>
-        <!-- Footer Links -->
-      
-      </footer>
+
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Profil</a>
+            <a class="dropdown-item" href="#">Contact</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">À propos</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container recherche">
+      <header id="recherche">
+        <h1 class="text-light w-50">Recherchez le voyage scolaire qui vous correspond !</h1>
+        <div class="row">
+          <form action="" class="p-3 mb-3">
+            <div class="option pb-2">
+              <select name="pays" class="pays w-100 rounded">
+                <option value="pays">Pays</option>
+                <option value="france">France</option>
+                <option value="angleterre">Angleterre</option>
+                <option value="espagne">Espagne</option>
+              </select>
+            </div>
+
+            <div class="option pb-2">
+              <select name="voyage" class="voyage w-100 rounded">
+                <option value="sejour">Séjour</option>
+                <option value="accueillir">Accueillir</option>
+                <option value="voyager">Voyager</option>
+                <option value="echanger">Echanger</option>
+              </select>
+            </div>
+
+            <div class="option pb-3">
+              <select name="entite" class="entite w-100 rounded">
+                <option value="entite">Entité</option>
+                <option value="etablissement">Etablissement</option>
+                <option value="professeur">Professeur</option>
+                <option value="instituteur">Instituteur</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btnRecherche w-100" style="height: 40px;">Rechercher</button>
+          </form>
+        </div>
+
+      </header>
+    </section>
+
+    <section class="container inscription">
+      <article class="inscrivez">
+        <h2 class="text-center p-4">Inscrivez-vous</h2>
+
+        <div class="d-flex justify-content-center pb-4">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nisi reprehenderit repudiandae
+            iure unde expedita quisquam nam, cum nesciunt facilis dolor ratione reiciendis eligendi. Iure,
+            sapiente officiis. Sapiente, possimus quibusdam? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Praesentium quam debitis reprehenderit magni eaque voluptatem nobis expedita,
+            illo vitae ipsa autem corporis accusamus quaerat assumenda est, qui, quia enim quisquam! Lorem,
+            ipsum dolor sit amet consectetur adipisicing elit. Iusto iure enim fugiat dolor illum architecto
+            saepe repudiandae tempora! Voluptate pariatur vitae voluptatum! Eaque omnis molestiae deleniti
+            odio? Explicabo, sint neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            non inventore recusandae culpa ab alias quasi vel natus omnis necessitatibus maxime eum placeat,
+            id architecto, doloribus ea ad laborum dolores?
+          </p>
+        </div>
+      </article>
+
+      <div class="d-flex justify-content-end pb-3">
+        <button type="submit" style="width: 150px; height: 45px;" id="btnInscription">Inscription</button>
+      </div>
+      <hr>
+    </section>
+
+    <section class="container actu bg-light">
+      <h2 class="text-center py-4">Actualités</h2>
+      <div class="row posts">
+
+        <div class="col-sm-12 col-md-6 my-2">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Grégoire Bourdette 1</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
+                molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
+                itaque saepe velit delectus.
+              </p>
+              <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 my-2">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Corinne Bourassa 2</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
+                molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
+                itaque saepe velit delectus.
+              </p>
+              <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 my-2">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Valérie Arpin 3</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
+                molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
+                itaque saepe velit delectus.
+              </p>
+              <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 my-2">
+          <div class="card">
+            <div class="commentaire">
+              <div class="card-body">
+                <h3 class="card-title">Raymond Villeneuve 4</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
+                  molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
+                  itaque saepe velit delectus.
+                </p>
+                <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 my-2">
+          <div class="card">
+            <div class="collapse multi-collapse" id="post5">
+              <div class="card-body">
+                <h3 class="card-title">Camille Corbin 5</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum
+                  modi molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis,
+                  eos ut quos itaque saepe velit delectus.
+                </p>
+                <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 my-2">
+          <div class="card">
+            <div class="collapse multi-collapse" id="post6">
+              <div class="card-body">
+                <h3 class="card-title">Martin Des Meaux 6</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum
+                  modi molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis,
+                  eos ut quos itaque saepe velit delectus.
+                </p>
+                <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-end py-4">
+        <button class="btn btn-primary voirActu" type="button" id="voirPlus" data-toggle="collapse"
+          data-target=".multi-collapse" aria-expanded="false" aria-controls="post5 post6">Voir plus
+          d'actualités</button>
+      </div>
+
+      <hr>
+    </section>
+  </main>
+
+  <footer class="page-footer font-small mdb-color pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Footer links -->
+      <div class="row text-center text-md-left mt-3 pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Mamakilgé</h6>
+          <p>Mamakilgé est un site indépendant lancé en 2020 pour facilité l'échange scolaire en ligne. Grâce à un
+            bouche-à-oreille constant, il sera peut être en 2022 le principal site d'échange scolaire. </p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Informations Légales</h6>
+          <p>
+            <a href="#!">Mentions Légales</a>
+          </p>
+          <p>
+            <a href="#!">Vie privée</a>
+          </p>
+          <p>
+            <a href="#!">Vos droits et obligations</a>
+          </p>
+          <p>
+            <a href="#!">Publicité</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">À Propos</h6>
+          <p>
+            <a href="#!">Qui sommes-nous ?</a>
+          </p>
+          <p>
+            <a href="#!">Avis</a>
+          </p>
+          <p>
+            <a href="#!">Nous rejoindre</a>
+          </p>
+          <p>
+            <a href="#!">Aide</a>
+          </p>
+        </div>
+
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p>
+            <i class="fas fa-home mr-3"></i> 18 Rue Geoffroy l'Asnier, 75004 Paris</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> mamakilge@gmail.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> 01 42 58 75 88</p>
+          <p>
+            <i class="fas fa-print mr-3"></i> 01 42 58 75 89</p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Footer links -->
+
+      <hr>
+
+      <!-- Grid row -->
+      <div class="row d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8">
+
+          <!--Copyright-->
+          <p class="text-center text-md-left">© 2020 Copyright:
+            <a href="https://mamakilgé.fr/">
+              <strong> Mamakilgé.fr</strong>
+            </a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0">
+
+          <!-- Social buttons -->
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+  </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="../js/script.js"></script>
 
 </html>
