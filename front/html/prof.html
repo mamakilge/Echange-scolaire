@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="bg-light">
         <div class="header">
             <!--Barre de recherche-->
             <div class="recherche">
@@ -70,7 +70,7 @@
                 <h1 class="text-center mb-5">Henri Boudreault</h1>
             </div>
             <div class= "col-sm 3 col-md-6">
-                <img class="img1" src="/img/prof 2.jpg" alt="Photo de Henri Boudreault">
+                <img class="img1" src="../fa-users Font Awesome Icons_fichiers/prof 2.jpg" alt="Photo de Henri Boudreault">
             </div>
 
         <!-- Envoyer un message / Ajouter au contact / Avis -->
@@ -86,7 +86,7 @@
 
         <!-- Géolocalisation / Calendrier d'accueil / Capacités d'accueil /
         Numéro de téléphone / Boutton en "recherche d'échange" -->
-        <div class="text-center border-top mt-5">
+        <div class="text-center border-top mt-5 bg-light">
             <div class="row">
                 <div class= "col-md-6 col-sm-12">
                     <p><i class="fas fa-map-marker-alt"></i> Montpellier, France.</p>                    
@@ -108,7 +108,7 @@
         </div>
 
         <!-- Historique du profil -->
-        <div class="bg-secondary">
+        <div class="">
             <div class=" border-top mt-5">
                 <h3 class="text-center mt-4 pb-4">Historique du profil</h3>
                 <div class="row d-flex justify-content-around">
@@ -120,11 +120,7 @@
                 </div>
             </div>
 
-                <div class="d-flex justify-content-end">
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#historique" aria-expanded="false" aria-controls="historique">
-                    Voir plus
-                    </button>
-                </div>
+                
             <div class="collapse" id="historique">
                 <div class="card card-body">
                     <div class="row d-flex justify-content-around">
@@ -135,20 +131,22 @@
                 </div>
             </div>
         </div>
+
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#historique" aria-expanded="false" aria-controls="historique">
+          Voir plus
+          </button>
+      </div>
         <!-- Avis / Tapez votre commentaire -->  
 
-        <div class="container bg-secondary  border-top mt-5">
+        <div class="container bg-light border-top mt-5">
             <h3 class="text-center mt-4 pb-4">Avis</h3>
             <div class="row d-flex justify-content-around">
                 <p class = "text-center border col-md-5 col-sm-12">Madère: Bonjour,Voilà retour de Madere 15 jours de randos et découvertes. decu. On me parlait de l ile au fleur,sauvage.c'est vrai beaucoup d agapanthe d 'aloes et puis pas plus de fleurs qu'ailleur, sauf au jardin exotique.</p>
                 <p class = "text-center border col-md-5 col-sm-12">Turin. Une ville de rues piétonnes et voûtées
                     C'est assez plaisant. C'est une des villes en Italie qui en possède le plus. De même, de nombreuses rues du centre sont piétonnes. Bref, une pérégrination d'un week-end dans les rues de Turin, c'est vraiment agréable</p>            
             </div>
-            <p>
-                <button class="btn btn-primary d-flex justify-content-end" type="button" data-toggle="collapse" data-target="#avis" aria-expanded="false" aria-controls="avis">
-                Voir plus
-                </button>
-            </p>
+           
           <div class="collapse" id="avis">
             <div class="card card-body">
                 <div class="row d-flex justify-content-around">
@@ -158,17 +156,24 @@
                 </div>
             </div>
           </div>
+
+          <div class="d-flex justify-content-end">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#avis" aria-expanded="false" aria-controls="avis">
+            Voir plus
+            </button>
+          </div>  
         <form>
             <div class="form-group text-center container">
                 <label for="exampleFormControlTextarea1">Tapez votre commentaire ici</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button class="btn btn-primary" type="exampleFormControlTextarea1">Poster</button>
             </div>
         </form>
         </div>     
     </main>
 
 <!-- Footer -->
-<footer class="page-footer font-small mdb-color pt-4">
+<footer class="page-footer bg-secondary font-small mdb-color pt-4">
 
     <!-- Footer Links -->
     <div class="container text-center text-md-left">
