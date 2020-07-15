@@ -77,7 +77,19 @@ FOOTER
 MEDIA QUERIES
 ///////////*/
 
-@media screen and (max-width: 720px min-width: 720px){
+@media screen and (min-width: 720px){
+    h1{
+        text-align: start;
+        padding: 20px 0 0 20px;
+        font-size: 2rem;
+    }
+
+    #recherche form{
+        margin: 20px 0 0 50px;
+    }
+}
+
+@media screen and (max-width: 720px){
     h1{
         text-align: start;
         padding: 20px 0 0 20px;
