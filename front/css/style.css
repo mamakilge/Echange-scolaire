@@ -1,6 +1,6 @@
 body{
     font-family: 'Biryani', sans-serif;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
 }
 
 /*//////////
@@ -8,13 +8,17 @@ NAVBAR
 /////////*/
 nav img{
     width: 60px;
+
 }
 
 nav a{
-    color: #02c39a;
+    color: #28afb0;
 }
 
-
+nav .btn{
+    background-color: #28afb0;
+    color: black;
+}
 
 /*///////////
 HEADER
@@ -28,7 +32,6 @@ h1{
 
 h2{
     font-size: 2rem;
-
 }
 
 #recherche{
@@ -47,6 +50,7 @@ h2{
 .btnRecherche{
     background-color: #28afb0;
     border-radius: 8px;
+    border-style: none;
 }
 
 /*//////////
@@ -58,15 +62,31 @@ MAIN SECTION INSCRIPTION
 }
 
 #btnInscription{
-    background-color: #e76f51;
+    background-color: #28afb0;
     margin-right: 20%;
     border-radius: 5px;
+    border-style: none;
 }
 
 hr{
     border: 1px solid black;
     width: 80%;
     margin: auto;
+}
+
+#afficher{
+    display: none;
+}
+
+#masque{
+    display: none;
+}
+
+#reduire{
+    display: none;
+    color: #28afb0;
+    border-radius: 5px;
+    margin: 5% auto;
 }
 
 /*//////////
@@ -80,6 +100,11 @@ MAIN SECTION ACTU
 .voirActu{
     margin-right: 15%;
     font-size: 1.2rem;
+    background-color: #28afb0;
+}
+
+.actu a{
+    background-color: #28afb0;
 }
 
 /*//////////
@@ -99,22 +124,27 @@ footer{
 }
 
 
+
 /*/////////
 MEDIA QUERIES
 ///////////*/
-@media screen and (max-width: 720px){
-    .commentaire{
-        display: none;
-    }
-}
-
-/*
-
 @media screen and (max-width: 720px){
     h1{
         text-align: start;
         padding: 20px 0 0 20px;
         font-size: 2rem;
+    }
+    
+
+    #afficher{
+        display: block;
+        color: #28afb0;
+        border-radius: 5px;
+        margin: 5% auto;
+    }
+
+    #post3, #post4{
+        display: none;
     }
 
     #recherche form{
@@ -133,5 +163,3 @@ MEDIA QUERIES
         margin: 20px 0 0 70px;
     }
 }
-
-*/

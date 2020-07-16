@@ -1,12 +1,56 @@
-var commentaire = document.getElementsByClassName('commentaire');
-console.log("commentaire", commentaire)
+window.onload=function(){
+    //texte inscription RWD
+    $('#afficher').click(function(){
+        $('#masque').show();
+        $('#afficher').hide();
+        $('#reduire').show();
+    })
 
-var voirPlus = document.getElementById('voirPlus');
-console.log("voirPlus", voirPlus);
+    $('#reduire').click(function(){
+        $('#masque').hide();
+        console.log("window")
+        
+        $('#afficher').show();
+        $('#reduire').hide();
+    })
 
-voirPlus.addEventListener('click', function () {
-console.log("cliqué", voirPlus)
+    // Actualités RWD
+    var post3 = document.getElementById('post3');
+    var post4 = document.getElementById('post4');
+    var voirPlus = document.getElementById('voirPlus');
+    
+    voirPlus.addEventListener('click', function(){
+        post3.style.display = 'block';
+        post4.style.display = 'block';
+    })
 
-    commentaire.style.display = 'block';
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
 

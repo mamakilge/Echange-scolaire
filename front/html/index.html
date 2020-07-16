@@ -10,7 +10,9 @@
     integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../js/script.js"></script>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -21,7 +23,7 @@
       <a href="#">
         <img src="../img/logo.png" alt="logo">
       </a>
-      <a class="navbar-brand" href="index.html" style="color: #28afb0;">Nom du site</a>
+      <a class="navbar-brand font-weight-bold pl-2" href="index.html">Nom du site</a>
       <!--Nom du site cliquable pour revenir sur accueil-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,21 +36,21 @@
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
 
-        <div class="nav-item active btn-group ml-3" role="group">
-          <button type="button" class="btn btn-outline-dark">Inscription</button>
-          <button type="button" class="btn btn-secondary">Connexion</button>
+        <div class="nav-item ml-3" role="group">
+          <button type="button" class="btn">Inscription</button>
+          <button type="button" class="btn">Connexion</button>
         </div>
 
         <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Profil</a>
-            <a class="dropdown-item" href="#">Contact</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">À propos</a>
-          </div>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Profil</a>
+              <a class="dropdown-item" href="#">Contact</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">À propos</a>
+            </div>
         </div>
       </div>
     </nav>
@@ -57,7 +59,7 @@
   <main>
     <section class="container recherche">
       <header id="recherche">
-        <h1 class="text-light w-50">Recherchez le voyage scolaire qui vous correspond !</h1>
+        <h1 class="text-light w-50 font-weight-bold">Recherchez le voyage scolaire qui vous correspond !</h1>
         <div class="row">
           <form action="" class="p-3 mb-3">
             <div class="option pb-2">
@@ -103,15 +105,18 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nisi reprehenderit repudiandae
             iure unde expedita quisquam nam, cum nesciunt facilis dolor ratione reiciendis eligendi. Iure,
             sapiente officiis. Sapiente, possimus quibusdam? Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Praesentium quam debitis reprehenderit magni eaque voluptatem nobis expedita,
-            illo vitae ipsa autem corporis accusamus quaerat assumenda est, qui, quia enim quisquam! Lorem,
-            ipsum dolor sit amet consectetur adipisicing elit. Iusto iure enim fugiat dolor illum architecto
-            saepe repudiandae tempora! Voluptate pariatur vitae voluptatum! Eaque omnis molestiae deleniti
-            odio? Explicabo, sint neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            non inventore recusandae culpa ab alias quasi vel natus omnis necessitatibus maxime eum placeat,
-            id architecto, doloribus ea ad laborum dolores?
+            adipisicing elit. Praesentium quam debitis reprehenderit magni eaque voluptatem nobis expedita, <button id="afficher">Afficher la suite</button><span id="masque">
+              illo vitae ipsa autem corporis accusamus quaerat assumenda est, qui, quia enim quisquam! Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit. Iusto iure enim fugiat dolor illum architecto
+              saepe repudiandae tempora! Voluptate pariatur vitae voluptatum! Eaque omnis molestiae deleniti
+              odio? Explicabo, sint neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              non inventore recusandae culpa ab alias quasi vel natus omnis necessitatibus maxime eum placeat,
+              id architecto, doloribus ea ad laborum dolores? </br></span>
+            <button id="reduire">Réduire</button>
           </p>
+
         </div>
+
       </article>
 
       <div class="d-flex justify-content-end pb-3">
@@ -133,7 +138,9 @@
                 molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
                 itaque saepe velit delectus.
               </p>
-              <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+              <div class="text-right">
+                <a href="#" class="btn">Afficher le commentaire</a>
+              </div>
             </div>
           </div>
         </div>
@@ -147,28 +154,34 @@
                 molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
                 itaque saepe velit delectus.
               </p>
-              <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+              <div class="text-right">
+                <a href="#" class="btn">Afficher le commentaire</a>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-12 col-md-6 my-2">
           <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Valérie Arpin 3</h3>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
-                molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
-                itaque saepe velit delectus.
-              </p>
-              <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+            <div id="post3">
+              <div class="card-body">
+                <h3 class="card-title">Valérie Arpin 3</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
+                  molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
+                  itaque saepe velit delectus.
+                </p>
+                <div class="text-right">
+                  <a href="#" class="btn">Afficher le commentaire</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-sm-12 col-md-6 my-2">
           <div class="card">
-            <div class="commentaire">
+            <div id="post4">
               <div class="card-body">
                 <h3 class="card-title">Raymond Villeneuve 4</h3>
                 <p class="card-text">
@@ -176,7 +189,9 @@
                   molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
                   itaque saepe velit delectus.
                 </p>
-                <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+                <div class="text-right">
+                  <a href="#" class="btn">Afficher le commentaire</a>
+                </div>
               </div>
             </div>
           </div>
@@ -192,7 +207,9 @@
                   modi molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis,
                   eos ut quos itaque saepe velit delectus.
                 </p>
-                <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+                <div class="text-right">
+                  <a href="#" class="btn">Afficher le commentaire</a>
+                </div>
               </div>
             </div>
           </div>
@@ -208,7 +225,9 @@
                   modi molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis,
                   eos ut quos itaque saepe velit delectus.
                 </p>
-                <a href="#" class="btn btn-primary">Afficher le commentaire</a>
+                <div class="text-right">
+                  <a href="#" class="btn">Afficher le commentaire</a>
+                </div>
               </div>
             </div>
           </div>
@@ -216,9 +235,8 @@
       </div>
 
       <div class="d-flex justify-content-end py-4">
-        <button class="btn btn-primary voirActu" type="button" id="voirPlus" data-toggle="collapse"
-          data-target=".multi-collapse" aria-expanded="false" aria-controls="post5 post6">Voir plus
-          d'actualités</button>
+        <button class="btn voirActu" type="button" id="voirPlus" data-toggle="collapse" data-target=".multi-collapse"
+          aria-expanded="false" aria-controls="post5 post6">Voir plus d'actualités</button>
       </div>
 
       <hr>
@@ -364,6 +382,6 @@
   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
   integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="../js/script.js"></script>
+
 
 </html>
