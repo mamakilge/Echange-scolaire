@@ -1,3 +1,8 @@
+body{
+    font-family: 'Biryani', sans-serif;
+    font-size: 1.15rem;
+}
+
 /*//////////
 NAVBAR
 /////////*/
@@ -5,12 +10,25 @@ nav img{
     width: 60px;
 }
 
+nav a{
+    color: #02c39a;
+}
+
+
+
 /*///////////
 HEADER
 /////////// */
 h1{
     padding: 40px 0 0 80px;
     text-align: center;
+    font-size: 2.5rem;
+
+}
+
+h2{
+    font-size: 2rem;
+
 }
 
 #recherche{
@@ -27,7 +45,7 @@ h1{
 }
 
 .btnRecherche{
-    background-color: #e76f51;
+    background-color: #28afb0;
     border-radius: 8px;
 }
 
@@ -70,6 +88,14 @@ FOOTER
 
 footer hr{
     width: 100%;
+}
+
+footer h3{
+    font-size: 1rem;
+}
+
+footer{
+    font-size: 0.8rem;
 }
 
 
