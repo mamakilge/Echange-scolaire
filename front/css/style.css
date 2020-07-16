@@ -1,12 +1,18 @@
-*{
+* {
     border-bottom: 0em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;700&display=swap');
+
+body {
+    font-family: 'Biryani', sans-serif;
 }
 
 /*******************************
 HEADER NAV
 *******************************/
 
-.icon-hamburger{
+.icon-hamburger {
     width: 35px;
     display: none;
 }
@@ -14,6 +20,22 @@ HEADER NAV
 
 
 
+
+/*******************************
+SLIDER VERSION MOBILE
+*******************************/
+
+.btn-slider{
+    text-decoration: none;
+    color: #02C39A;
+    font-size: 0.9;
+}
+.carousel-inner h5{
+    font-size: 1rem;
+}
+.carousel-inner p{
+    font-size: 0.8rem;
+}
 
 
 
@@ -26,23 +48,17 @@ HEADER NAV
 MEDIA QUERIES 
 *******************************/
 /*SMALL*/
-@media screen and (min-width:576px){
-
-}
+@media screen and (min-width:576px) {}
 
 /*MEDIUM*/
-@media screen and (min-width:768px){
-
-}
+@media screen and (min-width:768px) {}
 
 /*LARGE*/
-@media screen and (min-width:992px){
-    .icon-hamburger{
+@media screen and (min-width:992px) {
+    .icon-hamburger {
         display: inline;
     }
 }
 
 /*EXTRA LARGE*/
-@media screen and (min-width:1200px){
-
-}
+@media screen and (min-width:1200px) {}
