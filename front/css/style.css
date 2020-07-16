@@ -17,12 +17,42 @@ HEADER NAV
     display: none;
 }
 
-
+/*******************************
+CSS FORMULAIRE
+*******************************/
 
 
 
 /*******************************
-SLIDER VERSION MOBILE
+ANNONCES VERSION DESKTOP
+*******************************/
+.title-search{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.title-annonce-desktop{
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.btn-desktop{
+    text-decoration: none;
+    color: #02C39A;
+}
+
+.pagination{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.page-link{
+    text-decoration: none;
+    color: #02C39A;
+}
+
+/*******************************
+ANNONCES SLIDER VERSION MOBILE
 *******************************/
 
 .btn-slider{
@@ -39,10 +69,34 @@ SLIDER VERSION MOBILE
 
 
 
+/*******************************
+CSS FOOTER 
+*******************************/
+
+.page-footer{
+    border-top: 5px solid #02C39A;
+}
+
+.title-footer{
+    border-bottom: 1px solid #02C39A;
+    border-right: 1px solid #02C39A;
+    font-size: 1rem;
+}
+
+.footer-p{
+    font-size: 0.8rem;
+}
 
 
+.fas{
+    color: #02C39A;
+}
 
+.copyright{
+    text-decoration: none;
+    color: #02C39A;
 
+}
 
 /*******************************
 MEDIA QUERIES 
