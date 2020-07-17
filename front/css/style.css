@@ -20,7 +20,12 @@ HEADER NAV
 /*******************************
 CSS FORMULAIRE
 *******************************/
-
+.btn-form{
+    color: white;
+    background-color: #02C39A;
+    border-radius: 3px;
+   
+}
 
 
 /*******************************
@@ -29,6 +34,12 @@ ANNONCES VERSION DESKTOP
 .title-search{
     font-weight: 700;
     font-size: 2.5rem;
+
+
+}
+.bg-title{
+    background-image: url(../img/Captura\ de\ pantalla\ 2020-07-17\ a\ las\ 10.44.28.png);
+    background-position: center;
 }
 
 .title-annonce-desktop{
