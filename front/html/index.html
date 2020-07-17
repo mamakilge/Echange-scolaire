@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <title>Mamakilgé</title>
+  <!--FONT AWESOME-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
     integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+    <!--BOOTSTRAP-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!--FONT BIRYANI-->
   <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200&display=swap" rel="stylesheet">
+  <!--JQUERY-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="../js/script.js"></script>
   <link rel="stylesheet" href="../css/style.css">
@@ -30,17 +34,20 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
+      <!--BARRE DE RECHERCHE-->
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
 
+        <!--BOUTON INSCRIPTION / CONNEXION-->
         <div class="nav-item ml-3" role="group">
           <button type="button" class="btn">Inscription</button>
           <button type="button" class="btn">Connexion</button>
         </div>
 
+        <!--DROPDOWN MENU-->
         <div class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
@@ -57,6 +64,7 @@
   </header>
 
   <main>
+          <!-- SECTION HEADER RECHERCHE-->
     <section class="container recherche">
       <header id="recherche">
         <h1 class="text-light w-50 font-weight-bold">Recherchez le voyage scolaire qui vous correspond !</h1>
@@ -89,6 +97,7 @@
               </select>
             </div>
 
+    <!--BOUTON VALIDER FORM VERS PAGE RECHERCHE-->
             <button type="submit" class="btnRecherche w-100" style="height: 40px;">Rechercher</button>
           </form>
         </div>
@@ -96,6 +105,7 @@
       </header>
     </section>
 
+    <!--SECTION INSCRIPTION-->
     <section class="container inscription">
       <article class="inscrivez">
         <h2 class="text-center p-4">Inscrivez-vous</h2>
@@ -119,12 +129,14 @@
 
       </article>
 
+      <!--LIEN DE REDIRECTION VERS PAGE INSCRIPTION-->
       <div class="d-flex justify-content-end pb-3">
         <button type="submit" style="width: 150px; height: 45px;" id="btnInscription">Inscription</button>
       </div>
       <hr>
     </section>
 
+    <!--SECTION ACUTALITES-->
     <section class="container actu bg-light">
       <h2 class="text-center py-4">Actualités</h2>
       <div class="row posts">
@@ -234,6 +246,7 @@
         </div>
       </div>
 
+      <!--BOUTON VOIR PLUS D'ACTUALITES-->
       <div class="d-flex justify-content-end py-4">
         <button class="btn voirActu" type="button" id="voirPlus" data-toggle="collapse" data-target=".multi-collapse"
           aria-expanded="false" aria-controls="post5 post6">Voir plus d'actualités</button>
@@ -243,6 +256,7 @@
     </section>
   </main>
 
+  <!--FOOTER-->
   <footer class="page-footer font-small mdb-color pt-4">
 
     <!-- Footer Links -->

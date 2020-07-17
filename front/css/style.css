@@ -1,3 +1,6 @@
+/*//////////
+COMMUN
+/////////*/
 body{
     font-family: 'Biryani', sans-serif;
     font-size: 1.2rem;
@@ -21,7 +24,7 @@ nav .btn{
 }
 
 /*///////////
-HEADER
+MAIN HEADER
 /////////// */
 h1{
     padding: 40px 0 0 80px;
@@ -90,7 +93,7 @@ hr{
 }
 
 /*//////////
-MAIN SECTION ACTU
+MAIN SECTION ACTUALITES
 //////////// */
 .posts{
     width: 75%;

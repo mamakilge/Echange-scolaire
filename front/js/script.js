@@ -1,5 +1,6 @@
 window.onload=function(){
-    //texte inscription RWD
+
+//TEXTE INSCRIPTION COLLAPSE RWD
     $('#afficher').click(function(){
         $('#masque').show();
         $('#afficher').hide();
@@ -14,7 +15,7 @@ window.onload=function(){
         $('#reduire').hide();
     })
 
-    // Actualités RWD
+// ACTUALITES RWD
     var post3 = document.getElementById('post3');
     var post4 = document.getElementById('post4');
     var voirPlus = document.getElementById('voirPlus');
