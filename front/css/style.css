@@ -5,10 +5,40 @@ CSS COMMUM
     box-sizing: border-box;
 }
 
+body{
+    color: #0f0f0f;
+    font-family: 'Biryani', sans-serif;
+    line-height: 1.5;
+    font-size: 1.20rem;
+}
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
 hr{
     border: 1px solid black;
     width: 80%;
     margin: auto;
+}
+
+.bouton{
+    background-color: #00A6A6;
+}
+
+.mamakilge{
+    color: #00A6A6;
+}
+
+a{
+    color: #00A6A6;
 }
 /****************************************/
 /********************************************************
