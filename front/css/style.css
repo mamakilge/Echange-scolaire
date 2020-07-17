@@ -137,7 +137,6 @@ MEDIA QUERIES
         padding: 20px 0 0 20px;
         font-size: 2rem;
     }
-    
 
     #afficher{
         display: block;
@@ -152,6 +151,10 @@ MEDIA QUERIES
 
     #recherche form{
         margin: 20px 0 0 50px;
+    }
+
+    hr{
+        width: 100%;
     }
 }
 
