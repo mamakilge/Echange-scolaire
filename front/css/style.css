@@ -12,9 +12,24 @@ body {
 HEADER NAV
 *******************************/
 
-.icon-hamburger {
-    width: 35px;
-    display: none;
+.siteName{
+    color: #02C39A;
+    text-align: left;
+    font-weight: 600;
+}
+
+.logo{
+    width: 70px;
+}
+
+.btn-connexion{
+    color: #02C39A ;
+    border-color: gray;
+}
+
+.revenir-accueil{
+    text-decoration: none;
+    color: #02C39A;
 }
 
 /*******************************
@@ -119,11 +134,8 @@ MEDIA QUERIES
 @media screen and (min-width:768px) {}
 
 /*LARGE*/
-@media screen and (min-width:992px) {
-    .icon-hamburger {
-        display: inline;
-    }
-}
+@media screen and (min-width:992px) {}
+
 
 /*EXTRA LARGE*/
 @media screen and (min-width:1200px) {}

@@ -19,42 +19,46 @@
 
 <body>
     <header class="bg-light">
-        <nav class="container navbar navbar-expand-lg navbar-light d-flex justify-content-center">
+        <nav class="container navbar navbar-expand-lg navbar-light d-flex">
             <!--logo cliquable pour revenir sur la page d'accueil-->
-            <a href="#">
-                <img src>
-                <!--inclure image logo-->
+            <a class="mx-5" href="index.html">
+                <img class="logo" src="../img/img-logo.png" alt="logo site mamakilgé">
             </a>
-            <a class="navbar-brand" href="index.html">Nom du site</a>
             <!--Nom du site cliquable pour revenir sur accueil-->
+            <a class="siteName mr-5 navbar-brand" href="index.html">Nom du site</a>
+
+            <!--à partir d'ici en version mobile c'est un Menu Hamburguer-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="..." aria-label="Search">
+                    <div><input class="btn btn-form mt-1 pb-1" type="submit" value="Search"></div>
                 </form>
-                <div class="nav-item active btn-group ml-3" role="group">
-                    <button type="button" class="btn btn-outline-dark">Inscription</button>
-                    <button type="button" class="btn btn-secondary">Connexion</button>
-                </div>
-                <div class="nav-item dropdown">
-                    <!--Menu hamburger-->
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img class="icon-hamburger" src="/front/img/hamburguer.png" alt="icon hamburger">
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Profil</a>
-                        <a class="dropdown-item" href="#">Contact</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">À propos</a>
+                <ul class="navbar-nav mr-auto">
+                    <div class="btn-group" role="group">
+                        <li class="nav-item active">
+                            <button class="nav-link btn btn-connexion bg-white pb-1" type="button" href="#">Connexion</button>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <button class="nav-link btn btn-form bg-white pb-1" type="button" href="#">Inscription</button>
+                        </li>
                     </div>
-                </div>
-
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle pb-1" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Profil</a>
+                            <a class="dropdown-item" href="#">Contact</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">À propos</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </nav>
 
@@ -63,7 +67,7 @@
     <main>
         <nav class="container" aria-label="breadcrumb">
             <ol class="breadcrumb bg-transparent">
-                <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+                <li class="breadcrumb-item"><a class="revenir-accueil" href="index.html">Accueil</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Recherches</li>
             </ol>
         </nav>
@@ -74,9 +78,9 @@
             <div id="myGroup">
                 <!--Menu recherche accordeon-->
                 <p>
-                    <a class="btn btn-form" data-toggle="collapse" href="#multiCollapseExample1" role="button"
+                    <a class="btn btn-form pb-1" data-toggle="collapse" href="#multiCollapseExample1" role="button"
                         aria-expanded="false" aria-controls="multiCollapseExample1">Affiner ma recherche</a>
-                    <a class="btn btn-form" data-toggle="collapse" href="#multiCollapseExample2" role="button"
+                    <a class="btn btn-form pb-1" data-toggle="collapse" href="#multiCollapseExample2" role="button"
                         aria-expanded="false" aria-controls="multiCollapseExample2">Trier par</a>
                 </p>
                 <div class="row">
@@ -143,7 +147,7 @@
                                         <input type="checkbox" id="optionlycée" value="lycee">
                                     </div>
                                 </div>
-                                <div><input class="btn btn-form" type="submit" value="Submit"></div>
+                                <div><input class="btn btn-form pb-1" type="submit" value="Submit"></div>
                             </div>
                         </div>
                     </div>
@@ -163,7 +167,7 @@
                                     <label class="ml-3 mt-2" for="option3">Mieux noté </label>
                                 </span>
                             </div>
-                            <div><input class="btn btn-form" type="submit" value="Submit"></div>
+                            <div><input class="btn btn-form pb-1" type="submit" value="Submit"></div>
                         </div>
                     </div>
                 </div>
@@ -221,7 +225,8 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="title-annonce-desktop text-secondary card-title">Lycée/Collège Jeanne</h5>
+                                    <h5 class="title-annonce-desktop text-secondary card-title">Lycée/Collège Jeanne
+                                    </h5>
                                     <p class="card-text">This is a wider card with supporting text below as a
                                         natural lead-in to additional content. This content is a little bit longer.
                                     </p>
