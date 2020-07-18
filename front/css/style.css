@@ -15,11 +15,11 @@ nav img{
 }
 
 nav a{
-    color: #28afb0;
+    color: #02C39A;
 }
 
 nav .btn{
-    background-color: #28afb0;
+    background-color: #02C39A;
     color: black;
 }
 
@@ -50,7 +50,7 @@ h2{
 }
 
 .btnRecherche{
-    background-color: #28afb0;
+    background-color: #02C39A;
     border-radius: 8px;
     border-style: none;
 }
@@ -64,7 +64,7 @@ MAIN SECTION INSCRIPTION
 }
 
 #btnInscription{
-    background-color: #28afb0;
+    background-color: #02C39A;
     margin-right: 20%;
     border-radius: 5px;
     border-style: none;
@@ -86,7 +86,7 @@ hr{
 
 #reduire{
     display: none;
-    color: #28afb0;
+    color: ##02C39A;
     border-radius: 5px;
     margin: 5% auto;
 }
@@ -102,11 +102,11 @@ MAIN SECTION ACTUALITES
 .voirActu{
     margin-right: 15%;
     font-size: 1.2rem;
-    background-color: #28afb0;
+    background-color: #02C39A;
 }
 
 .actu a{
-    background-color: #28afb0;
+    background-color: #02C39A;
 }
 
 /*//////////
@@ -139,7 +139,7 @@ MEDIA QUERIES
 
     #afficher{
         display: block;
-        color: #28afb0;
+        color: ##02C39A;
         border-radius: 5px;
         margin: 5% auto;
     }
