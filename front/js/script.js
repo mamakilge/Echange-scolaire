@@ -1,29 +1,37 @@
-window.onload=function(){
+window.onload = function () {
 
-//TEXTE INSCRIPTION COLLAPSE RWD
-    $('#afficher').click(function(){
-        $('#masque').show();
+    //TEXTE INSCRIPTION COLLAPSE RWD
+    $('#afficher').click(function () {
         $('#afficher').hide();
+        $('#masque').show();
         $('#reduire').show();
     })
 
-    $('#reduire').click(function(){
+    $('#reduire').click(function () {
         $('#masque').hide();
-        console.log("window")
-        
         $('#afficher').show();
         $('#reduire').hide();
     })
 
-// ACTUALITES RWD
+    // ACTUALITES RWD
     var post3 = document.getElementById('post3');
     var post4 = document.getElementById('post4');
     var voirPlus = document.getElementById('voirPlus');
-    
-    voirPlus.addEventListener('click', function(){
+    var voirMoins = document.getElementById('voirMoins');
+
+    voirPlus.addEventListener('click', function () {
         post3.style.display = 'block';
         post4.style.display = 'block';
-    })
+        voirPlus.style.display = 'none';
+        voirMoins.style.display = 'block';
+    });
+
+    voirMoins.addEventListener('click', function () {
+        post3.style.display = 'none';
+        post4.style.display = 'none';
+        voirPlus.style.display = 'block';
+        voirMoins.style.display = 'none';
+    });
 
 
 
@@ -45,9 +53,7 @@ window.onload=function(){
 
 
 
-
-
-  }
+}
 
 
 

@@ -10,11 +10,16 @@ body{
     color: #02C39A;
 }
 
+hr{
+    border: 1px solid black;
+    margin: auto;
+}
+
 /*//////////
 NAVBAR
 /////////*/
 nav img{
-    width: 60px;
+    width: 60px;    
 }
 
 nav .btn{
@@ -69,11 +74,7 @@ MAIN SECTION INSCRIPTION
     border-style: none;
 }
 
-hr{
-    border: 1px solid black;
-    width: 80%;
-    margin: auto;
-}
+
 
 #afficher{
     display: none;
@@ -98,10 +99,19 @@ MAIN SECTION ACTUALITES
     margin: auto;
 }
 
-.voirActu{
+.cardActu{
     margin-right: 15%;
     font-size: 1.2rem;
     background-color: #02C39A;
+}
+
+#voirPlus{
+
+    display: block;
+}
+
+#voirMoins{
+    display: none;
 }
 
 .actu a{
@@ -122,7 +132,10 @@ footer h3{
 
 footer{
     font-size: 0.8rem;
+    line-height: 30px;
 }
+
+
 
 
 
@@ -136,6 +149,12 @@ MEDIA QUERIES
         font-size: 2rem;
     }
 
+    /*RECHERCHE*/
+    #recherche form{
+        margin: 20px 0 0 50px;
+    }
+
+    /*ACTUALITES*/
     #afficher{
         display: block;
         color: #02C39A;
@@ -147,13 +166,17 @@ MEDIA QUERIES
         display: none;
     }
 
-    #recherche form{
-        margin: 20px 0 0 50px;
-    }
-
-    hr{
+    .posts{
         width: 100%;
     }
+
+
+
+    /*FOOTER*/
+    footer{
+        line-height: 20px;
+    }
+
 }
 
 @media screen and (max-width: 960px){

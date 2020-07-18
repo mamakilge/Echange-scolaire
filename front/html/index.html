@@ -27,7 +27,7 @@
       <a href="#">
         <img src="../img/logo.png" alt="logo">
       </a>
-      <a class="couleur navbar-brand font-weight-bold pl-2 " href="index.html">Mamakilgé</a>
+      <a class="navbar-brand font-weight-bold pl-2 " href="index.html" style="color: #02C39A;">Mamakilgé</a>
       <!--Nom du site cliquable pour revenir sur accueil-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -248,8 +248,10 @@
 
       <!--BOUTON VOIR PLUS D'ACTUALITES-->
       <div class="d-flex justify-content-end py-4">
-        <button class="btn voirActu" type="button" id="voirPlus" data-toggle="collapse" data-target=".multi-collapse"
-          aria-expanded="false" aria-controls="post5 post6">Voir plus d'actualités</button>
+        <button class="btn cardActu" type="button" id="voirPlus" data-toggle="collapse" data-target=".multi-collapse"
+          aria-expanded="false" aria-controls="post5 post6">Afficher plus d'actualités</button>
+          <button class="btn cardActu" type="button" id="voirMoins" data-toggle="collapse" data-target=".multi-collapse"
+          aria-expanded="false" aria-controls="post5 post6">Réduire actualités</button>
       </div>
 
       <hr>
@@ -257,18 +259,18 @@
   </main>
 
   <!--FOOTER-->
-  <footer class="page-footer font-small mdb-color pt-4">
+  <footer class="page-footer font-small mdb-color">
 
     <!-- Footer Links -->
     <div class="container text-center text-md-left">
 
       <!-- Footer links -->
-      <div class="row text-center text-md-left mt-3 pb-3">
+      <div class="row text-center text-md-left">
 
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Mamakilgé</h6>
-          <p>Mamakilgé est un site indépendant lancé en 2020 pour facilité l'échange scolaire en ligne. Grâce à un
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+          <h6 class="text-uppercase font-weight-bold pt-2">Mamakilgé</h6>
+          <p class="mmkg">Mamakilgé est un site indépendant lancé en 2020 pour faciliter l'échange scolaire en ligne. Grâce à un
             bouche-à-oreille constant, il sera peut être en 2022 le principal site d'échange scolaire. </p>
         </div>
         <!-- Grid column -->
@@ -276,18 +278,12 @@
         <hr class="w-100 clearfix d-md-none">
 
         <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Informations Légales</h6>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+          <h6 class="text-uppercase font-weight-bold pt-2">Informations Légales</h6>
           <p>
-            <a href="#!" class="couleur">Mentions Légales</a>
-          </p>
-          <p>
-            <a href="#!" class="couleur">Vie privée</a>
-          </p>
-          <p>
-            <a href="#!" class="couleur">Vos droits et obligations</a>
-          </p>
-          <p>
+            <a href="#!" class="couleur">Mentions Légales</a> </br>
+            <a href="#!" class="couleur">Vie privée</a></br>
+            <a href="#!" class="couleur">Vos droits et obligations</a></br>
             <a href="#!" class="couleur">Publicité</a>
           </p>
         </div>
@@ -296,19 +292,13 @@
         <hr class="w-100 clearfix d-md-none">
 
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">À Propos</h6>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+          <h6 class="text-uppercase font-weight-bold pt-2">À Propos</h6>
           <p>
-            <a href="#!" class="couleur">Qui sommes-nous ?</a>
-          </p>
-          <p>
-            <a href="#!" class="couleur">Avis</a>
-          </p>
-          <p>
-            <a href="#!" class="couleur">Nous rejoindre</a>
-          </p>
-          <p>
-            <a href="#!" class="couleur">Aide</a>
+            <a href="#!" class="couleur">Qui sommes-nous ?</a></br>
+            <a href="#!" class="couleur">Avis</a></br>
+            <a href="#!" class="couleur">Nous rejoindre</a></br>
+            <a href="#!" class="couleur">Aide</a></br>
           </p>
         </div>
 
@@ -316,16 +306,14 @@
         <hr class="w-100 clearfix d-md-none">
 
         <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
+          <h6 class="text-uppercase font-weight-bold pt-2">Contact</h6>
           <p>
-            <i class="fas fa-home mr-3"></i> 18 Rue Geoffroy l'Asnier, 75004 Paris</p>
-          <p>
-            <i class="fas fa-envelope mr-3"></i> mamakilge@gmail.com</p>
-          <p>
-            <i class="fas fa-phone mr-3"></i> 01 42 58 75 88</p>
-          <p>
-            <i class="fas fa-print mr-3"></i> 01 42 58 75 89</p>
+            <i class="fas fa-home mr-3"></i> 18 Rue Geoffroy l'Asnier, 75004 Paris </br>
+            <i class="fas fa-envelope mr-3"></i> mamakilge@gmail.com </br>
+            <i class="fas fa-phone mr-3"></i> 01 42 58 75 88 </br>
+            <i class="fas fa-print mr-3"></i> 01 42 58 75 89 </br>
+          </p>
         </div>
         <!-- Grid column -->
 
