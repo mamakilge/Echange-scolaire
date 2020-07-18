@@ -6,16 +6,15 @@ body{
     font-size: 1.2rem;
 }
 
+.couleur{
+    color: #02C39A;
+}
+
 /*//////////
 NAVBAR
 /////////*/
 nav img{
     width: 60px;
-
-}
-
-nav a{
-    color: #02C39A;
 }
 
 nav .btn{
@@ -86,7 +85,7 @@ hr{
 
 #reduire{
     display: none;
-    color: ##02C39A;
+    color: #02C39A;
     border-radius: 5px;
     margin: 5% auto;
 }
@@ -139,7 +138,7 @@ MEDIA QUERIES
 
     #afficher{
         display: block;
-        color: ##02C39A;
+        color: #02C39A;
         border-radius: 5px;
         margin: 5% auto;
     }
