@@ -21,7 +21,7 @@
     <header class="bg-light">
         <nav class="container navbar navbar-expand-lg navbar-light d-flex">
             <!--logo cliquable pour revenir sur la page d'accueil-->
-            <a class="mx-5" href="index.html">
+            <a class="mx-5 navbar-brand" href="index.html">
                 <img class="logo" src="../img/img-logo.png" alt="logo site mamakilgé">
             </a>
             <!--Nom du site cliquable pour revenir sur accueil-->
@@ -38,24 +38,22 @@
                     <div><input class="btn btn-form mt-1 pb-1" type="submit" value="Search"></div>
                 </form>
                 <ul class="navbar-nav mr-auto">
-                    <div class="btn-group" role="group">
-                        <li class="nav-item active">
-                            <button class="nav-link btn btn-connexion bg-white pb-1" type="button" href="#">Connexion</button>
-                        </li>
-                        <li class="nav-item mr-3">
-                            <button class="nav-link btn btn-form bg-white pb-1" type="button" href="#">Inscription</button>
-                        </li>
-                    </div>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle pb-1" href="#" id="navbarDropdown" role="button"
+                    <li class="nav-item d-flex ml-lg-5">
+                        <a class="nav-link btn-nav" href="#">Connexion<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <a class="nav-link btn-nav" href="#">Inscription<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown ml-lg-5">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Dropdown
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Profil</a>
                             <a class="dropdown-item" href="#">Contact</a>
+                            <a class="dropdown-item" href="#">À Propos</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">À propos</a>
+                            <a class="dropdown-item" href="#">Mentions Légales</a>
                         </div>
                     </li>
                 </ul>

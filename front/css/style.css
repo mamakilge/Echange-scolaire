@@ -22,10 +22,11 @@ HEADER NAV
     width: 70px;
 }
 
-.btn-connexion{
-    color: #02C39A ;
-    border-color: gray;
+:hover.btn-nav{
+    background-color: #02C39A ;
 }
+
+
 
 .revenir-accueil{
     text-decoration: none;
@@ -132,6 +133,7 @@ MEDIA QUERIES
 
 /*MEDIUM*/
 @media screen and (min-width:768px) {}
+
 
 /*LARGE*/
 @media screen and (min-width:992px) {}
