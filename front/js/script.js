@@ -34,7 +34,10 @@ window.onload = function () {
     });
 
 
-
+    //FOOTER RWD
+    $('.lienCache').click(function(){
+        
+    })
 
 
 

@@ -134,6 +134,7 @@ footer{
 }
 
 
+
 /*/////////
 MEDIA QUERIES
 ///////////*/
@@ -190,7 +191,17 @@ MEDIA QUERIES
         display: none;
     }
 
-
+    #info p, #propos p{
+        display: none;
+    }
+    
+    #info a, #propos a{
+        color: black;
+    }
+    
+    #info a:hover, #propos a:hover{
+        color: #02C39A;
+    }
 
 }
 
