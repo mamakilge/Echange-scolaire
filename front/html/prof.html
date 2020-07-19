@@ -25,10 +25,9 @@
     <nav class="container navbar navbar-expand-lg navbar-light d-flex justify-content-center">
         <!--logo cliquable pour revenir sur la page d'accueil-->
         <a href="#">
-            <img src>
+            <img class="logo" src="../fa-users Font Awesome Icons_fichiers/logo mmkg.png">
             <!--inclure image logo-->
         </a>
-        <a class="navbar-brand" href="index.html">Nom du site</a>
         <!--Nom du site cliquable pour revenir sur accueil-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,8 +46,7 @@
             <div class="nav-item dropdown">
                 <!--Menu hamburger-->
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="icon-hamburger" src="/front/img/hamburguer.png" alt="icon hamburger">
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                    
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Profil</a>
@@ -104,7 +102,8 @@
                     <input type="date" id="start" name="trip-start" value="12-07-20" min="2018-01-01" max="2100-12-31">
                     <p class="ml-5"><i class="fas fa-users verte"></i> 15 Terminal à accueillir.</p>
                     <p class="ml-5"><i class="fas fa-phone verte"></i> 07 85 25 69 52</p>
-                    <p class="ml-5"><i id="echange" class="fas fa-toggle-on"></i> Recherche d'échange.</p>
+                    <p class="ml-5 js2"><i id="echange2" class="fas fa-toggle-on verte"></i> Ne recherche pas d'échange.</p>
+                    <p class="ml-5 js"><i id="echange" class="fas fa-toggle-on verte"></i> Recherche d'échange.</p>
                 </div>
 
                 <!-- Ma classe -->  
@@ -430,7 +429,7 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 <!--Script Javascript-->
-<script src = "../script/script.js"></script>
+<script src="../js/script.js"></script>
 
 </html>
 
