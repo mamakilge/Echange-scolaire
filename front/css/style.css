@@ -74,8 +74,6 @@ MAIN SECTION INSCRIPTION
     border-style: none;
 }
 
-
-
 #afficher{
     display: none;
 }
@@ -136,9 +134,6 @@ footer{
 }
 
 
-
-
-
 /*/////////
 MEDIA QUERIES
 ///////////*/
@@ -150,8 +145,20 @@ MEDIA QUERIES
     }
 
     /*RECHERCHE*/
+    #recherche{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
     #recherche form{
         margin: 20px 0 0 50px;
+    }
+
+    /*INSCRIPTION*/
+    .inscrivez p{
+        width: 100%;
+        text-align: center;
     }
 
     /*ACTUALITES*/
@@ -169,8 +176,6 @@ MEDIA QUERIES
     .posts{
         width: 100%;
     }
-
-
 
     /*FOOTER*/
     footer{
