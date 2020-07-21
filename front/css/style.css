@@ -55,6 +55,15 @@ CSS COMMUM
     .avis{
         height: 100px;
     }
+    .img1{
+        background-image: url(/front/fa-users\ Font\ Awesome\ Icons_fichiers/doigt1.png);
+    }
+
+    .img{
+        background-image: url(/front/fa-users\ Font\ Awesome\ Icons_fichiers/5-etoiles.png);
+    }
+
+
     
     /********************************************************
     CSS FOOTER
