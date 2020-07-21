@@ -30,6 +30,8 @@ nav .btn{
 /*///////////
 MAIN HEADER
 /////////// */
+
+/*NAV*/
 h1{
     padding: 30px 0 0 20px;
     text-align: center;
@@ -55,13 +57,14 @@ h1{
     border-style: none;
 }
 
+/*COOKIES*/
+
 #cookiesConteneur{
     bottom: 10px;
     position: fixed;
     width: 100%;
     z-index: 25;
     display: block;
-
 }
 
 #cookies{

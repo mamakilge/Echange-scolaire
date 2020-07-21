@@ -1,5 +1,10 @@
 window.onload = function () {
 
+    //COOKIES
+    $('#accepte').click(function(){
+        $('#cookiesConteneur').hide();
+    })
+
     //TEXTE INSCRIPTION COLLAPSE RWD
     $('#afficher').click(function () {
         $('#afficher').hide();
