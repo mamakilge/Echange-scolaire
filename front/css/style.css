@@ -1,5 +1,5 @@
 * {
-    border-bottom: 0em;
+    box-sizing: border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;700&display=swap');
