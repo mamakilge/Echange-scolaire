@@ -13,30 +13,24 @@ window.onload = function () {
         $('#reduire').hide();
     })
 
-    // ACTUALITES RWD
-    var post3 = document.getElementById('post3');
-    var post4 = document.getElementById('post4');
-    var voirPlus = document.getElementById('voirPlus');
-    var voirMoins = document.getElementById('voirMoins');
+    //ACTUALITES RWD
+    $('#voirPlus').click(function(){
+        $('#post3, #post4').show();
+        $('#voirMoins').show();
+        $('#voirPlus').hide();
 
-    voirPlus.addEventListener('click', function () {
-        post3.style.display = 'block';
-        post4.style.display = 'block';
-        voirPlus.style.display = 'none';
-        voirMoins.style.display = 'block';
-    });
+    })
 
-    voirMoins.addEventListener('click', function () {
-        post3.style.display = 'none';
-        post4.style.display = 'none';
-        voirPlus.style.display = 'block';
-        voirMoins.style.display = 'none';
-    });
+    $('#voirMoins').click(function(){
+        $('#post3, #post4').hide();
+        $('#voirMoins').hide();
+        $('#voirPlus').show();
+    })
 
 
     //FOOTER RWD
-    $('.lienCache').click(function(){
-        
+    $('.bas').click(function(){
+        $('.cache').toggle();
     })
 
 

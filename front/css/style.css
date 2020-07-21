@@ -31,13 +31,9 @@ nav .btn{
 MAIN HEADER
 /////////// */
 h1{
-    padding: 40px 0 0 80px;
+    padding: 30px 0 0 20px;
     text-align: center;
     font-size: 2.5rem;
-}
-
-h2{
-    font-size: 2rem;
 }
 
 #recherche{
@@ -50,7 +46,7 @@ h2{
 #recherche form{
     border-radius: 15px;
     background-color: rgba(112, 128, 144, 0.7);
-    margin: 40px 0 0 250px;
+    margin: 0 auto;
 }
 
 .btnRecherche{
@@ -59,9 +55,36 @@ h2{
     border-style: none;
 }
 
+#cookiesConteneur{
+    bottom: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 25;
+    display: block;
+
+}
+
+#cookies{
+    background-color: #F2F2F2;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 0 16px -4px #666666;
+    color: #333333;
+    font: 12px/1.5 Verdana;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+
+}
+
 /*//////////
 MAIN SECTION INSCRIPTION
 //////////// */
+
+h2{
+    font-size: 2rem;
+}
+
 .inscrivez p{
     width: 75%;
     text-align: center;
@@ -75,10 +98,6 @@ MAIN SECTION INSCRIPTION
 }
 
 #afficher{
-    display: none;
-}
-
-#masque{
     display: none;
 }
 
@@ -97,24 +116,29 @@ MAIN SECTION ACTUALITES
     margin: auto;
 }
 
-.cardActu{
+#voirPlus{
+    display: block;
     margin-right: 15%;
     font-size: 1.2rem;
     background-color: #02C39A;
 }
 
-#voirPlus{
-
-    display: block;
-}
-
 #voirMoins{
     display: none;
+    margin-right: 15%;
+    font-size: 1.2rem;
+    background-color: #02C39A;
 }
 
 .actu a{
     background-color: #02C39A;
 }
+
+.card{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 
 /*//////////
 FOOTER 
@@ -170,13 +194,15 @@ MEDIA QUERIES
         margin: 5% auto;
     }
 
+    #masque{
+        display: none;
+    }
+
     #post3, #post4{
         display: none;
     }
 
-    .posts{
-        width: 100%;
-    }
+
 
     /*FOOTER*/
     footer{
@@ -186,23 +212,19 @@ MEDIA QUERIES
     footer hr{
         display: none;
     }
-
-    #mmkg{
-        display: none;
-    }
-
-    #info p, #propos p{
-        display: none;
-    }
     
-    #info a, #propos a{
-        color: black;
-    }
-    
-    #info a:hover, #propos a:hover{
+    .bas a:hover{
         color: #02C39A;
     }
 
+    .bas p{
+        display: none;
+
+    }
+
+    .bas h6:hover{
+        color: #02C39A;
+    }
 }
 
 @media screen and (max-width: 960px){
@@ -212,7 +234,26 @@ MEDIA QUERIES
         font-size: 2rem;
     }
 
+    #recherche{
+        padding: 0px;
+        margin: 0px;
+    }
+
     #recherche form{
         margin: 20px 0 0 70px;
     }
+
+    .btnConnexion{
+        margin-left: 0 !important;
+    }
+
+    .posts{
+        width: 100%;
+    }
+
+    .card{
+        margin: 0px;
+    }
 }
+
+

@@ -9,7 +9,7 @@
   <!--FONT AWESOME-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
     integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
-    <!--BOOTSTRAP-->
+  <!--BOOTSTRAP-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!--FONT BIRYANI-->
@@ -25,7 +25,7 @@
     <nav class="container navbar navbar-expand-lg navbar-light d-flex justify-content-center">
       <!--logo cliquable pour revenir sur la page d'accueil-->
       <a href="#">
-        <img src="../img/logo.png" alt="logo">
+        <img src="../img/logo1.png" alt="logo">
       </a>
       <a class="navbar-brand font-weight-bold pl-2 " href="index.html" style="color: #02C39A;">Mamakilgé</a>
       <!--Nom du site cliquable pour revenir sur accueil-->
@@ -42,32 +42,47 @@
         </form>
 
         <!--BOUTON INSCRIPTION / CONNEXION-->
-        <div class="nav-item ml-3" role="group">
+        <div class="nav-item ml-3 btnConnexion" role="group">
           <button type="button" class="btn couleur">Inscription</button>
           <button type="button" class="btn couleur">Connexion</button>
         </div>
 
         <!--DROPDOWN MENU-->
         <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle couleur" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item couleur" href="#">Profil</a>
-              <a class="dropdown-item couleur" href="#">Contact</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item couleur" href="#">À propos</a>
-            </div>
+          <a class="nav-link dropdown-toggle couleur" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item couleur" href="#">Profil</a>
+            <a class="dropdown-item couleur" href="#">Contact</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item couleur" href="#">À propos</a>
+          </div>
         </div>
       </div>
     </nav>
+
+    <!--COOKIES-->
+    <div id="cookiesConteneur">
+      <div id="cookies">
+        <p>
+          Ce site utilise des cookies pour vous offrir le meileur service. En poursuivant votre navigation, vous
+          acceptez l'utilisation des cookies.
+        </p>
+
+        <div>
+          <button id="accepte">J'accepte</button>
+          <button><a href="#info">En savoir plus</a></button>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main>
-          <!-- SECTION HEADER RECHERCHE-->
+    <!-- SECTION HEADER RECHERCHE-->
     <section class="container recherche">
       <header id="recherche">
-        <h1 class="text-light w-50 font-weight-bold">Recherchez le voyage scolaire qui vous correspond !</h1>
+        <h1 class="w-50 font-weight-bold">Recherchez le voyage scolaire qui vous correspond !</h1>
         <div class="row">
 
           <!--FORMULAIRE DE RECHERCHE-->
@@ -78,6 +93,9 @@
                 <option value="france">France</option>
                 <option value="angleterre">Angleterre</option>
                 <option value="espagne">Espagne</option>
+                <option value="ecuateur">Ecuador</option>
+                <option value="irlande">Ireland</option>
+                <option value="mayotte">Mayotte</option>
               </select>
             </div>
 
@@ -99,7 +117,7 @@
               </select>
             </div>
 
-    <!--BOUTON VALIDER FORM VERS PAGE RECHERCHE-->
+            <!--BOUTON VALIDER FORM VERS PAGE RECHERCHE-->
             <button type="submit" class="btnRecherche w-100" style="height: 40px;">Rechercher</button>
           </form>
         </div>
@@ -112,23 +130,23 @@
       <article class="inscrivez">
         <h2 class="text-center p-4">Inscrivez-vous</h2>
 
-        <div class="d-flex justify-content-center pb-4">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nisi reprehenderit repudiandae
-            iure unde expedita quisquam nam, cum nesciunt facilis dolor ratione reiciendis eligendi. Iure,
-            sapiente officiis. Sapiente, possimus quibusdam? Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Praesentium quam debitis reprehenderit magni eaque voluptatem nobis expedita, <button id="afficher">Afficher la suite</button><span id="masque">
-              illo vitae ipsa autem corporis accusamus quaerat assumenda est, qui, quia enim quisquam! Lorem,
-              ipsum dolor sit amet consectetur adipisicing elit. Iusto iure enim fugiat dolor illum architecto
-              saepe repudiandae tempora! Voluptate pariatur vitae voluptatum! Eaque omnis molestiae deleniti
-              odio? Explicabo, sint neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-              non inventore recusandae culpa ab alias quasi vel natus omnis necessitatibus maxime eum placeat,
-              id architecto, doloribus ea ad laborum dolores? </br></span>
-            <button id="reduire">Réduire</button>
+        <div class=" text-center pb-4 mx-auto">
+          <p class=" mx-auto">
+            Vous êtes <strong>instituteurs, professeurs, directeur d'établissements</strong> et recherchez à faire
+            <strong>voyager vos élèves ou en recevoir</strong> ? Cette plateforme a été créée pour vous ! En mettant en
+            relation des établissements à travers le monde, nous facilitons les démarches souvent lourdes et à la charge
+            de l'enseignant. Ici vous avez tous les outils pour rechercher le voyage qui correspond à vos attentes.
           </p>
-
+          <p class=" mx-auto">
+            <button id="afficher">Afficher la suite</button><span id="masque">
+              Une seule étape pour accéder aux nombreuses fonctionnalités et avantages qu'offre cette plateforme : vous
+              inscrire en tant qu'enseignant, ou établissement. Vous pourrez dès lors communiquer avec les profils qui
+              vous intéressent, et créer le votre afin que le reste du monde puisse également connaître vos désirs de
+              voyages, d'échanges ou de récéption. </br> <strong>N'hésitez plus, cliquez sur le lien juste en
+                dessous!</strong></span>
+          </p>
+          <button id="reduire">Réduire</button>
         </div>
-
       </article>
 
       <!--LIEN DE REDIRECTION VERS PAGE INSCRIPTION-->
@@ -175,37 +193,33 @@
           </div>
         </div>
 
-        <div class="col-sm-12 col-md-6 my-2">
-          <div class="card" id="post3">
-            <div>
-              <div class="card-body">
-                <h3 class="card-title">Valérie Arpin 3</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
-                  molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
-                  itaque saepe velit delectus.
-                </p>
-                <div class="text-right">
-                  <a href="#" class="btn">Afficher le profil</a>
-                </div>
+        <div class="col-sm-12 col-md-6 my-2" id="post3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Valérie Arpin 3</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
+                molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
+                itaque saepe velit delectus.
+              </p>
+              <div class="text-right">
+                <a href="#" class="btn">Afficher le profil</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-sm-12 col-md-6 my-2">
-          <div class="card" id="post4">
-            <div>
-              <div class="card-body">
-                <h3 class="card-title">Raymond Villeneuve 4</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
-                  molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
-                  itaque saepe velit delectus.
-                </p>
-                <div class="text-right">
-                  <a href="#" class="btn">Afficher le profil</a>
-                </div>
+        <div class="col-sm-12 col-md-6 my-2" id="post4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Raymond Villeneuve 4</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempora laborum modi
+                molestias, nisi unde hic! Sit aspernatur enim sapiente at sint perspiciatis, eos ut quos
+                itaque saepe velit delectus.
+              </p>
+              <div class="text-right">
+                <a href="#" class="btn">Afficher le profil</a>
               </div>
             </div>
           </div>
@@ -250,9 +264,9 @@
 
       <!--BOUTON VOIR PLUS / MOINS D'ACTUALITES-->
       <div class="d-flex justify-content-end py-4">
-        <button class="btn cardActu" type="button" id="voirPlus" data-toggle="collapse" data-target=".multi-collapse"
+        <button class="btn" type="button" id="voirPlus" data-toggle="collapse" data-target=".multi-collapse"
           aria-expanded="false" aria-controls="post5 post6">Afficher plus d'actualités</button>
-          <button class="btn cardActu" type="button" id="voirMoins" data-toggle="collapse" data-target=".multi-collapse"
+        <button class="btn" type="button" id="voirMoins" data-toggle="collapse" data-target=".multi-collapse"
           aria-expanded="false" aria-controls="post5 post6">Réduire actualités</button>
       </div>
 
@@ -262,50 +276,49 @@
 
   <!--FOOTER-->
   <footer class="page-footer font-small mdb-color">
-
     <div class="container text-center text-md-left">
       <div class="row text-center text-md-left">
 
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto" id="mmkg">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto bas">
           <h6 class="text-uppercase font-weight-bold pt-2">Mamakilgé</h6>
-          <p class="mmkg">Mamakilgé est un site indépendant lancé en 2020 pour faciliter l'échange scolaire en ligne. Grâce à un
+          <p class="cache">Mamakilgé est un site indépendant lancé en 2020 pour faciliter l'échange scolaire en ligne.
+            Grâce à un
             bouche-à-oreille constant, il sera peut être en 2022 le principal site d'échange scolaire. </p>
         </div>
 
         <hr class="w-100 clearfix d-md-none">
 
         <!-- Grid column -->
-          <div class="col-sm-6 col-md-2 col-lg-2 col-xl-2 mx-auto" id="info">
-            <h6 class="text-uppercase font-weight-bold pt-2">Informations Légales</h6>
-            <p class="lienCache">
-              <a href="#!" class="couleur">Mentions Légales</a> </br>
-              <a href="#!" class="couleur">Vie privée</a></br>
-              <a href="#!" class="couleur">Vos droits et obligations</a></br>
-              <a href="#!" class="couleur">Publicité</a>
-            </p>
-          </div>
-  
-          <hr class="w-100 clearfix d-md-none">
-  
-          <!-- Grid column -->
-          <div class="col-sm-6 col-md-3 col-lg-2 col-xl-2 mx-auto" id="propos">
-            <h6 type="submit" class="text-uppercase font-weight-bold pt-2">À Propos</h6>
-            <p class="lienCache">
-              <a href="#!" class="couleur">Qui sommes-nous ?</a></br>
-              <a href="#!" class="couleur">Avis</a></br>
-              <a href="#!" class="couleur">Nous rejoindre</a></br>
-              <a href="#!" class="couleur">Aide</a>
-            </p>
-          </div>
-          
-        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto bas" id="info">
+          <h6 class="text-uppercase font-weight-bold pt-2">Informations Légales</h6>
+          <p class="cache">
+            <a href="#!" class="couleur">Mentions Légales</a> </br>
+            <a href="#!" class="couleur">Vie privée</a></br>
+            <a href="#!" class="couleur">Vos droits et obligations</a></br>
+            <a href="#!" class="couleur">Publicité</a>
+          </p>
+        </div>
+
         <hr class="w-100 clearfix d-md-none">
 
         <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto bas">
+          <h6 class="text-uppercase font-weight-bold pt-2">À Propos</h6>
+          <p class="cache">
+            <a href="#!" class="couleur">Qui sommes-nous ?</a></br>
+            <a href="#!" class="couleur">Avis</a></br>
+            <a href="#!" class="couleur">Nous rejoindre</a></br>
+            <a href="#!" class="couleur">Aide</a>
+          </p>
+        </div>
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto  bas">
           <h6 class="text-uppercase font-weight-bold pt-2">Contact</h6>
-          <p>
+          <p class="cache">
             <i class="fas fa-home mr-3"></i> 18 Rue Geoffroy l'Asnier, 75004 Paris </br>
             <i class="fas fa-envelope mr-3"></i> mamakilge@gmail.com </br>
             <i class="fas fa-phone mr-3"></i> 01 42 58 75 88 </br>
@@ -318,7 +331,7 @@
 
       <!-- FIN DE PAGE -->
       <div class="row d-flex align-items-center bg-light">
-        <div class="col-md-7 col-lg-8">
+        <div class="col-6 col-md-7 col-lg-8">
           <!--Copyright-->
           <p class="text-center text-md-left">© 2020 Copyright:
             <a href="https://mamakilgé.fr/" class="couleur">
@@ -328,7 +341,7 @@
         </div>
 
         <!-- Grid column -->
-        <div class="col-md-5 col-lg-4 ml-lg-0">
+        <div class="col-6 col-md-5 col-lg-4 ml-lg-0">
           <!-- Social buttons -->
           <div class="text-center text-md-right">
             <ul class="list-unstyled list-inline">
@@ -354,11 +367,9 @@
               </li>
             </ul>
           </div>
-
         </div>
       </div>
     </div>
-
   </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -367,6 +378,5 @@
   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
   integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
 
 </html>
