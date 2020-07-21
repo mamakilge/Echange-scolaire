@@ -1,3 +1,5 @@
+// BOUTON ECHANGE EN JS
+
 var echange = document.getElementById('echange');
 var echange2 = document.getElementById('echange2');
 var js = document.getElementById('js');
@@ -16,4 +18,18 @@ echange.addEventListener('click', function(){
 }
 
 })
+
+// MODAL INSCRIPTION
+
+var modal = document.getElementById('modal');
+var btni = document.getElementById('btni');
+
+function modalDisplay(){
+	modal.style.display= "none";
+}
+
+btni.onclick= function(){
+	modal.style.display= "block";
+}
+
 

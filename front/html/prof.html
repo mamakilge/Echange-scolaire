@@ -40,7 +40,7 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
             <div class="nav-item active btn-group ml-3" role="group">
-                <button type="button" class="btn btn-outline-dark">Inscription</button>
+                <button type="button" class="btn btn-outline-dark btni" id="btni">Inscription</button>
                 <button type="button" class="btn btn-secondary">Connexion</button>
             </div>
             <div class="nav-item dropdown">
@@ -62,6 +62,105 @@
 </header>
 
     <main class="container">
+
+        <!-- MODAL INSCRIPTION -->
+
+        <div class="container text-center border border-dark pb-5 pr-5" id="modal">
+
+          <h1 class="mt-5 font-weight-bold">INSCRIPTION</h1>
+          <!-- Professeur / Etablissement -->
+          <div class="form-check mr-4 mt-5">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                  checked>
+              <label class="form-check-label font-weight-bold ml-2" for="exampleRadios1">
+                  Professeur
+              </label>
+          </div>
+          <div class="form-check mt-5">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label font-weight-bold ml-2" for="exampleRadios2">
+                  Établissement
+              </label>
+          </div>
+  
+          <!-- NOM / Prénom -->
+          <div class="form-group row  mt-5">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">NOM</label>
+              <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3">
+              </div>
+          </div>
+          <div class="form-group row mt-5">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Prénom</label>
+              <div class="col-sm-10 ">
+                  <input type="password" class="form-control" id="inputPassword3">
+              </div>
+          </div>
+  
+          <!-- Adresse Mail / Mot de passe / Répéter le mot de passe -->
+          <div class="form-group row mt-5">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Adresse Mail</label>
+              <div class="col-sm-10 ">
+                  <input type="email" class="form-control" id="inputEmail3">
+              </div>
+          </div>
+          <div class="form-group row mt-5">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Mot de passe</label>
+              <div class="col-sm-10 ">
+                  <input type="password" class="form-control" id="inputPassword3">
+              </div>
+          </div>
+          <div class="form-group row mt-5">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Répéter le mot de passe</label>
+              <div class="col-sm-10 ">
+                  <input type="email" class="form-control" id="inputEmail3">
+              </div>
+          </div>
+  
+          <!-- Pays / Langue Enseigné -->
+          <div class="form-group row mt-5">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Pays</label>
+              <div class="col-sm-10">
+                  <select class="form-control">
+                      <option>France</option>
+                      <option>Angleterre</option>
+                      <option>Espagne</option>
+                      <option>Italie</option>
+                      <option>Allemaggne</option>
+                      <option>Hongrie</option>
+                  </select>
+              </div>
+          </div>
+  
+  
+          <div class="form-group row mt-5">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Langue enseigné</label>
+              <div class="col-sm-10">
+                  <select class="form-control">
+                      <option>Français</option>
+                      <option>Anglais</option>
+                      <option>Espagnol</option>
+                      <option>Italien</option>
+                      <option>Allemand</option>
+                      <option>Hongroise</option>
+                  </select>
+              </div>
+          </div>
+  
+          <!-- Bouton J'ai lu et j'accepte les termes et conditions et Bouton Inscription -->
+  
+          <div class="mt-5">
+              <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+              <label class="form-check-label" for="invalidCheck3">
+                  J'ai lu et j'accepte les termes et conditions
+              </label>
+          </div>
+  
+          <div class="mt-5">
+              <button class="btn btn-primary" type="submit">Inscription</button>
+          </div>
+  
+      </div>
 
         <!-- Navigation Accueil/Annonce Prof-->
         <nav class="container" aria-label="breadcrumb">
@@ -85,8 +184,8 @@
 
             <div class= "col-sm-12 col-md-6 text-center">
                 <p>Henri Boudreault Ph.D. professeur à l'UQAM en enseignement en formation professionnelle et technique</p>
-                <button type="button" class="btn btn-primary btn-lg vert">Ajouter au contact</button>
-                <button type="button" class="btn btn-primary btn-lg vert">Envoyer un message</button>
+                <button type="button" class="btn btn-primary btn-lg vert btni">Ajouter au contact</button>
+                <button type="button" class="btn btn-primary btn-lg vert btni">Envoyer un message</button>
             </div>
         </div>
 

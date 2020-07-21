@@ -24,6 +24,16 @@ CSS COMMUM
     /********************************************************
     CSS MAIN
     ********************************************************/
+    #modal{
+        background-color:white;
+        height: 90%;
+        width: 100%;
+        position: fixed;
+        margin: auto;
+        display: none;
+        overflow: auto;
+        z-index: 1;
+    }
     .verte{
         color: #25d366;
     }
