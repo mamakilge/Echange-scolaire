@@ -65,22 +65,34 @@
 
         <!-- MODAL INSCRIPTION -->
 
-        <div class="container text-center border border-dark pb-5 pr-5" id="modal">
-
-          <h1 class="mt-5 font-weight-bold">INSCRIPTION</h1>
-          <!-- Professeur / Etablissement -->
-          <div class="form-check mr-4 mt-5">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                  checked>
-              <label class="form-check-label font-weight-bold ml-2" for="exampleRadios1">
-                  Professeur
-              </label>
+        <div class="container border border-dark pb-5 pr-5 ml-5" id="modal">
+          <div class="text-center">
+          <a href="#" id="btnNo">&times;</a>
           </div>
+          <h1 class="mt-5 font-weight-bold text-center">INSCRIPTION</h1>
+          <!-- Professeur / Etablissement -->
           <div class="form-check mt-5">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label font-weight-bold ml-2" for="exampleRadios2">
-                  Établissement
-              </label>
+            <form class="">
+              <fieldset class="form-group">
+                <div class="row">
+                  <legend class="col-form-label col-sm-2 pt-0">Vous êtes :</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Professeur
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Établissement
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
           </div>
   
           <!-- NOM / Prénom -->
@@ -149,15 +161,16 @@
   
           <!-- Bouton J'ai lu et j'accepte les termes et conditions et Bouton Inscription -->
   
-          <div class="mt-5">
+          <div class="mt-5 text-center">
               <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
               <label class="form-check-label" for="invalidCheck3">
                   J'ai lu et j'accepte les termes et conditions
               </label>
           </div>
   
-          <div class="mt-5">
-              <button class="btn btn-primary" type="submit">Inscription</button>
+          <div class="mt-5 text-center">
+              <button class="btn vert" type="submit">Inscription</button>
+              <a href="#" id="btnNo2">Pas maintenant</a>
           </div>
   
       </div>
@@ -184,8 +197,8 @@
 
             <div class= "col-sm-12 col-md-6 text-center">
                 <p>Henri Boudreault Ph.D. professeur à l'UQAM en enseignement en formation professionnelle et technique</p>
-                <button type="button" class="btn btn-primary btn-lg vert btni">Ajouter au contact</button>
-                <button type="button" class="btn btn-primary btn-lg vert btni">Envoyer un message</button>
+                <button type="button" class="btn btn-primary btn-lg vert" id="btni1">Ajouter au contact</button>
+                <button type="button" class="btn btn-primary btn-lg vert" id="btni2">Envoyer un message</button>
             </div>
         </div>
 
@@ -215,7 +228,58 @@
         </div>
 
         <!-- Historique du profil desktop -->
+        <section class="d-none d-md-block mt-5">
+          <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-center ml-5">
+            <div class="col mb-4">
+              <div class="card w-75 p-3">
+                <img src="../img/40779887235_0e60ccfa2c_b.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">Hôte</h4>
+                  <p class="card-text">Nous avons reçu en Mai 2020 une classe de 6ème du collège Agustiniano de Madrid pour
+                    une période de deux semaines.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card w-75 p-3">
+                <img src="../img/150814-F-QQ371-071.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">Hôte</h4>
+                  <p class="card-text">En octobre 2019, 15 élèves de collège Brandenburg ont eu le plaisir de passer une
+                    semaine dans la classe de nos 5ème, une classe de langues.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card w-75 p-3">
+                <img src="../img/190928-M-TU080-084.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">Voyage</h4>
+                  <p class="card-text">Nos élèves de 4ème ont pu profiter d'un séjour linguistique exceptionnel pendant 2
+                    semaine dans une école en Chine.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card w-75 p-3">
+                <img src="../img/190928-M-TU080-1006.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">Voyage</h4>
+                  <p class="card-text">Pour une deuxième année consécutive une classe de 4ème a pu de nouveau profiter d'une
+                    immersion dans un collège en banlieu de Pékin pendant 2 semaines.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <div class="d-none d-md-block">
+          <div class="d-flex justify-content-end">
+            <button class="btn btn-primary vert" type="button" data-toggle="collapse" data-target="#historique" aria-expanded="false" aria-controls="historique">
+            Voir plus
+            </button>
+        </div>
+      </div>
+        <!--<div class="d-none d-md-block">
             <div class=" border-top mt-5">
                 <h3 class="text-center mt-4 pb-4">Historique du profil</h3>
                 <div class="row d-flex justify-content-around">
@@ -229,7 +293,7 @@
 
                 
             <div class="collapse" id="historique">
-                <div class="card card-body">
+                <div class="">
                     <div class="row d-flex justify-content-around">
                         <p class = "text-center border col-md-5 col-sm-12 img1"><strong>Madère:</strong><br> Bonjour,Voilà retour de Madere 15 jours de randos et découvertes. decu. On me parlait de l ile au fleur,sauvage.c'est vrai beaucoup d agapanthe d 'aloes et puis pas plus de fleurs qu'ailleur, sauf au jardin exotique.</p>
                         <p class = "text-center border col-md-5 col-sm-12 img1"><strong>Turin:</strong><br> Une ville de rues piétonnes et voûtées
@@ -244,7 +308,7 @@
           Voir plus
           </button>
       </div>
-    </div>
+    </div>-->
 
         <!-- Historique du profil mobile -->
 
@@ -293,21 +357,66 @@
       </div>
 
 
-        <!-- Avis / Tapez votre commentaire desktop -->  
+        <!-- Avis / Tapez votre commentaire desktop --> 
 
-        <div class="container bg-light border-top mt-5 d-md-block">
+        <div class="container-fluid bg-light">
+          <div class="container mt-5">
             <h3 class="text-center mt-4 pb-4">Avis</h3>
             <div class="row d-flex justify-content-around">
-                <p class = "text-center border col-md-5 col-sm-12 img"><strong>Madère:</strong><br> Bonjour,Voilà retour de Madere 15 jours de randos et découvertes. decu. On me parlait de l ile au fleur,sauvage.c'est vrai beaucoup d agapanthe d 'aloes et puis pas plus de fleurs qu'ailleur, sauf au jardin exotique.</p>
-                <p class = "text-center border col-md-5 col-sm-12 img"><strong>Turin:</strong><br> Une ville de rues piétonnes et voûtées
+              <p class="text-center border col-md-5 col-sm-12"><strong>Madère </strong><img src="/front/fa-users Font Awesome Icons_fichiers/5-etoiles.png" class="img"><br> Bonjour,Voilà retour de Madere 15
+                jours de randos et découvertes. decu. On me parlait de l ile au fleur,sauvage.c'est vrai beaucoup d agapanthe d 'aloes et puis pas plus de fleurs qu'ailleur, sauf au jardin exotique.</p>
+              <p class="text-center border col-md-5 col-sm-12"><strong>Turin</strong><img src="/front/fa-users Font Awesome Icons_fichiers/5-etoiles.png" class="img"><br> Une ville de rues piétonnes et
+                voûtées. C'est assez plaisant. C'est une des villes en Italie qui en possède le plus. De même, de nombreuses rues du
+                centre sont piétonnes. Bref, une pérégrination d'un week-end dans les rues de Turin, c'est vraiment agréable
+              </p>
+            </div>
+            <div class="collapse" id="avis">
+              <div>
+                <div class="row d-flex justify-content-around">
+                  <p class="text-center border col-md-5 col-sm-12"><strong>Madère</strong><img src="/front/fa-users Font Awesome Icons_fichiers/5-etoiles.png" class="img"><br> Bonjour,Voilà retour de
+                    Madere 15 jours de randos
+                    et découvertes. decu. On me parlait de l ile au fleur,sauvage.c'est vrai beaucoup d agapanthe d 'aloes
+                    et
+                    puis pas plus de fleurs qu'ailleur, sauf au jardin exotique.</p>
+                  <p class="text-center border col-md-5 col-sm-12"><strong>Turin</strong><img src="/front/fa-users Font Awesome Icons_fichiers/5-etoiles.png" class="img"><br> Une ville de rues piétonnes et
+                    voûtées
+                    C'est assez plaisant. C'est une des villes en Italie qui en possède le plus. De même, de nombreuses rues
+                    du centre sont piétonnes. Bref, une pérégrination d'un week-end dans les rues de Turin, c'est vraiment
+                    agréable</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button class="btn bouton vert" type="button" data-toggle="collapse" data-target="#avis" aria-expanded="false"
+                aria-controls="avis">
+                Voir plus
+              </button>
+            </div>
+            <form>
+              <div class="mt-2 form-group text-center container">
+                <label for="exampleFormControlTextarea1">Tapez votre commentaire ici</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                <button class="mt-2 btn bouton" type="exampleFormControlTextarea1">Poster</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        
+
+      <!-- <div class="container bg-light border-top mt-5 d-md-block">
+            <h3 class="text-center mt-4 pb-4">Avis</h3>
+            <div class="row d-flex justify-content-around">
+                <p class = "text-center border col-md-5 col-sm-12 img"><strong>Madère:</strong><img src="/front/fa-users Font Awesome Icons_fichiers/5-etoiles.png" class="img"><br> Bonjour,Voilà retour de Madere 15 jours de randos et découvertes. decu. On me parlait de l ile au fleur,sauvage.c'est vrai beaucoup d agapanthe d 'aloes et puis pas plus de fleurs qu'ailleur, sauf au jardin exotique.</p>
+                <p class = "text-center border col-md-5 col-sm-12 img"><strong>Turin:</strong><img src="/front/fa-users Font Awesome Icons_fichiers/5-etoiles.png" class="img"><br> Une ville de rues piétonnes et voûtées
                     C'est assez plaisant. C'est une des villes en Italie qui en possède le plus. De même, de nombreuses rues du centre sont piétonnes. Bref, une pérégrination d'un week-end dans les rues de Turin, c'est vraiment agréable</p>            
             </div>
            
           <div class="collapse" id="avis">
-            <div class="card card-body">
+            <div class="">
                 <div class="row d-flex justify-content-around">
-                    <p class = "text-center border col-md-5 col-sm-12 img"><strong>Madère:</strong><br> Bonjour,Voilà retour de Madere 15 jours de randos et découvertes. decu. On me parlait de l ile au fleur,sauvage.c'est vrai beaucoup d agapanthe d 'aloes et puis pas plus de fleurs qu'ailleur, sauf au jardin exotique.</p>
-                    <p class = "text-center border col-md-5 col-sm-12 img"><strong>Turin:</strong><br> Une ville de rues piétonnes et voûtées
+                    <p class = "text-center border col-md-5 col-sm-12 img"><strong>Madère:</strong><img src="/front/fa-users Font Awesome Icons_fichiers/5-etoiles.png" class="img"><br> Bonjour,Voilà retour de Madere 15 jours de randos et découvertes. decu. On me parlait de l ile au fleur,sauvage.c'est vrai beaucoup d agapanthe d 'aloes et puis pas plus de fleurs qu'ailleur, sauf au jardin exotique.</p>
+                    <p class = "text-center border col-md-5 col-sm-12 img"><strong>Turin:</strong><img src="/front/fa-users Font Awesome Icons_fichiers/5-etoiles.png" class="img"><br> Une ville de rues piétonnes et voûtées
                         C'est assez plaisant. C'est une des villes en Italie qui en possède le plus. De même, de nombreuses rues du centre sont piétonnes. Bref, une pérégrination d'un week-end dans les rues de Turin, c'est vraiment agréable</p>            
                 </div>
             </div>
@@ -322,10 +431,10 @@
             <div class="form-group text-center container">
                 <label for="exampleFormControlTextarea1">Tapez votre commentaire ici</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                <button class="btn btn-primary vert" type="exampleFormControlTextarea1">Poster</button>
+                <button class="btn btn-primary vert" id="btni3" type="exampleFormControlTextarea1">Poster</button>
             </div>
         </form>
-        </div>     
+        </div> -->     
 
         <!-- Avis / Tapez votre commentaire mobile --> 
 

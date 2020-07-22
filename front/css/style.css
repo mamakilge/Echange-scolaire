@@ -24,6 +24,10 @@ CSS COMMUM
     /********************************************************
     CSS MAIN
     ********************************************************/
+    #btnNo{
+        color: #25D366;
+        font-size: 3rem;
+    }
     #modal{
         background-color:white;
         height: 90%;
@@ -33,6 +37,9 @@ CSS COMMUM
         display: none;
         overflow: auto;
         z-index: 1;
+    }
+    #btnNo2{
+        font-size: 0.75rem;
     }
     .verte{
         color: #25d366;
@@ -60,7 +67,7 @@ CSS COMMUM
     }
 
     .img{
-        background-image: url(/front/fa-users\ Font\ Awesome\ Icons_fichiers/5-etoiles.png);
+        width:90px; 
     }
 
 
