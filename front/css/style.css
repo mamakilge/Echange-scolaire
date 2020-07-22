@@ -39,7 +39,7 @@ h1{
 }
 
 #recherche{
-    background-image: url(../img/background.png);
+    background-image: url(../img/img1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -76,8 +76,13 @@ h1{
     margin: 0 auto;
     padding: 10px;
     text-align: center;
-    width: 500px;
+    width: 80%;
+    height: 100px;
+    font-size: 1rem;
+}
 
+#cookies a{
+    text-decoration: none;
 }
 
 /*//////////
@@ -160,7 +165,18 @@ footer{
     line-height: 30px;
 }
 
+.bas a:hover{
+    color: #02C39A;
+}
 
+.bas p{
+    display: none;
+
+}
+
+.bas h6:hover{
+    color: #02C39A;
+}
 
 /*/////////
 MEDIA QUERIES
@@ -216,18 +232,7 @@ MEDIA QUERIES
         display: none;
     }
     
-    .bas a:hover{
-        color: #02C39A;
-    }
 
-    .bas p{
-        display: none;
-
-    }
-
-    .bas h6:hover{
-        color: #02C39A;
-    }
 }
 
 @media screen and (max-width: 960px){
@@ -257,6 +262,8 @@ MEDIA QUERIES
     .card{
         margin: 0px;
     }
+
+
 }
 
 
