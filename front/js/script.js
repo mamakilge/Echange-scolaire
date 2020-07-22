@@ -1,9 +1,42 @@
 window.onload = function () {
 
-    //COOKIES
+    //COOKIES MOBILE
+    //apparition
+    var cookiesMobile = document.getElementById('cookiesMobile');
+    console.log("window.onload -> cookiesMobile", cookiesMobile)
+
+    function timer(){
+        cookiesMobile.style.display = 'block';
+        console.log("timer")
+    }
+    setTimeout(timer, 1000);    
+    console.log("setTimeout")
+
+    //disparition
+    $('#accepteMob').click(function(){
+        $('#cookiesMobile').hide();
+        console.log("cookiesMobile")
+    })
+
+    $('#croix').click(function(){
+        $('#cookiesMobile').hide();
+    })
+
+    //COOKIES DESKTOP
+    //apparition
+    var cookiesConteneur = document.getElementById('cookiesConteneur');
+
+    function timer(){
+        cookiesConteneur.style.display = 'block';
+    }
+    setTimeout(timer, 1000);    
+
+    //disparition
     $('#accepte').click(function(){
         $('#cookiesConteneur').hide();
     })
+
+////////////////////////////////////////////////////
 
     //TEXTE INSCRIPTION COLLAPSE RWD
     $('#afficher').click(function () {
@@ -18,12 +51,13 @@ window.onload = function () {
         $('#reduire').hide();
     })
 
+////////////////////////////////////////////////////
+
     //ACTUALITES RWD
     $('#voirPlus').click(function(){
         $('#post3, #post4').show();
         $('#voirMoins').show();
         $('#voirPlus').hide();
-
     })
 
     $('#voirMoins').click(function(){
@@ -32,6 +66,7 @@ window.onload = function () {
         $('#voirPlus').show();
     })
 
+    ////////////////////////////////////////////////////
 
     //FOOTER RWD
     $('.bas').click(function(){
