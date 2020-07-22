@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <title>Mamakilgé</title>
+    <!--JS - JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <!--FONT AWESOME-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
     integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
@@ -16,12 +22,6 @@
   integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <!--FONT BIRYANI-->
   <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200&display=swap" rel="stylesheet">
-  <!--JS - JQUERY-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="../js/script.js"></script>
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -30,11 +30,9 @@
   <header class="bg-light">
     <nav class="container navbar navbar-expand-lg navbar-light d-flex justify-content-center">
       <!--logo cliquable pour revenir sur la page d'accueil-->
-      <a href="#">
-        <img src="../img/logo1.png" alt="logo">
+      <a href="index.html" id="logo">
+        <img src="../img/logoo.png" alt="échange scolaire">
       </a>
-      <a class="navbar-brand font-weight-bold pl-2 " href="index.html" style="color: #02C39A;">Mamakilgé</a>
-      <!--Nom du site cliquable pour revenir sur accueil-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -71,17 +69,16 @@
     <!--COOKIES-->
     <div id="cookiesConteneur">
       <div id="cookies">
+
         <p>
           Ce site utilise des cookies pour vous offrir le meileur service. En poursuivant votre navigation, vous
           acceptez l'utilisation des cookies.
         </p>
-
-        <div>
           <button id="accepte">J'accepte</button>
           <button><a href="#info">En savoir plus</a></button>
-        </div>
       </div>
     </div>
+
   </header>
 
   <main>
@@ -286,17 +283,7 @@
       <div class="row text-center text-md-left">
 
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto bas">
-          <h6 class="text-uppercase font-weight-bold pt-2">Mamakilgé</h6>
-          <p class="cache">Mamakilgé est un site indépendant lancé en 2020 pour faciliter l'échange scolaire en ligne.
-            Grâce à un
-            bouche-à-oreille constant, il sera peut être en 2022 le principal site d'échange scolaire. </p>
-        </div>
-
-        <hr class="w-100 clearfix d-md-none">
-
-        <!-- Grid column -->
-        <div class="col-6 col-md-3 col-lg-2 col-xl-2 mx-auto bas" id="info">
+        <div class="col-4 col-md-3 col-lg-2 col-xl-2 mx-auto bas" id="info">
           <h6 class="text-uppercase font-weight-bold pt-2">Informations Légales</h6>
           <p class="cache">
             <a href="#!" class="couleur">Mentions Légales</a> </br>
@@ -309,7 +296,7 @@
         <hr class="w-100 clearfix d-md-none">
 
         <!-- Grid column -->
-        <div class="col-6 col-md-3 col-lg-2 col-xl-2 mx-auto bas">
+        <div class="col-4 col-md-3 col-lg-2 col-xl-2 mx-auto bas">
           <h6 class="text-uppercase font-weight-bold pt-2">À Propos</h6>
           <p class="cache">
             <a href="#!" class="couleur">Qui sommes-nous ?</a></br>
@@ -322,7 +309,7 @@
         <hr class="w-100 clearfix d-md-none">
 
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto  bas">
+        <div class="col-4 col-md-3 col-lg-3 col-xl-3 mx-auto  bas">
           <h6 class="text-uppercase font-weight-bold pt-2">Contact</h6>
           <p class="cache">
             <i class="fas fa-home mr-3"></i> 18 Rue Geoffroy l'Asnier, 75004 Paris </br>
