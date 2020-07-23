@@ -22,9 +22,23 @@ nav img{
     width: 200px;    
 }
 
-nav .btn{
-    background-color: #02C39A;
-    color: black;
+.siteName{
+    color: #02C39A;
+    text-align: left;
+    font-weight: 600;
+}
+
+.logo{
+    width: 225px;
+}
+
+:hover.btn-nav{
+    background-color: #02C39A ;
+}
+
+.revenir-accueil{
+    text-decoration: none;
+    color: #02C39A;
 }
 
 /*/////////////////////////////

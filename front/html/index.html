@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <title>Mamakilgé</title>
+  <title>Echange scolaire</title>
   <!--JS - JQUERY-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -31,43 +31,46 @@
 
 <body>
   <header class="bg-light">
-    <nav class="container navbar navbar-expand-lg navbar-light d-flex justify-content-center">
+    <nav class="container navbar navbar-expand-lg navbar-light d-flex">
       <!--logo cliquable pour revenir sur la page d'accueil-->
-      <a href="index.html" id="logo">
-        <img src="../img/logoo.png" alt="échange scolaire">
+      <a class="mx-lg-5 navbar-brand" href="index.html">
+          <img class="logo" src="../img/logo.png" alt="logo site échange scolaire">
       </a>
+
+      <a class="siteName mr-5 navbar-brand" href="index.html"></a>
+
+      <!--à partir d'ici en version mobile c'est un Menu Hamburguer-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!--BARRE DE RECHERCHE-->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-
-        <!--BOUTON INSCRIPTION / CONNEXION-->
-        <div class="nav-item ml-3 btnConnexion" role="group">
-          <button type="button" class="btn couleur">Inscription</button>
-          <button type="button" class="btn couleur">Connexion</button>
-        </div>
-
-        <!--DROPDOWN MENU-->
-        <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle couleur" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item couleur" href="#">Profil</a>
-            <a class="dropdown-item couleur" href="#">Contact</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item couleur" href="#">À propos</a>
-          </div>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="..." aria-label="Search">
+              <input class="btn btn-form mt-1 pb-1" type="submit" value="Search">
+          </form>
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item d-flex ml-lg-5">
+                  <a class="nav-link btn-nav" href="#">Connexion<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item d-flex">
+                  <a class="nav-link btn-nav" href="#">Inscription<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown ml-lg-5">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Contact</a>
+                      <a class="dropdown-item" href="#">À Propos</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Mentions Légales</a>
+                  </div>
+              </li>
+          </ul>
       </div>
-    </nav>
+  </nav>
 
     <!--COOKIES DESKTOP-->
     <div id="cookiesConteneur">
@@ -325,7 +328,7 @@
           <h6 class="text-uppercase font-weight-bold pt-2 text-center">Contact</h6>
           <p class="cache">
             <i class="fas fa-home mr-3"></i> 18 Rue Geoffroy l'Asnier, 75004 Paris </br>
-            <i class="fas fa-envelope mr-3"></i> mamakilge@gmail.com </br>
+            <i class="fas fa-envelope mr-3"></i> echange-scolaire@gmail.com </br>
             <i class="fas fa-phone mr-3"></i> 01 42 58 75 88 </br>
           </p>
         </div>
@@ -338,8 +341,8 @@
         <div class="col-6 col-md-7 col-lg-8">
           <!--Copyright-->
           <p class="text-center text-md-left">© 2020 Copyright:
-            <a href="https://mamakilgé.fr/" class="couleur">
-              <strong> Mamakilgé.fr</strong>
+            <a href="https://echange-scolaire.fr/" class="couleur">
+              <strong> echange-scolaire.fr</strong>
             </a>
           </p>
         </div>
