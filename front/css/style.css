@@ -39,6 +39,34 @@ HEADER NAV
 }
 
 /*******************************
+CSS Revenir Accueil et bg title
+*******************************/
+
+.revenir-accueil:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: #02C39A;
+}
+.title-search{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 10%;
+
+
+}
+.bg-title{
+    background-image: url(../img/img1.jpg);
+    background-position-x: center;
+    height: 400px;
+
+}
+
+.title-annonce-desktop{
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+/*******************************
 CSS FORMULAIRE DESKTOP ET MOBILE
 *******************************/
 .btn-form{
@@ -100,29 +128,6 @@ CSS FORMULAIRE DESKTOP ET MOBILE
 /*******************************
 ANNONCES VERSION DESKTOP
 *******************************/
-.revenir-accueil:hover{
-    text-decoration: none;
-    font-weight: bold;
-    color: #02C39A;
-}
-.title-search{
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin-top: 10%;
-
-
-}
-.bg-title{
-    background-image: url(../img/img1.jpg);
-    background-position-x: center;
-    height: 400px;
-
-}
-
-.title-annonce-desktop{
-    font-weight: 700;
-    font-size: 1.75rem;
-}
 
 .btn-voirplus{
     text-decoration: none;
