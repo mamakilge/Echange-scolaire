@@ -19,7 +19,7 @@ HEADER NAV
 }
 
 .logo{
-    width: 225px;
+    width: 200px;
 }
 
 :hover.btn-nav{
@@ -211,7 +211,12 @@ CSS INFORMATIONS LÉGALES
 MEDIA QUERIES 
 *******************************/
 /*SMALL*/
-@media screen and (min-width:576px) {}
+@media screen and (min-width:576px) {
+    .logo{
+        width: 225px;
+    }
+    
+}
 
 /*MEDIUM*/
 @media screen and (min-width:768px) {
