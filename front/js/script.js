@@ -3,13 +3,13 @@ window.onload = function () {
     //COOKIES MOBILE
     //apparition
     var cookiesMobile = document.getElementById('cookiesMobile');
-    console.log("window.onload -> cookiesMobile", cookiesMobile)
+    console.log("cookiesMobile", cookiesMobile)
 
-    function timer(){
+    function timerMob(){
         cookiesMobile.style.display = 'block';
         console.log("timer")
     }
-    setTimeout(timer, 1000);    
+    setTimeout(timerMob, 1000);    
     console.log("setTimeout")
 
     //disparition
