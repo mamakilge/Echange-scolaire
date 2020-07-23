@@ -26,8 +26,12 @@ HEADER NAV
     background-color: #02C39A ;
     border-radius: 5px;
 }
-
-
+.btn-form{
+    color: white;
+    background-color: #02C39A;
+    border-radius: 3px;
+   
+}
 
 .revenir-accueil{
     text-decoration: none;
