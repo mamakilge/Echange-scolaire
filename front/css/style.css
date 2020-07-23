@@ -5,7 +5,37 @@
 CSS INFORMATIONS LÉGALES
 *******************************/
 
-.mamakilge{
+.echange-scolaire{
+    text-decoration: none;
+    color: #02C39A;
+}
+
+/*******************************
+HEADER NAV
+*******************************/
+
+.siteName{
+    color: #02C39A;
+    text-align: left;
+    font-weight: 600;
+}
+
+.logo{
+    width: 200px;
+}
+
+:hover.btn-nav{
+    background-color: #02C39A ;
+    border-radius: 5px;
+}
+.btn-form{
+    color: white;
+    background-color: #02C39A;
+    border-radius: 3px;
+   
+}
+
+.revenir-accueil{
     text-decoration: none;
     color: #02C39A;
 }
