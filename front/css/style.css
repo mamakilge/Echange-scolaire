@@ -95,6 +95,10 @@ h3{
     margin: auto;
 }
 
+.commentaire{
+    resize : none; 
+}
+
 .hote-voy{
     font-weight: bold;
 }
