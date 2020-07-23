@@ -18,10 +18,6 @@ hr{
 /*//////////////////////////////
 NAVBAR
 ////////////////////////////////*/
-nav img{
-    width: 200px;    
-}
-
 .siteName{
     color: #02C39A;
     text-align: left;
@@ -39,6 +35,12 @@ nav img{
 .revenir-accueil{
     text-decoration: none;
     color: #02C39A;
+}
+
+.btn-form{
+    color: white;
+    background-color: #02C39A;
+    border-radius: 3px;
 }
 
 /*/////////////////////////////
