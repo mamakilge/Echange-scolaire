@@ -211,19 +211,6 @@ MAIN SECTION ACTUALITES
     padding: 3px;
 }
 
-.card img{
-    width: 80%;
-    display: block;
-    margin: 0 auto;
-}
-
-.prev, .next{
-    font-size: 3rem;
-}
-
-.carousel-control-next-icon{
-    filter: invert(100%);
-}
 /*//////////////////////////////
 FOOTER 
 /////////////////////////////// */
@@ -317,6 +304,15 @@ MEDIA QUERIES
 
     #cookiesCon{
         display: none;
+    }
+
+    .mobile{
+        padding: 0px;
+    }
+
+    .bcg-profile{
+        background-color: rgba(226, 245, 231, 0.75);
+        color: black;
     }
 }
 
