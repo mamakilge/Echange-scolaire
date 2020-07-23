@@ -7,15 +7,16 @@
     <meta name="description"
         content="Échanges scolaires, voyages scolaires, tout ce dont vous avez besoin pour trouver le votre sur mésure">
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="../js/script.js"></script>    
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="../js/script.js"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;700&display=swap" rel="stylesheet">
@@ -32,7 +33,7 @@
         <nav class="container navbar navbar-expand-lg navbar-light d-flex">
             <!--logo cliquable pour revenir sur la page d'accueil-->
             <a class="mr-lg-5 navbar-brand" href="index.html">
-                <img class="logo" src="../img/logo.png" alt="logo site mamakilgé">
+                <img class="logo" src="front/img/logo.png" alt="logo site mamakilgé">
             </a>
 
 
@@ -56,7 +57,7 @@
                     <li class="nav-item dropdown ml-lg-5">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            
+
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Contact</a>
@@ -101,15 +102,18 @@
                                 <div class="choix">
                                     <label class="titleForm">Je cherche : </label>
                                     <span class="input-group">
-                                        <input class="mt-1 input" type="radio" name="bac" id="optionaccueil" value="accueil">
+                                        <input class="mt-1 input" type="radio" name="bac" id="optionaccueil"
+                                            value="accueil">
                                         <label class="ml-3" for="optionaccueil">Accueillir élèves</label>
                                     </span>
                                     <span class="input-group">
-                                        <input class="mt-1 input" type="radio" name="bac" id="optionpartir" value="partir">
+                                        <input class="mt-1 input" type="radio" name="bac" id="optionpartir"
+                                            value="partir">
                                         <label class="ml-3" for="optionpartir">Partir en voyage</label>
                                     </span>
                                     <span class="input-group">
-                                        <input class="mt-1 input" type="radio" name="bac" id="optionlesdeux" value="les deux">
+                                        <input class="mt-1 input" type="radio" name="bac" id="optionlesdeux"
+                                            value="les deux">
                                         <label class="ml-3" for="optionlesdeux">Les deux</label>
                                     </span>
                                 </div>
@@ -139,7 +143,8 @@
                                         <label class="ml-3" for="option30">Moins de 30 élèves</label>
                                     </span>
                                     <span class="input-group">
-                                        <input class="mt-1 input" type="radio" name="bac" id="option30-40" value="30-40">
+                                        <input class="mt-1 input" type="radio" name="bac" id="option30-40"
+                                            value="30-40">
                                         <label class="ml-3" for="option30-40">Entre 30 et 40 élèves</label>
                                     </span>
                                     <span class="input-group">
@@ -160,20 +165,21 @@
                                 </div>
                             </div>
 
-                            <div class="affinerMobile d-block d-lg-none"><!--Affiner Mobile-->
+                            <div class="affinerMobile d-block d-lg-none">
+                                <!--Affiner Mobile-->
                                 <select class="select-css select-mobile custom-select">
                                     <option selected>Je cherche</option>
                                     <option value="1">Accueillir élèves</option>
                                     <option value="2">Partir en voyage</option>
                                     <option value="3">Les deux</option>
-                                  </select>
-                                  <select class="select-css select-mobile custom-select">
+                                </select>
+                                <select class="select-css select-mobile custom-select">
                                     <option selected>Choisissez la langue du pays d'accueil</option>
                                     <option value="1">Français</option>
                                     <option value="2">Español</option>
                                     <option value="3">English</option>
-                                  </select>
-                                  <select class="select-css select-mobile custom-select">
+                                </select>
+                                <select class="select-css select-mobile custom-select">
                                     <option selected>Choisissez le pays d'accueil</option>
                                     <option value="france">France</option>
                                     <option value="mayotte">Mayotte</option>
@@ -187,13 +193,13 @@
                                     <option value="1">Moins de 30 élèves</option>
                                     <option value="2">Entre 30 et 40 élèves</option>
                                     <option value="3">Plus de 40 élèves</option>
-                                  </select>
-                                  <select class="select-css select-mobile custom-select">
+                                </select>
+                                <select class="select-css select-mobile custom-select">
                                     <option selected>Niveau des élèves</option>
                                     <option value="1">Collège</option>
                                     <option value="2">Lycée</option>
                                     <option value="3">Collège et Lycée</option>
-                                  </select>
+                                </select>
 
                             </div>
 
@@ -227,7 +233,7 @@
                                     <option value="1">Nombre d'élèves</option>
                                     <option value="2">Niveau des élèves</option>
                                     <option value="3">Mieux noté</option>
-                                  </select>
+                                </select>
 
                             </div>
 
@@ -240,114 +246,88 @@
 
         </section>
         <!--ANNONCES CLICABLES DESKTOP-->
-        <div class="d-none d-md-block container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div class="card mb-3">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="/front/img/22918-NU6SNY.jpg" class="card-img" alt="établissement scolaire">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="title-annonce-desktop text-secondary card-title">Lycée Flaubert</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a
-                                        natural lead-in to additional content. This content is a little bit longer.
-                                    </p>
-                                    <a href="#" class="btn-voirplus">
-                                        Voir plus
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+        <section class="container d-none d-md-block">
+              <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                  <div class="card p-3">
+                    <img src="/front/img/prof5.jpg" class="card-img-top" alt="image professeur">
+                    <div class="card-body">
+                      <h4 class="card-title">Hôte</h4>
+                      <p class="card-text">Pour une deuxième année consécutive une classe de 4ème a pu de nouveau profiter
+                        d'une
+                        immersion dans un collège en banlieu de Berlin pendant 2 semaines.</p>
                     </div>
+                    <a href="#" class="d-flex btn-voirplus">
+                        Voir plus
+                    </a>
+                  </div>
                 </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="card mb-3">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="/front/img/4006723.jpg" class="card-img" alt="établissement scolaire">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="title-annonce-desktop text-secondary card-title">Lycée Bla bla</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a
-                                        natural lead-in to additional content. This content is a little bit longer.
-                                    </p>
-                                    <a href="#" class="btn-voirplus">
-                                        Voir plus
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col mb-4">
+                    <div class="card p-3">
+                      <img src="/front/img/prof6.jpg" class="card-img-top" alt="image professeur">
+                      <div class="card-body">
+                        <h4 class="card-title">Hôte</h4>
+                        <p class="card-text">Pour une deuxième année consécutive une classe de 4ème a pu de nouveau profiter
+                          d'une
+                          immersion dans un collège en banlieu de Berlin pendant 2 semaines.</p>
+                      </div>
+                      <a href="#" class="d-flex btn-voirplus">
+                          Voir plus
+                      </a>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="card mb-3">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="/front/img/2513680.jpg" class="card-img" alt="établissement scolaire">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="title-annonce-desktop text-secondary card-title">Lycée/Collège Jeanne
-                                    </h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a
-                                        natural lead-in to additional content. This content is a little bit longer.
-                                    </p>
-                                    <a href="#" class="btn-voirplus">
-                                        Voir plus
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card p-3">
+                      <img src="/front/img/groupprof1.jpg" class="card-img-top" alt="groupe de personnnes">
+                      <div class="card-body">
+                        <h4 class="card-title">Hôte</h4>
+                        <p class="card-text">Pour une deuxième année consécutive une classe de 4ème a pu de nouveau profiter
+                          d'une
+                          immersion dans un collège en banlieu de Berlin pendant 2 semaines.</p>
+                      </div>
+                      <a href="#" class="d-flex btn-voirplus">
+                          Voir plus
+                      </a>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="card mb-3">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="/front/img/2513668.jpg" class="card-img" alt="établissement scolaire">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="title-annonce-desktop text-secondary card-title">Lycée/Collège Matrix
-                                    </h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a
-                                        natural lead-in to additional content. This content is a little bit longer.
-                                    </p>
-                                    <a href="#" class="btn-voirplus">
-                                        Voir plus
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card p-3">
+                      <img src="/front/img/groupprof2.jpg" class="card-img-top" alt="groupe de personnes">
+                      <div class="card-body">
+                        <h4 class="card-title">Hôte</h4>
+                        <p class="card-text">Pour une deuxième année consécutive une classe de 4ème a pu de nouveau profiter
+                          d'une
+                          immersion dans un collège en banlieu de Berlin pendant 2 semaines.</p>
+                      </div>
+                      <a href="#" class="d-flex btn-voirplus">
+                          Voir plus
+                      </a>
                     </div>
-                </div>
-            </div>
+                  </div>
+              </div>
 
-            <!--PAGINATION-->
-            <nav class="d-flex justify-content-center" aria-label="Page navigation example">
-                <ul class="pagination">
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav> <!--fin pagination et annonces clicables desktop-->
-
-        </div>
+                <!--PAGINATION-->
+                <nav class="d-flex justify-content-center" aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--fin pagination et annonces clicables desktop-->
+          </section>
         <!--ANNONCES CLICABLES MOBILE-->
-        <div class="d-lg-none mb-4 container">
+        <div class="container d- block d-lg-none mb-4">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -399,87 +379,87 @@
     <!-- FOOTER -->
     <footer class="page-footer font-small mdb-color pt-2">
         <div class="container text-center">
-          <div class="row text-center text-md-left d-flex justify-content-center">
-    
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 bas mx-auto" id="info">
-              <h6 class="text-uppercase font-weight-bold pt-2 text-center">Informations Légales</h6>
-              <p class="cache">
-                <a href="#!" class="couleur">Mentions Légales</a> </br>
-                <a href="#!" class="couleur">Vie privée</a></br>
-                <a href="#!" class="couleur">Vos droits et obligations</a></br>
-              </p>
+            <div class="row text-center text-md-left d-flex justify-content-center">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 bas mx-auto" id="info">
+                    <h6 class="text-uppercase font-weight-bold pt-2 text-center">Informations Légales</h6>
+                    <p class="cache">
+                        <a href="#!" class="couleur">Mentions Légales</a> </br>
+                        <a href="#!" class="couleur">Vie privée</a></br>
+                        <a href="#!" class="couleur">Vos droits et obligations</a></br>
+                    </p>
+                </div>
+
+                <hr class="w-100 clearfix d-block d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 bas">
+                    <h6 class="text-uppercase font-weight-bold pt-2 text-center">À Propos</h6>
+                    <p class="cache">
+                        <a href="#!" class="couleur">Qui sommes-nous ?</a></br>
+                        <a href="#!" class="couleur">Nous rejoindre</a></br>
+                        <a href="#!" class="couleur">Aide</a>
+                    </p>
+                </div>
+
+                <hr class="w-100 clearfix d-block d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto  bas">
+                    <h6 class="text-uppercase font-weight-bold pt-2 text-center">Contact</h6>
+                    <p class="cache">
+                        <i class="fas fa-home mr-3"></i> 18 Rue Geoffroy l'Asnier, 75004 Paris </br>
+                        <i class="fas fa-envelope mr-3"></i> mamakilge@gmail.com </br>
+                        <i class="fas fa-phone mr-3"></i> 01 42 58 75 88 </br>
+                    </p>
+                </div>
             </div>
-    
+
             <hr class="w-100 clearfix d-block d-md-none">
-    
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 bas">
-              <h6 class="text-uppercase font-weight-bold pt-2 text-center">À Propos</h6>
-              <p class="cache">
-                <a href="#!" class="couleur">Qui sommes-nous ?</a></br>
-                <a href="#!" class="couleur">Nous rejoindre</a></br>
-                <a href="#!" class="couleur">Aide</a>
-              </p>
+
+            <!-- FIN DE PAGE -->
+            <div class="row d-flex align-items-center bg-transparent">
+                <div class="col-6 col-md-7 col-lg-8 pt-2">
+                    <!--Copyright-->
+                    <p class="text-center text-md-left">© 2020 Copyright:
+                        <a href="https://mamakilgé.fr/" class="copyright couleur">
+                            <strong> Mamakilgé.fr</strong>
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Grid column -->
+                <div class="col-6 col-md-5 col-lg-4 ml-lg-0 pt-2">
+                    <!-- Social buttons -->
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-    
-            <hr class="w-100 clearfix d-block d-md-none">
-    
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto  bas">
-              <h6 class="text-uppercase font-weight-bold pt-2 text-center">Contact</h6>
-              <p class="cache">
-                <i class="fas fa-home mr-3"></i> 18 Rue Geoffroy l'Asnier, 75004 Paris </br>
-                <i class="fas fa-envelope mr-3"></i> mamakilge@gmail.com </br>
-                <i class="fas fa-phone mr-3"></i> 01 42 58 75 88 </br>
-              </p>
-            </div>
-          </div>
-    
-          <hr class="w-100 clearfix d-block d-md-none">
-    
-          <!-- FIN DE PAGE -->
-          <div class="row d-flex align-items-center bg-transparent">
-            <div class="col-6 col-md-7 col-lg-8 pt-2">
-              <!--Copyright-->
-              <p class="text-center text-md-left">© 2020 Copyright:
-                <a href="https://mamakilgé.fr/" class="copyright couleur">
-                  <strong> Mamakilgé.fr</strong>
-                </a>
-              </p>
-            </div>
-    
-            <!-- Grid column -->
-            <div class="col-6 col-md-5 col-lg-4 ml-lg-0 pt-2">
-              <!-- Social buttons -->
-              <div class="text-center text-md-right">
-                <ul class="list-unstyled list-inline">
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fab fa-google-plus-g"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
-      </footer>
+    </footer>
 </body>
 
 
