@@ -74,7 +74,7 @@ h1{
     color: #333333;
     font: 12px/1.5 Verdana;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0.5%;
     text-align: center;
     width: 60%;
     height: 120px;
@@ -209,7 +209,6 @@ MEDIA QUERIES
         width: 80%;
         height: 450px;
         font-size: 1.3rem;
-
     }
 
     #cookiesMob a{
@@ -343,10 +342,6 @@ MEDIA QUERIES
 
     .card{
         margin: 0px;
-    }
-
-    footer hr{
-        display: none;
     }
 }
 
