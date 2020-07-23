@@ -202,10 +202,19 @@ MAIN SECTION ACTUALITES
     text-decoration: none;
     color: #02C39A;
 }
+
 .carousel-caption {
     position: relative;
     left: 0;
     top: 0;
+}
+
+.prev, .next{
+    font-size: 3rem;
+}
+
+.carousel-control-next-icon{
+    filter: invert(100%);
 }
 
 .btn-voirplus:hover{
