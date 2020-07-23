@@ -51,7 +51,10 @@ CSS HEADER
 /********************************************************
 CSS MAIN
 ********************************************************/
-
+.bg-title{
+    background-image: url(../img/imgbcg.jpg);
+    background-position: center;
+}
 .imgEcole{
     width: 450px;
 }
@@ -67,6 +70,11 @@ CSS MAIN
 .form-control{
     width: 70%;
     margin: auto;
+}
+
+.bcg-profile{
+    background-color: rgba(226, 245, 231, 0.75);
+    color: black;
 }
 /*******************************************************/
 /********************************************************
