@@ -17,6 +17,7 @@ CSS COMMUM
     /********************************************************
     CSS HEADER
     ********************************************************/
+
  .logo{
     width: 100px;
  }
@@ -24,11 +25,17 @@ CSS COMMUM
     /********************************************************
     CSS MAIN
     ********************************************************/
+
+    .bg-title{
+        background-image: url(/front/fa-users\ Font\ Awesome\ Icons_fichiers/imgbcg.jpg);        
+        background-position: center;
+    }
+
     #btnNo{
         color: #25D366;
         font-size: 3rem;
     }
-    #modal{
+    #modal{        
         background-color:white;
         height: 90%;
         width: 100%;
@@ -68,6 +75,9 @@ CSS COMMUM
 
     .img{
         width:90px; 
+    }
+    .p-3{
+        padding: 0rem !important;
     }
 
 
