@@ -61,6 +61,7 @@ h1{
 #btnRecherche{
     display: block;
     margin: 0 auto;
+    padding: 4% 15%;
 }
 
 /*PETIT SEARCH*/
@@ -203,10 +204,17 @@ MAIN SECTION ACTUALITES
     color: #02C39A;
 }
 
-.carousel-caption {
-    position: relative;
-    left: 0;
-    top: 0;
+.btn-voirplus:hover{
+    background-color:#02C39A ;
+    color: white;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.card img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
 }
 
 .prev, .next{
@@ -216,14 +224,6 @@ MAIN SECTION ACTUALITES
 .carousel-control-next-icon{
     filter: invert(100%);
 }
-
-.btn-voirplus:hover{
-    background-color:#02C39A ;
-    color: white;
-    border-radius: 3px;
-    padding: 3px;
-}
-
 /*//////////////////////////////
 FOOTER 
 /////////////////////////////// */
