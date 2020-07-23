@@ -58,3 +58,10 @@ btnNo.onclick= function(){
 btnNo2.onclick= function(){
 	modal.style.display= "none";
 }*/
+
+// FOOTER
+window.onload = function (){
+    $('.bas').click(function(){
+        $('.cache').toggle();
+    })
+}

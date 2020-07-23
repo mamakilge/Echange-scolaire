@@ -18,9 +18,31 @@ CSS COMMUM
     CSS HEADER
     ********************************************************/
 
- .logo{
-    width: 100px;
- }
+.siteName{
+    color: #02C39A;
+    text-align: left;
+    font-weight: 600;
+}
+
+.logo{
+    width: 200px;
+}
+
+:hover.btn-nav{
+    background-color: #02C39A ;
+    border-radius: 5px;
+}
+.btn-form{
+    color: white;
+    background-color: #02C39A;
+    border-radius: 3px;
+   
+}
+
+.revenir-accueil{
+    text-decoration: none;
+    color: #02C39A;
+}
     
     /********************************************************
     CSS MAIN
@@ -85,14 +107,44 @@ CSS COMMUM
     /********************************************************
     CSS FOOTER
     ********************************************************/
-    footer h3{
-        font-size: 1em;
-    
+.page-footer{
+    border-top: 2.5px solid #02C39A;
+}
+
+footer hr{
+    width: 100%;
+}
+
+footer h3{
+    font-size: 1rem;
+}
+
+footer{
+    font-size: 0.8rem;
+    line-height: 30px;
+}
+
+.bas a, a:hover, h6:hover{
+    color: #02C39A;
+}
+
+.bas p{
+    display: none;
+}
+
+
+.copyright{
+    text-decoration: none;
+    color: #02C39A;
+
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        line-height: 20px;
     }
-    
-    footer p{
-        font-size: 0.8rem;
-    }
+}
+
 /*******************************************************/
 
 
