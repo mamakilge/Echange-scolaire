@@ -11,23 +11,6 @@ body{
     line-height: 1.5;
     font-size: 1.20rem;
 }
-h1{
-    font-size: 2.5rem;
-}
-
-h2{
-    font-size: 2rem;
-}
-
-h3{
-    font-size: 1.5rem;
-}
-
-hr{
-    border: 0.5px solid gray;
-    width: 80%;
-    margin: auto;
-}
 
 .bouton{
     background-color: #02C39A;
@@ -40,20 +23,56 @@ hr{
 a{
     color: #02C39A;
 }
-/****************************************/
-/********************************************************
-CSS HEADER
-********************************************************/
-.logo{
-    width: 100px;
+/*******************************
+HEADER NAV
+*******************************/
+
+.siteName{
+    color: #02C39A;
+    text-align: left;
+    font-weight: 600;
 }
+
+.logo{
+    width: 200px;
+}
+
+:hover.btn-nav{
+    background-color: #02C39A ;
+    border-radius: 5px;
+}
+.btn-form{
+    color: white;
+    background-color: #02C39A;
+    border-radius: 3px;
+   
+}
+
+.revenir-accueil{
+    text-decoration: none;
+    color: #02C39A;
+}
+
 /*******************************************************/
 /********************************************************
 CSS MAIN
 ********************************************************/
+
+
 .bg-title{
     background-image: url(../img/imgbcg.jpg);
     background-position: center;
+}
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
 }
 .imgEcole{
     width: 450px;
@@ -84,22 +103,57 @@ CSS MAIN
     background-color: rgba(226, 245, 231, 0.75);
     color: black;
 }
+
+/*//////////
+FOOTER 
+//////////// */
+
+.page-footer{
+    border-top: 2.5px solid #02C39A;
+}
+
+footer hr{
+    width: 100%;
+}
+
+footer h3{
+    font-size: 1rem;
+}
+
+footer{
+    font-size: 0.8rem;
+    line-height: 30px;
+}
+
+.bas a, a:hover, h6:hover{
+    color: #02C39A;
+}
+
+.bas p{
+    display: none;
+}
+
+
+.copyright{
+    text-decoration: none;
+    color: #02C39A;
+
+}
+
 /*******************************************************/
 /********************************************************
 MEDIA QUERIES
 ********************************************************/
+
+@media screen and (max-width: 768px){
+    footer{
+        line-height: 20px;
+    }
+}
+
 /*Small*/
 @media screen and (min-width: 576px){
 }
 /*Medium*/
 @media screen and (min-width: 768px){
 }
-/*Large*/
-/*@media screen and (min-width: 992px){
-}*/
-/*Extra large*/
-/*@media screen and (min-width: 1200px){
-}*/
-/********************************************************
-FIN MEDIA QUERIES
-********************************************************/
