@@ -52,6 +52,13 @@ CSS COMMUM
         background-image: url(/front/fa-users\ Font\ Awesome\ Icons_fichiers/imgbcg.jpg);        
         background-position: center;
     }
+    .espace1{
+        margin-right: 30px;
+    }
+
+    .espace{
+        margin-right: 15px;
+    }
 
     #btnNo{
         color: #25D366;
