@@ -24,6 +24,7 @@ HEADER NAV
 
 :hover.btn-nav{
     background-color: #02C39A ;
+    border-radius: 5px;
 }
 
 
@@ -125,6 +126,7 @@ ANNONCES VERSION DESKTOP
 .btn-voirplus:hover{
     background-color:#02C39A ;
     color: white;
+    border-radius: 3px;
     padding: 3px;
 }
 
@@ -177,7 +179,7 @@ footer{
     line-height: 30px;
 }
 
-.bas a:hover, h6:hover{
+.bas a, a:hover, h6:hover{
     color: #02C39A;
 }
 
