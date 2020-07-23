@@ -63,6 +63,10 @@ CSS MAIN
     width: 300px;
     margin: auto;
 }
+.iconvsp{
+    margin-right: 15px;
+}
+
 .img1{
     width: 90px;
 }
@@ -70,6 +74,10 @@ CSS MAIN
 .form-control{
     width: 70%;
     margin: auto;
+}
+
+.hote-voy{
+    font-weight: bold;
 }
 
 .bcg-profile{
