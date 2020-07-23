@@ -184,34 +184,28 @@ h2{
 /*//////////////////////////////
 MAIN SECTION ACTUALITES
 ///////////////////////////////*/
-.posts{
-    width: 75%;
-    margin: auto;
+#post3, #post4{
+    display: none;
 }
 
 #voirPlus{
-    display: block;
-    margin-right: 15%;
-    font-size: 1.2rem;
-    
 
+    font-size: 1.2rem;
 }
 
 #voirMoins{
     display: none;
-    margin-right: 15%;
     font-size: 1.2rem;
-}
-
-
-.card{
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 .btn-voirplus{
     text-decoration: none;
     color: #02C39A;
+}
+.carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
 }
 
 .btn-voirplus:hover{
@@ -359,7 +353,6 @@ MEDIA QUERIES
         text-align: center;
     }
 
-    /*ACTUALITES*/
     #afficher{
         display: block;
         color: #02C39A;
@@ -371,6 +364,7 @@ MEDIA QUERIES
         display: none;
     }
 
+    /*ACTUALITES*/
     #post3, #post4{
         display: none;
     }
@@ -395,18 +389,6 @@ MEDIA QUERIES
 
     #recherche form{
         margin: 20px 0 0 70px;
-    }
-
-    .btnConnexion{
-        margin-left: 0 !important;
-    }
-
-    .posts{
-        width: 100%;
-    }
-
-    .card{
-        margin: 0px;
     }
 }
 
