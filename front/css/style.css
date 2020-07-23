@@ -164,20 +164,27 @@ CSS FOOTER
     border-top: 2.5px solid #02C39A;
 }
 
-.title-footer{
-    border-bottom: 1px solid #02C39A;
-    border-right: 1px solid #02C39A;
+footer hr{
+    width: 100%;
+}
+
+footer h3{
     font-size: 1rem;
 }
 
-.footer-p{
+footer{
     font-size: 0.8rem;
+    line-height: 30px;
 }
 
-
-.fas{
+.bas a:hover, h6:hover{
     color: #02C39A;
 }
+
+.bas p{
+    display: none;
+}
+
 
 .copyright{
     text-decoration: none;
@@ -201,7 +208,11 @@ MEDIA QUERIES
 @media screen and (min-width:576px) {}
 
 /*MEDIUM*/
-@media screen and (min-width:768px) {}
+@media screen and (min-width:768px) {
+    footer{
+        line-height: 20px;
+    }
+}
 
 
 /*LARGE*/
