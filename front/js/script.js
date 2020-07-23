@@ -3,19 +3,15 @@ window.onload = function () {
     //COOKIES MOBILE
     //apparition
     var cookiesMobile = document.getElementById('cookiesMobile');
-    console.log("cookiesMobile", cookiesMobile)
 
     function timerMob(){
         cookiesMobile.style.display = 'block';
-        console.log("timer")
     }
     setTimeout(timerMob, 1000);    
-    console.log("setTimeout")
 
     //disparition
     $('#accepteMob').click(function(){
         $('#cookiesMobile').hide();
-        console.log("cookiesMobile")
     })
 
     $('#croix').click(function(){
