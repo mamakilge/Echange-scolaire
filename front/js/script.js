@@ -1,1 +1,3 @@
-var a = 12;
+$(document).ready(function () {
+    
+}) //FERMETURE DE $(document).ready(function(){
