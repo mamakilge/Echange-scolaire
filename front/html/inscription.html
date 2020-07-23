@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link href="stylesheet" href="/front/css/inscription.css">
+</head>
+<body>
+    <!-- MODAL INSCRIPTION -->
+
+<div class="container border border-dark pb-5 pr-5 ml-5" id="modal">
+    <div class="text-center">
+    <a href="#" id="btnNo">&times;</a>
+    </div>
+    <h1 class="mt-5 font-weight-bold text-center">INSCRIPTION</h1>
+    <!-- Professeur / Etablissement -->
+    <div class="form-check mt-5">
+      <form class="">
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0">Vous êtes :</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  Professeur
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Établissement
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- NOM / Prénom -->
+    <div class="form-group row  mt-5">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">NOM</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3">
+        </div>
+    </div>
+    <div class="form-group row mt-5">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Prénom</label>
+        <div class="col-sm-10 ">
+            <input type="password" class="form-control" id="inputPassword3">
+        </div>
+    </div>
+
+    <!-- Adresse Mail / Mot de passe / Répéter le mot de passe -->
+    <div class="form-group row mt-5">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Adresse Mail</label>
+        <div class="col-sm-10 ">
+            <input type="email" class="form-control" id="inputEmail3">
+        </div>
+    </div>
+    <div class="form-group row mt-5">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Mot de passe</label>
+        <div class="col-sm-10 ">
+            <input type="password" class="form-control" id="inputPassword3">
+        </div>
+    </div>
+    <div class="form-group row mt-5">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Répéter le mot de passe</label>
+        <div class="col-sm-10 ">
+            <input type="email" class="form-control" id="inputEmail3">
+        </div>
+    </div>
+
+    <!-- Pays / Langue Enseigné -->
+    <div class="form-group row mt-5">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Pays</label>
+        <div class="col-sm-10">
+            <select class="form-control">
+                <option>France</option>
+                <option>Angleterre</option>
+                <option>Espagne</option>
+                <option>Italie</option>
+                <option>Allemaggne</option>
+                <option>Hongrie</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div class="form-group row mt-5">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Langue enseigné</label>
+        <div class="col-sm-10">
+            <select class="form-control">
+                <option>Français</option>
+                <option>Anglais</option>
+                <option>Espagnol</option>
+                <option>Italien</option>
+                <option>Allemand</option>
+                <option>Hongroise</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Bouton J'ai lu et j'accepte les termes et conditions et Bouton Inscription -->
+
+    <div class="mt-5 text-center">
+        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+        <label class="form-check-label" for="invalidCheck3">
+            J'ai lu et j'accepte les termes et conditions
+        </label>
+    </div>
+
+    <div class="mt-5 text-center">
+        <button class="btn vert" type="submit">Inscription</button>
+        <a href="#" id="btnNo2">Pas maintenant</a>
+    </div>
+
+</div>
+    
+</body>
+<script src="/front/js/inscription.js"></script>
+</html>
