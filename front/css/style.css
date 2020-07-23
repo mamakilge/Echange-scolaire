@@ -177,7 +177,7 @@ footer{
     line-height: 30px;
 }
 
-.bas a:hover, h6:hover{
+.bas a, .bas a:hover, h6:hover{
     color: #02C39A;
 }
 
