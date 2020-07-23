@@ -21,7 +21,7 @@ echange.addEventListener('click', function(){
 
 // MODAL INSCRIPTION
 
-var modal = document.getElementById('modal');
+/*var modal = document.getElementById('modal');
 var btni = document.getElementById('btni');
 var btni1 = document.getElementById('btni1');
 var btni2 = document.getElementById('btni2');
@@ -57,4 +57,4 @@ btnNo.onclick= function(){
 
 btnNo2.onclick= function(){
 	modal.style.display= "none";
-}
+}*/
