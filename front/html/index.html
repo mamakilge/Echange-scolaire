@@ -79,8 +79,8 @@
           Ce site utilise des cookies pour vous offrir le meileur service. En poursuivant votre navigation, vous
           acceptez l'utilisation des cookies.
         </p>
-        <button id="accepte">J'accepte</button>
-        <button id="savoirPlus"><a href="#info">En savoir plus</a></button>
+        <button class="btn-form" id="accepte">J'accepte</button>
+        <button id="savoirPlus"><a class="btn-form" href="#info">En savoir plus</a></button>
       </div>
     </div>
 
@@ -108,7 +108,7 @@
           <!--FORMULAIRE DE RECHERCHE-->
           <form action="" method="POST" class="p-3 mb-3">
             <div class="option pb-2">
-              <select name="pays" class="pays w-100 rounded">
+              <select name="pays" class="pays select-css">
                 <option value="pays">Pays</option>
                 <option value="france">France</option>
                 <option value="angleterre">Angleterre</option>
@@ -120,7 +120,7 @@
             </div>
 
             <div class="option pb-2">
-              <select name="voyage" class="voyage w-100 rounded">
+              <select name="voyage" class="voyage select-css">
                 <option value="sejour">Séjour</option>
                 <option value="accueillir">Accueillir</option>
                 <option value="voyager">Voyager</option>
@@ -129,7 +129,7 @@
             </div>
 
             <div class="option pb-3">
-              <select name="entite" class="entite w-100 rounded">
+              <select name="entite" class="entite select-css">
                 <option value="entite">Entité</option>
                 <option value="etablissement">Etablissement</option>
                 <option value="professeur">Professeur</option>
@@ -138,7 +138,7 @@
             </div>
 
             <!--BOUTON VALIDER FORM VERS PAGE RECHERCHE-->
-            <button type="submit" class="btnRecherche w-100" style="height: 40px;">Rechercher</button>
+            <button type="submit" class="btn-form w-100" style="height: 40px;">Rechercher</button>
           </form>
         </div>
 
@@ -171,7 +171,7 @@
 
       <!--LIEN DE REDIRECTION VERS PAGE INSCRIPTION-->
       <div class="d-flex justify-content-end pb-3">
-        <button type="submit" style="width: 150px; height: 45px;" id="btnInscription">Inscription</button>
+        <button class="btn-form" type="submit" style="width: 150px; height: 45px;" id="btnInscription">Inscription</button>
       </div>
       <hr>
     </section>
@@ -284,9 +284,9 @@
 
       <!--BOUTON VOIR PLUS / MOINS D'ACTUALITES-->
       <div class="d-flex justify-content-end py-4">
-        <button class="btn" type="button" id="voirPlus" data-toggle="collapse" data-target=".multi-collapse"
+        <button class="btn btn-form" type="button" id="voirPlus" data-toggle="collapse" data-target=".multi-collapse"
           aria-expanded="false" aria-controls="post5 post6">Afficher plus d'actualités</button>
-        <button class="btn" type="button" id="voirMoins" data-toggle="collapse" data-target=".multi-collapse"
+        <button class="btn btn-form" type="button" id="voirMoins" data-toggle="collapse" data-target=".multi-collapse"
           aria-expanded="false" aria-controls="post5 post6">Réduire actualités</button>
       </div>
 
