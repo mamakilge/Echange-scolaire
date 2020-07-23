@@ -67,3 +67,39 @@ CSS Revenir Accueil et bg title
     font-weight: 700;
     font-size: 1.75rem;
 }
+
+/*******************************
+CSS FOOTER 
+*******************************/
+
+.page-footer{
+    border-top: 2.5px solid #02C39A;
+}
+
+footer hr{
+    width: 100%;
+}
+
+footer h3{
+    font-size: 1rem;
+}
+
+footer{
+    font-size: 0.8rem;
+    line-height: 30px;
+}
+
+.bas a, a:hover, h6:hover{
+    color: #02C39A;
+}
+
+.bas p{
+    display: none;
+}
+
+
+.copyright{
+    text-decoration: none;
+    color: #02C39A;
+
+}
