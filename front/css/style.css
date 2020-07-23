@@ -171,9 +171,7 @@ h2{
 }
 
 #btnInscription{
-    background-color: #02C39A;
     margin-right: 20%;
-    border-radius: 5px;
     border-style: none;
 }
 
@@ -200,23 +198,33 @@ MAIN SECTION ACTUALITES
     display: block;
     margin-right: 15%;
     font-size: 1.2rem;
-    background-color: #02C39A;
+    
+
 }
 
 #voirMoins{
     display: none;
     margin-right: 15%;
     font-size: 1.2rem;
-    background-color: #02C39A;
+
 }
 
-.actu a{
-    background-color: #02C39A;
-}
 
 .card{
     margin-left: 5%;
     margin-right: 5%;
+}
+
+.btn-voirplus{
+    text-decoration: none;
+    color: #02C39A;
+}
+
+.btn-voirplus:hover{
+    background-color:#02C39A ;
+    color: white;
+    border-radius: 3px;
+    padding: 3px;
 }
 
 /*//////////////////////////////
