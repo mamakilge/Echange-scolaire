@@ -28,10 +28,11 @@ NAVBAR
     width: 200px;
 }
 
-:hover.btn-nav{
+:hover.btn-nav, :hover.btn-form{
     background-color: #02C39A ;
     border-radius: 5px;
 }
+
 .btn-form{
     text-decoration: none;
     color: white;
@@ -39,13 +40,8 @@ NAVBAR
     border-radius: 3px;
 }
 
-.revenir-accueil{
-    text-decoration: none;
-    color: #02C39A;
-}
-
 /*/////////////////////////////
-MAIN HEADER
+MAIN HEADER RECHERCHE
 ////////////////////////////// */
 
 /*NAV*/
@@ -67,10 +63,12 @@ h1{
     margin: 0 auto;
 }
 
-
+#btnRecherche{
+    display: block;
+    margin: 0 auto;
+}
 
 /*PETIT SEARCH*/
-
 .select-css {
     font-size: 16px;
     font-family: 'Arial', sans-serif;
@@ -171,8 +169,10 @@ h2{
 }
 
 #btnInscription{
-    margin-right: 20%;
-    border-style: none;
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    font-size: 1.5rem;
 }
 
 #afficher{
@@ -206,7 +206,6 @@ MAIN SECTION ACTUALITES
     display: none;
     margin-right: 15%;
     font-size: 1.2rem;
-
 }
 
 
@@ -272,7 +271,7 @@ MEDIA QUERIES
         padding: 20px;
         text-align: center;
         width: 80%;
-        height: 450px;
+        height: 400px;
         font-size: 1.3rem;
     }
 
@@ -288,10 +287,12 @@ MEDIA QUERIES
     }
     
     #accepteMob{
+        margin-top: 10px;
         padding: 10px 25px;
     }
     
     #savoirPlusMob{
+        margin-top: 10px;
         padding: 10px;
     }
 
@@ -304,21 +305,20 @@ MEDIA QUERIES
 }
 
 @media screen and (min-width: 576px){
-    #cookiesMob p{
-        margin: 50px auto 20px;
-        width: 70%;
+    #cookiesMob{
+        padding: 20px 0px; 
         line-height: 3rem;
     }
 }
 
 @media screen and (max-width: 576px){
-    #cookiesCon{
-        display: none;
-    }
-
     .top{
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    #cookiesCon{
+        display: none;
     }
 }
 
