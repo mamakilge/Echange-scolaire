@@ -23,6 +23,16 @@ textarea{
     resize: none;
 }
 
+.gauche{
+    width: 50%;
+}
+
+.droite{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
 /***********
 MOBILE
 ***********/
