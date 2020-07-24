@@ -1,29 +1,31 @@
-textarea{
-    resize: none;
-}
-
-.messagerie i{
-    font-size: 2rem;
-    transform: scaleX(-1);
-    filter: FlipH;
-    color: #02C39A;
-    
-
-}
-
+/***********
+CONTACTS
+***********/
 .contacts{
     border: 1px solid black;
 }
 
+/*************
+MESSAGES
+*************/
 .messagerie{
     border: 1px solid black;
 }
 
-.messages.droite{
-
+i{
+    font-size: 2rem;
+    transform: scaleX(-1);
+    filter: FlipH;
+    color: #02C39A;
 }
 
+textarea{
+    resize: none;
+}
 
+/***********
+MOBILE
+***********/
 .mobile{
     display: none;
 }
@@ -38,6 +40,10 @@ MEDIA QUERIES
 
     .mobile{
         display: block;
+    }
+
+    .contactMob img{
+        width: 100px;
     }
 
     .messagesMob{
