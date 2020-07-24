@@ -129,6 +129,12 @@ CSS FORMULAIRE DESKTOP ET MOBILE
 .select-mobile{
     width: -webkit-fill-available;
 }
+
+.text-slider{
+    background-color: #f7f7f773;
+    font-weight: bold;
+    color: #202325;
+}
 /*******************************
 ANNONCES VERSION DESKTOP
 *******************************/
