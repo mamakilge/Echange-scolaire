@@ -1,6 +1,7 @@
 window.onload = function (){
 
-// LIENS MOBILE
+// MOBILE
+// LIENS
 $('.lienMessages').click(function(){
 console.log("lienMessages")
     $('.contactMob').hide();
@@ -13,7 +14,13 @@ $('.lienContacts').click(function(){
         $('.messagesMob').hide();
     })
 
+//CONTACTS
+$('.media').click(function(){
+    if($('.media') === $(this)){
+        $(this).css("background-color", "#02C39A")
+    }
 
+})
 
 
 } //FERMETURE WINDOW ONLOAD

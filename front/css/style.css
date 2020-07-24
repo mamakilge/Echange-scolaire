@@ -1,36 +1,74 @@
+.titre{
+    background-color: rgb(233, 233, 233);
+    padding: 2%;
+}
+
+.conteneur{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 /***********
 CONTACTS
 ***********/
-.contacts{
-    border: 1px solid black;
+.scroll{
+    height: 40rem;
+    overflow: auto; 
+}
+
+img{
+    width: 13%;
+
+    border-radius: 10%;
+}
+
+.photo{
+    position: relative;
+    top: 0;
+    left: 0%;
+}
+
+.media{
+    border: 1px solid grey;
+}
+
+.media:hover{
+    color: #02C39A;
 }
 
 /*************
 MESSAGES
 *************/
-.messagerie{
-    border: 1px solid black;
+.messages{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 234, 234);
 }
 
-i{
+.gauche{
+    width: 45%;
+    margin: 1%;
+}
+
+.droite{
+    width: 45%;
+    margin: 1%;
+    align-self: flex-end;
+    background-color: #c9f8ee;
+}
+
+.icone{
     font-size: 2rem;
     transform: scaleX(-1);
     filter: FlipH;
     color: #02C39A;
+    margin-bottom: 2%;
+    border: none;
 }
 
 textarea{
     resize: none;
-}
-
-.gauche{
-    width: 50%;
-}
-
-.droite{
-    width: 50%;
-    display: flex;
-    justify-content: end;
+    border-radius: 5px;
 }
 
 /***********
