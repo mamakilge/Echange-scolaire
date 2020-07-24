@@ -212,7 +212,16 @@ MAIN SECTION ACTUALITES
     background-color:#02C39A ;
     color: white;
     border-radius: 3px;
-    padding: 3px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-slider{
+    text-decoration: none;
+    color: #02C39A;
+    font-size: 0.9;
+    font-weight: bold;
 }
 
 /*//////////////////////////////
@@ -315,10 +324,12 @@ MEDIA QUERIES
     }
 
     .bcg-profile{
-        background-color: #f7f7f773;
-        color: black;
+        background-color: rgba(226, 245, 231, 0.75);
+        color: #202325;
         font-weight: bold;
     }
+
+    
 }
 
 @media screen and (min-width: 768px){
