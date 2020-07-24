@@ -1,4 +1,5 @@
 window.onload = function () {
+    console.log("window")
     $('.bas').click(function () {
         $('.cache').toggle();
     })
