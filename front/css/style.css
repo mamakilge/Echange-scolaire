@@ -4,6 +4,7 @@ COMMUN
 body{
     font-family: 'Biryani', sans-serif;
     font-size: 1.2rem;
+    line-height: 1.5;
 }
 
 .couleur{
@@ -194,7 +195,6 @@ MAIN SECTION ACTUALITES
 }
 
 #voirPlus{
-
     font-size: 1.2rem;
 }
 
@@ -315,8 +315,9 @@ MEDIA QUERIES
     }
 
     .bcg-profile{
-        background-color: rgba(226, 245, 231, 0.75);
+        background-color: #f7f7f773;
         color: black;
+        font-weight: bold;
     }
 }
 
