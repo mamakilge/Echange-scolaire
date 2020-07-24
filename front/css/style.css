@@ -119,6 +119,11 @@ h3{
 .imgEcole{
     width: 450px;
 }
+
+.imgClasse{
+    height: 250px;
+    width: 250px;
+}
 .avis{
     height: 100px;
     width: 300px;
