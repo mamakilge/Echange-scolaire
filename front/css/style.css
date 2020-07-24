@@ -23,6 +23,10 @@ NAVBAR
     width: 200px;
 }
 
+#search{
+    max-width: 80%;
+}
+
 :hover.btn-nav, :hover.btn-form{
     background-color: #02C39A ;
     border-radius: 5px;
