@@ -4,6 +4,10 @@ CSS COMMUM
 *{
     box-sizing: border-box;
 }
+.select-css:hover {
+    border-color: #02C39A;
+   }
+ 
 
 .vert{
     background-color:#02C39A;
