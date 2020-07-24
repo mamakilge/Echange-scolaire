@@ -1,0 +1,49 @@
+textarea{
+    resize: none;
+}
+
+.messagerie i{
+    font-size: 2rem;
+    transform: scaleX(-1);
+    filter: FlipH;
+    color: #02C39A;
+    
+
+}
+
+.contacts{
+    border: 1px solid black;
+}
+
+.messagerie{
+    border: 1px solid black;
+}
+
+.messages.droite{
+
+}
+
+
+.mobile{
+    display: none;
+}
+
+/***********************
+MEDIA QUERIES
+***********************/
+@media screen and (max-width: 768px){
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .messagesMob{
+        display: none;
+    }
+
+}
+
+
