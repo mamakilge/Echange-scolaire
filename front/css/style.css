@@ -130,11 +130,7 @@ CSS FORMULAIRE DESKTOP ET MOBILE
     width: -webkit-fill-available;
 }
 
-.text-slider{
-    background-color: #f7f7f773;
-    font-weight: bold;
-    color: #202325;
-}
+
 /*******************************
 ANNONCES VERSION DESKTOP
 *******************************/
@@ -148,7 +144,9 @@ ANNONCES VERSION DESKTOP
     background-color:#02C39A ;
     color: white;
     border-radius: 3px;
-    padding: 3px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
 .pagination{
@@ -175,6 +173,11 @@ ANNONCES SLIDER VERSION MOBILE
 }
 .carousel-inner p{
     font-size: 0.8rem;
+}
+.text-slider{
+    background-color: rgba(226, 245, 231, 0.75);;
+    font-weight: bold;
+    color: #202325;
 }
 
 
