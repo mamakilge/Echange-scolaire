@@ -33,6 +33,10 @@ HEADER NAV
    
 }
 
+#search{
+    max-width: 80%;
+}
+
 .revenir-accueil{
     text-decoration: none;
     color: #02C39A;
