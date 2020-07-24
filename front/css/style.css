@@ -1,12 +1,16 @@
 *{
     border-bottom: 0em;
 }
+
+a {
+    text-decoration: underline;
+}
 /*******************************
 CSS INFORMATIONS LÉGALES
 *******************************/
 
+
 .echange-scolaire{
-    text-decoration: none;
     color: #02C39A;
 }
 
