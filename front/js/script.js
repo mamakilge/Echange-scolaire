@@ -12,20 +12,18 @@ $('.lienContacts').click(function(){
     console.log("lienContacts")
         $('.contactMob').show();
         $('.messagesMob').hide();
-    })
+})
 
 //CONTACTS
-$('.media').click(function(){
-    if($('.media') === $(this)){
-        $(this).css("background-color", "#02C39A")
-    }
 
+var profil = document.getElementById('profil1', 'profil2');
+console.log("getElementById")
+
+profil.addEventListener('click', function(){
+console.log("addEventListener")
+    this.style.backgroundColor = '#02C39A';
 })
 
-$('.unContact').click(function(e){
-    e.preventDefault();
-    $('.unContact').css('background-color', '#02C39A');
-})
 
 
 } //FERMETURE WINDOW ONLOAD
