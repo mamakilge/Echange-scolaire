@@ -22,6 +22,11 @@ $('.media').click(function(){
 
 })
 
+$('.unContact').click(function(e){
+    e.preventDefault();
+    $('.unContact').css('background-color', '#02C39A');
+})
+
 
 } //FERMETURE WINDOW ONLOAD
 
