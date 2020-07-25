@@ -26,31 +26,29 @@
     <nav class="container navbar navbar-expand-lg navbar-light d-flex">
       <!--logo cliquable pour revenir sur la page d'accueil-->
       <a class="mr-lg-5 navbar-brand" href="index.html">
-        <img class="logo" src="/front/fa-users Font Awesome Icons_fichiers/logoo.png" alt="logo site mamakilgé">
+        <img class="logo" src="img/logo.png" alt="logo site mamakilgé">
       </a>
-
 
       <!--à partir d'ici en version mobile c'est un Menu Hamburguer-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <form class="form-inline my-4 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="..." aria-label="Search">
-          <input class="btn btn-form" type="submit" value="Search">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <form class="form-inline">
+          <input class="form-control" type="search" id="search" placeholder="Rechercher" aria-label="Search">
+          <button class="btn btn-form"><i class="fas fa-search"></i></button>
         </form>
         <ul class="navbar-nav">
           <li class="nav-item d-flex ml-lg-5">
-            <a class="nav-link btn-nav" href="#">Connexion<span class="sr-only">(current)</span></a>
+            <a class="nav-link btn-nav" href="inscription.html">Connexion<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item d-flex">
-            <a class="nav-link btn-nav" href="#">Inscription<span class="sr-only">(current)</span></a>
+            <a class="nav-link btn-nav" href="inscription.html">Inscription<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown ml-lg-5">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Contact</a>
@@ -62,6 +60,7 @@
         </ul>
       </div>
     </nav>
+
 
   </header>
   <main>
@@ -163,7 +162,7 @@
               <div class="mt-5 text-center">
                 <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
                 <label class="form-check-label" for="invalidCheck3">
-                  J'ai lu et j'accepte les termes et conditions
+                  J'ai lu et j'accepte <a href="/mentionapropos.html#droits">les termes et conditions</a> 
                 </label>
               </div>
             </form>
@@ -196,7 +195,7 @@
       <div class="row">
 
         <div class="col-sm 3 col-md-6">
-          <img class="img1" src="../fa-users Font Awesome Icons_fichiers/prof5.jpg" alt="Photo de Henri Boudreault">
+          <img class="img1" src="img/prof5.jpg" alt="Photo de Henri Boudreault">
         </div>
 
         <!-- Envoyer un message / Ajouter au contact / Avis -->
@@ -205,9 +204,9 @@
           <p>Henri Boudreault Ph.D. professeur au collège Jean Mermoz, j'apporte des techniques agréables et efficaces,
             (originaire de Vosges-Alsace), et durant deux années- prof.assistant à l'université Humbolt de Berlin - 21
             ans professeur de collège.</p>
-          <button type="button" class="btn btn-primary btn-lg vert select-css" data-toggle="modal" data-target="#exampleModal"
+          <button type="button" class="btn btn-lg vert btn-form" data-toggle="modal" data-target="#exampleModal"
             data-whatever="@mdo">Ajouter au contact</button>
-          <button type="button" class="btn btn-primary btn-lg vert select-css" data-toggle="modal" data-target="#exampleModal"
+          <button type="button" class="btn btn-lg vert btn-form" data-toggle="modal" data-target="#exampleModal"
             data-whatever="@mdo">Envoyer un message</button>
         </div>
       </div>
@@ -251,7 +250,7 @@
         <div class="row row-cols-1 row-cols-md-2">
           <div class="col mb-4">
             <div class="card p-3">
-              <img src="/front/fa-users Font Awesome Icons_fichiers/college5.jpg" class="card-img-top" alt="collège banlieu de Berlin">
+              <img src="img/college5.jpg" class="card-img-top" alt="collège banlieu de Berlin">
               <div class="card-body">
                 <h4 class="card-title">Hôte</h4>
                 <p class="card-text">Pour une deuxième année consécutive une classe de 3ème a pu de nouveau profiter
@@ -262,7 +261,7 @@
           </div>
           <div class="col mb-4">
             <div class="card p-3">
-              <img src="/front/fa-users Font Awesome Icons_fichiers/college6.jpg" class="card-img-top" alt="Collège magnifique">
+              <img src="img/college6.jpg" class="card-img-top" alt="Collège magnifique">
               <div class="card-body">
                 <h4 class="card-title">Hôte</h4>
                 <p class="card-text">En Novembre 2018, 15 élèves du collège Jean Mermoz ont eu le plaisir de passer une
@@ -272,7 +271,7 @@
           </div>
           <div class="col mb-4">
             <div class="card p-3">
-              <img src="/front/fa-users Font Awesome Icons_fichiers/college7.jpg" class="card-img-top" alt="Collège Espagne">
+              <img src="img/college7.jpg" class="card-img-top" alt="Collège Espagne">
               <div class="card-body">
                 <h4 class="card-title">Voyage</h4>
                 <p class="card-text">Nos élèves de 3ème ont pu profiter d'un séjour linguistique exceptionnel pendant 2
@@ -282,7 +281,7 @@
           </div>
           <div class="col mb-4">
             <div class="card p-3">
-              <img src="/front/fa-users Font Awesome Icons_fichiers/college8.jpg" class="card-img-top" alt="Collège incroyable">
+              <img src="img/college8.jpg" class="card-img-top" alt="Collège incroyable">
               <div class="card-body">
                 <h4 class="card-title">Voyage</h4>
                 <p class="card-text">Nous avons reçu en Février 2018 une classe de 3ème du collège Jean Mermoz pour
@@ -294,7 +293,7 @@
       </div>
       <div class="d-none d-md-block">
         <div class="d-flex justify-content-center">
-          <button data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" class="btn vert select-css" type="button"
+          <button data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" class="btn vert btn-form" type="button"
             data-toggle="collapse" data-target="#historique" aria-expanded="false" aria-controls="historique">
             Voir plus
           </button>
@@ -310,35 +309,31 @@
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="../fa-users Font Awesome Icons_fichiers/college5.jpg" class="d-block w-100" alt="tableau">
+              <img src="img/college5.jpg" class="d-block w-100" alt="tableau">
               <div class="carousel-caption d-md-block">
                 <p>Hôte: Nous avons reçu en Février 2018 une classe de 3ème du collège Jean Mermoz pour
                   une période de deux semaines.</p>
-                <a href="#" type="button" class="btn-slider btn-link verte select-css">Voir Plus</a>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="../fa-users Font Awesome Icons_fichiers/college6.jpg" class="d-block w-100" alt="tableau">
+              <img src="img/college6.jpg" class="d-block w-100" alt="tableau">
               <div class="carousel-caption d-md-block">
                 <p>Hôte: En Novembre 2018, 15 élèves du collège Jean Mermoz ont eu le plaisir de passer une
                   semaine dans la classe de nos 3ème, une classe de langues.</p>
-                <a href="#" type="button" class="btn-slider btn-link verte">Voir Plus</a>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="../fa-users Font Awesome Icons_fichiers/college7.jpg" class="d-block w-100" alt="tableau">
+              <img src="img/college7.jpg" class="d-block w-100" alt="tableau">
               <div class="carousel-caption d-md-block">
                 <p>Voyage: Nos élèves de 3ème ont pu profiter d'un séjour linguistique exceptionnel pendant 2
                   semaine dans une école en Espagne.</p>
-                <a href="#" type="button" class="btn-slider btn-link verte">Voir Plus</a>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="../fa-users Font Awesome Icons_fichiers/college8.jpg" class="d-block w-100" alt="tableau">
+              <img src="img/college8.jpg" class="d-block w-100" alt="tableau">
               <div class="carousel-caption d-md-block">
                 <p>Voyage: Pour une deuxième année consécutive une classe de 3ème a pu de nouveau profiter d'une
                   immersion dans un collège en banlieu de Berlin pendant 2 semaines.</p>
-                <a href="#" type="button" class="btn-slider btn-link verte">Voir Plus</a>
               </div>
             </div>
           </div>
@@ -361,11 +356,11 @@
           <h3 class="text-center mt-4 pb-4">Avis</h3>
           <div class="row d-flex justify-content-around">
             <p class="text-center border col-md-5 col-sm-12"><strong>Sergio Marquina</strong><img
-                src="/front/fa-users Font Awesome Icons_fichiers/5-etoiles.png" alt="5 étoiles" class="img"><br> L'échange scolaire avec
+                src="img/5-etoiles.png" alt="5 étoiles" class="img"><br> L'échange scolaire avec
               le professeur Henri Boudreault s'est super bien passer! mes élèves ont adoré étudier avec ce professeur
               charismatique.</p>
             <p class="text-center border col-md-5 col-sm-12"><strong>Gaston Clauet</strong><img
-                src="/front/fa-users Font Awesome Icons_fichiers/5-etoiles.png" alt="5 étoiles" class="img"><br> La rencontre avec le
+                src="img/5-etoiles.png" alt="5 étoiles" class="img"><br> La rencontre avec le
               professeur Henri Boudreault ont permis de constater leur excellence et à quel point ils sont impliqués
               émotionnellement dans la réussite de soi même.
             </p>
@@ -374,10 +369,10 @@
             <div>
               <div class="row d-flex justify-content-around">
                 <p class="text-center border col-md-5 col-sm-12"><strong>Sabryna Mongeon</strong><img
-                    src="/front/fa-users Font Awesome Icons_fichiers/5-etoiles.png" alt="5 étoiles" class="img"><br> Henri propose une
+                    src="img/5-etoiles.png" alt="5 étoiles" class="img"><br> Henri propose une
                   façon d’apprendre inédite avec dynamisme, pédagogie, et une grande envie de partager.</p>
                 <p class="text-center border col-md-5 col-sm-12"><strong>Hugo Clément</strong><img
-                    src="/front/fa-users Font Awesome Icons_fichiers/5-etoiles.png" alt="5 étoiles" class="img"><br> Expérience
+                    src="img/5-etoiles.png" alt="5 étoiles" class="img"><br> Expérience
                   incroyable. Henri Boudreault était extrêmement engageant, sympathique et compétent pour mes élèves.
                 </p>
               </div>
@@ -393,7 +388,7 @@
             <div class="mt-2 form-group text-center container">
               <label for="exampleFormControlTextarea1">Tapez votre commentaire ici</label>
               <textarea class="form-control bloquer" id="exampleFormControlTextarea1" rows="5"></textarea>
-              <button data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" class="btn vert select-css"
+              <button data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" class="btn vert btn-form"
                 type="button" data-toggle="collapse" data-target="#historique" aria-expanded="false"
                 aria-controls="historique">
                 Poster
