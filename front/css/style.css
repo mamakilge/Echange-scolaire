@@ -5,6 +5,180 @@ body{
     font-family: 'Biryani', sans-serif;
     font-size: 1.2rem;
     line-height: 1.5;
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Biryani', sans-serif;
+}
+
+/*******************************
+HEADER NAV
+*******************************/
+
+.siteName{
+    color: #02C39A;
+    text-align: left;
+    font-weight: 600;
+}
+
+.logo{
+    width: 200px;
+}
+
+:hover.btn-nav{
+    background-color: #02C39A ;
+    border-radius: 5px;
+}
+.btn-form{
+    color: white;
+    background-color: #02C39A;
+    border-radius: 3px;
+
+}
+
+#search{
+    max-width: 80%;
+}
+
+.revenir-accueil{
+    text-decoration: none;
+    color: #02C39A;
+}
+
+/*******************************
+CSS Revenir Accueil et bg title
+*******************************/
+
+.revenir-accueil:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: #02C39A;
+}
+.title-search{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 10%;
+
+
+}
+.bg-title{
+    background-image: url(../img/img1.jpg);
+    background-position-x: center;
+    height: 400px;
+
+}
+
+.title-annonce-desktop{
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+/*******************************
+CSS FORMULAIRE DESKTOP ET MOBILE
+*******************************/
+.btn-form{
+    color: white;
+    background-color: #02C39A;
+    border-radius: 3px;
+
+}
+
+.titleForm{
+    font-weight: bold;
+
+}
+
+.select-css {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    color: #444;
+    line-height: 1.3;
+    padding: .4em 1.4em .3em .8em;
+    width: 200px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #02C39A;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+    border-radius: .3em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url(../img/arrow_down.png),
+      linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+   }
+   .select-css::-ms-expand {
+    display: none;
+   }
+   .select-css:hover {
+    border-color: #02C39A;
+   }
+   .select-css:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px #02C39A;
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+   }
+   .select-css option {
+    font-weight:normal;
+   }
+
+.select-mobile{
+    width: -webkit-fill-available;
+}
+
+
+/*******************************
+ANNONCES VERSION DESKTOP
+*******************************/
+
+.btn-voirplus{
+    text-decoration: none;
+    color: #02C39A;
+}
+
+.btn-voirplus:hover{
+    background-color:#02C39A ;
+    color: white;
+    border-radius: 3px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.pagination{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.page-link{
+    text-decoration: none;
+    color: #02C39A;
+}
+
+/*******************************
+ANNONCES SLIDER VERSION MOBILE
+*******************************/
+
+.btn-slider{
+    text-decoration: none;
+    color: #02C39A;
+    font-size: 0.9rem;
+    border: none;
+}
+.carousel-inner h5{
+    font-size: 1rem;
 }
 
 .couleur{
@@ -82,7 +256,7 @@ h1{
     line-height: 1.3;
     padding: .4em 1.4em .3em .8em;
     width: 200px;
-    max-width: 100%; 
+    max-width: 100%;
     box-sizing: border-box;
     margin: 0;
     border: 1px solid #02C39A;
@@ -108,7 +282,7 @@ h1{
     border-color: #aaa;
     box-shadow: 0 0 1px 3px #02C39A;
     box-shadow: 0 0 0 3px -moz-mac-focusring;
-    color: #222; 
+    color: #222;
     outline: none;
    }
 .select-css option {
@@ -220,12 +394,12 @@ MAIN SECTION ACTUALITES
 .btn-slider{
     text-decoration: none;
     color: #02C39A;
-    font-size: 0.9;
+    font-size: 0.9rem;
     font-weight: bold;
 }
 
 /*//////////////////////////////
-FOOTER 
+FOOTER
 /////////////////////////////// */
 footer hr{
     width: 100%;
@@ -276,19 +450,19 @@ MEDIA QUERIES
     #cookiesMob a{
         color: black;
     }
-    
+
     #cookiesMob button{
         background-color: #02C39A;
         border-radius: 5px;
         border-style: none;
         margin-top: 30px;
     }
-    
+
     #accepteMob{
         margin-top: 10px;
         padding: 10px 25px;
     }
-    
+
     #savoirPlusMob{
         margin-top: 10px;
         padding: 10px;
@@ -304,7 +478,7 @@ MEDIA QUERIES
 
 @media screen and (min-width: 576px){
     #cookiesMob{
-        padding: 20px 0px; 
+        padding: 20px 0px;
         line-height: 3rem;
     }
 }
@@ -329,14 +503,14 @@ MEDIA QUERIES
         font-weight: bold;
     }
 
-    
+
 }
 
 @media screen and (min-width: 768px){
     #cookiesMob{
         display: none;
     }
-    
+
     #croix{
         position: absolute;
         top: 0px;
@@ -415,3 +589,78 @@ MEDIA QUERIES
 
 
 
+
+.carousel-inner p{
+    font-size: 0.8rem;
+}
+.text-slider{
+    background-color: rgba(226, 245, 231, 0.75);;
+    font-weight: bold;
+    color: #202325;
+}
+
+
+
+/*******************************
+CSS FOOTER
+*******************************/
+
+.page-footer{
+    border-top: 2.5px solid #02C39A;
+}
+
+footer hr{
+    width: 100%;
+}
+
+footer h3{
+    font-size: 1rem;
+}
+
+footer{
+    font-size: 0.8rem;
+    line-height: 30px;
+}
+
+.bas a, a:hover, h6:hover{
+    color: #02C39A;
+}
+
+.cache{
+    display: none;
+}
+
+
+.copyright{
+    text-decoration: none;
+    color: #02C39A;
+
+}
+
+
+
+/*******************************
+MEDIA QUERIES
+*******************************/
+/*SMALL*/
+@media screen and (min-width:576px) {
+    .logo{
+        width: 225px;
+    }
+
+}
+
+/*MEDIUM*/
+@media screen and (min-width:768px) {
+    footer{
+        line-height: 20px;
+    }
+}
+
+
+/*LARGE*/
+@media screen and (min-width:992px) {}
+
+
+/*EXTRA LARGE*/
+@media screen and (min-width:1200px) {}
