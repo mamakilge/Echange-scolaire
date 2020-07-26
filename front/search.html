@@ -1,23 +1,33 @@
+  
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Échanges scolaires, voyages scolaires, tout ce dont vous avez besoin pour trouver le votre sur mésure">
-
-
-    <script src="js/script.js"></script>
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <title>Recherche - Annonces</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Echange scolaire</title>
+  <!--JS - JQUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <!--FONT AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+  <!--BOOTSTRAP-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <!--FONT BIRYANI-->
+  <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200,300,700&display=swap" rel="stylesheet">
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -110,16 +120,18 @@
                                     </span>
                                 </div>
                                 <div class="langue my-3">
-                                    <label class="titleForm mr-2" for="">Choisissez la langue du pays d'accueil</label>
+                                    <label class="titleForm mr-2">Choisissez la langue du pays d'accueil</label>
                                     <select class="select-css option-langue">
+                                        <option value="select">...</option>
                                         <option value="français">Français</option>
                                         <option value="espagnol">Español</option>
                                         <option value="anglais">English</option>
                                     </select>
                                 </div>
                                 <div class="pays my-3">
-                                    <label class="titleForm mr-2" for="">Choisissez le pays</label>
+                                    <label class="titleForm mr-2">Choisissez le pays</label>
                                     <select class="select-css option-pays">
+                                        <option value="select">...</option>
                                         <option value="france">France</option>
                                         <option value="mayotte">Mayotte</option>
                                         <option value="espagne">España</option>
@@ -152,7 +164,7 @@
                                     </div>
                                     <div class="input-niveau">
                                         <label for="optionlycee">Lycée</label>
-                                        <input class="ml-3" type="checkbox" id="optionlycée" value="lycee">
+                                        <input class="ml-3" type="checkbox" id="optionlycee" value="lycee">
                                     </div>
                                 </div>
                             </div>
@@ -330,7 +342,7 @@
                             <h5>Henri Boudreault</h5>
                             <p>Henri Boudreault Ph.D. professeur au collège Jean Mermoz, j'apporte des
                                 techniques...</p>
-                            <a href="#" type="button" class="btn-slider btn-link">Afficher le profil</a>
+                            <button type="button" class="btn-slider btn-link">Afficher le profil</button>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -339,7 +351,7 @@
                             <h5>Jérémy Dupont</h5>
                             <p>Jérémy Dupont professeur d'Anglais au collège La Tourelle, Polyglotte
                                 depuis 10 ans...</p>
-                            <a href="#" type="button" class="btn-slider btn-link">Afficher le profil</a>
+                            <button type="button" class="btn-slider btn-link">Afficher le profil</button>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -348,7 +360,7 @@
                             <h5>Lycée Stanislas</h5>
                             <p>Lorsqu’il s’agit d’apprendre un métier, nous faisons souvent référence
                                 à l’apprentissage...</p>
-                            <a href="#" type="button" class="btn-slider btn-link">Afficher le profil</a>
+                            <button type="button" class="btn-slider btn-link">Afficher le profil</button>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -357,7 +369,7 @@
                             <h5>Collège Fenelon</h5>
                             <p>La mobilité internationale et la maîtrise d'une ou de plusieurs langues
                                 européennes...</p>
-                            <a href="#" type="button" class="btn-slider btn-link">Afficher le profil</a>
+                            <button type="button" class="btn-slider btn-link">Afficher le profil</button>
                         </div>
                     </div>
                 </div>
@@ -374,102 +386,87 @@
 
     </main>
 
-    <!-- FOOTER -->
-    <footer class="page-footer font-small mdb-color pt-2">
-        <div class="container text-center">
-            <div class="row text-center text-md-left d-flex justify-content-center">
-
-                <!-- Grid column -->
-                <div class="col-12 col-md-4 bas mx-auto" id="info">
-                    <h6 class="text-uppercase font-weight-bold pt-2">Mentions Légales</h6>
-                    <p class="cache">
-                        <a href="mentionsapropos.html#cgu" class="couleur">CGU</a> </br>
-                        <a href="mentionsapropos.html#politiqueconfidentialite" class="couleur">Politique de confidencialité</a></br>
-                        <a href="mentionsapropos.html#droits" class="couleur">Droits d'auteur et droits de reproduction</a></br>
-                        <a href="mentionsapropos.html#accessibilite" class="couleur">Accesibilité du site</a></br>
-                    </p>
-                </div>
-
-                <hr class="w-100 clearfix d-block d-md-none">
-
-                <!-- Grid column -->
-                <div class="col-12 col-md-4 bas">
-                    <h6 class="text-uppercase font-weight-bold pt-2">À Propos</h6>
-                    <p class="cache">
-                        <a href="mentionsapropos.html#nous" class="couleur">Qui sommes-nous ?</a></br>
-                        <a href="mentionsapropos.html#rejoignez" class="couleur">Nous rejoindre</a></br>
-                        <a href="mentionsapropos.html#contacter" class="couleur">Contactez-nous</a>
-                    </p>
-                </div>
-
-                <hr class="w-100 clearfix d-block d-md-none">
-
-                <!-- Grid column -->
-                <div class="col-12 col-md-4 mx-auto  bas">
-                    <h6 class="text-uppercase font-weight-bold pt-2">Contact</h6>
-                    <p class="cache">
-                        <i class="fas fa-home mr-3"></i> 18 Rue Geoffroy l'Asnier, 75004 Paris </br>
-                        <i class="fas fa-envelope mr-3"></i> echange-scolaire@gmail.com </br>
-                        <i class="fas fa-phone mr-3"></i> 01 42 58 75 88 </br>
-                    </p>
-                </div>
+<!-- FOOTER -->
+<footer class="page-footer font-small mdb-color pt-2">
+    <div class="container text-center">
+        <div class="row text-center text-md-left d-flex justify-content-center">
+  
+            <!-- Grid column -->
+          <div class="col-12 col-md-4 bas mx-auto" id="info">
+            <h6 class="text-uppercase font-weight-bold pt-2">Mentions Légales</h6>
+            <div class="cache">
+              <p><a href="mentionsapropos.html#cgu" class="couleur">CGU</a></p>
+              <p><a href="mentionsapropos.html#politiqueconfidentialite" class="couleur">Politique de confidencialité</a></p>
+              <p><a href="mentionsapropos.html#droits" class="couleur">Droits d'auteur et droits de reproduction</a></p>
+              <p><a href="mentionsapropos.html#accessibilite" class="couleur">Accesibilité du site</a></p>
             </div>
-
-            <hr class="w-100 clearfix d-block d-md-none">
-
-            <!-- FIN DE PAGE -->
-            <div class="row d-flex align-items-center bg-transparent">
-                <div class="col-6 col-md-7 col-lg-8 pt-2">
-                    <!--Copyright-->
-                    <p class="text-center text-md-left">© 2020 Copyright:
-                        <a href="https://echange-scolaire.fr/" class="copyright couleur">
-                            <strong>echange-scolaire.fr</strong>
-                        </a>
-                    </p>
-                </div>
-
-                <!-- Grid column -->
-                <div class="col-6 col-md-5 col-lg-4 ml-lg-0 pt-2">
-                    <!-- Social buttons -->
-                    <div class="text-center text-md-right">
-                        <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                    <i class="fab fa-google-plus-g"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+        </div>
+        <hr class="w-100 clearfix d-block d-md-none">
+        <!-- Grid column -->
+        <div class="col-12 col-md-4 bas">
+            <h6 class="text-uppercase font-weight-bold pt-2">À Propos</h6>
+            <div class="cache">
+              <p><a href="mentionsapropos.html#nous" class="couleur">Qui sommes-nous ?</a></p>
+              <p><a href="mentionsapropos.html#rejoignez" class="couleur">Nous rejoindre</a></p>
+              <p><a href="mentionsapropos.html#contacter" class="couleur">Contactez-nous</a></p>
+            </div>
+        </div>
+        <hr class="w-100 clearfix d-block d-md-none">
+        <!-- Grid column -->
+        <div class="col-12 col-md-4 mx-auto  bas">
+            <h6 class="text-uppercase font-weight-bold pt-2">Contact</h6>
+            <div class="cache">
+              <p><i class="fas fa-home mr-3"></i> 18 Rue Geoffroy l'Asnier, 75004 Paris</p>
+              <p><i class="fas fa-envelope mr-3"></i> echange-scolaire@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> 01 42 58 75 88</p>
+            </div>
+        </div>
+    </div>
+  
+        <hr class="w-100 clearfix d-block d-md-none">
+  
+        <!-- FIN DE PAGE -->
+        <div class="row d-flex align-items-center bg-transparent">
+            <div class="col-6 col-md-7 col-lg-8 pt-2">
+                <!--Copyright-->
+                <p class="text-center text-md-left">© 2020 Copyright:
+                    <a href="https://echange-scolaire.fr/" class="copyright couleur">
+                        <strong>echange-scolaire.fr</strong>
+                    </a>
+                </p>
+            </div>
+  
+            <!-- Grid column -->
+            <div class="col-6 col-md-5 col-lg-4 ml-lg-0 pt-2">
+                <!-- Social buttons -->
+                <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+  </footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-</script>
-
-</script>
 
 </html>
