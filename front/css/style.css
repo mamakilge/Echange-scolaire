@@ -2,8 +2,6 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;700&display=swap');
-
 body {
     font-family: 'Biryani', sans-serif;
 }
@@ -166,7 +164,8 @@ ANNONCES SLIDER VERSION MOBILE
 .btn-slider{
     text-decoration: none;
     color: #02C39A;
-    font-size: 0.9;
+    font-size: 0.9rem;
+    border: none;
 }
 .carousel-inner h5{
     font-size: 1rem;
