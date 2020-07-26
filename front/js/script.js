@@ -1,5 +1,4 @@
 window.onload = function () {
-    $('.bas').click(function () {
 
     //COOKIES MOBILE
     //apparition
@@ -36,6 +35,7 @@ window.onload = function () {
 
     //TEXTE INSCRIPTION COLLAPSE RWD
     $('#afficher').click(function () {
+    console.log("afficher")
         $('#afficher').hide();
         $('#masque').show();
         $('#reduire').show();
@@ -70,4 +70,4 @@ window.onload = function () {
     })
 
 
-})} //FERMETURE DE WINDOW ONLOAD
+} //FERMETURE DE WINDOW ONLOAD
