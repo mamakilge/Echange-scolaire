@@ -17,8 +17,21 @@ body{
     color: #02C39A;
 }
 
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
 a{
     color: #02C39A;
+    text-decoration: underline;
 }
 
 /*******************************
@@ -51,46 +64,43 @@ HEADER NAV
     color: #02C39A;
 }
 
-/*******************************************************/
+#search{
+    max-width: 80%;
+}
+
+
 /********************************************************
-CSS MAIN
+CSS PRESENTATION
 ********************************************************/
-
-
 .bg-title{
     background-image: url(../img/imgbcg.jpg);
     background-position: center;
 }
 
-h1{
-    font-size: 2.5rem;
-}
-
-h2{
-    font-size: 2rem;
-}
-
-h3{
-    font-size: 1.5rem;
-}
 .imgEcole{
     width: 450px;
 }
-
-.imgClasse{
-    height: 250px;
-    width: 250px;
-}
-.avis{
-    height: 100px;
-    width: 300px;
-    margin: auto;
-}
+/********************************************************
+CSS LA VIE SUR PLACE
+********************************************************/
 .iconvsp{
     margin-right: 15px;
 }
+/********************************************************
+CSS HISTORIQUE DU PROFIL
+********************************************************/
+.hote-voy{
+    font-weight: bold;
+}
 
-.img1{
+.bcg-profile{
+    background-color: rgba(226, 245, 231, 0.75);
+    color:#202325;
+}
+/********************************************************
+CSS AVIS
+********************************************************/
+.stars{
     width: 90px;
 }
 
@@ -103,14 +113,6 @@ h3{
     resize : none; 
 }
 
-.hote-voy{
-    font-weight: bold;
-}
-
-.bcg-profile{
-    background-color: rgba(226, 245, 231, 0.75);
-    color:#202325;
-}
 
 /*//////////
 FOOTER 
