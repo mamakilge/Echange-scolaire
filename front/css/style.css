@@ -1,6 +1,8 @@
 /********************************************************
 CSS COMMUM
 ********************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;700&display=swap');
+
 *{
     box-sizing: border-box;
 }
@@ -11,7 +13,7 @@ CSS COMMUM
 }
 
 
-@font-face{
+body{
         font-family: 'Biryani', sans-serif;
     }
     
