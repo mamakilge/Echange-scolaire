@@ -1,4 +1,5 @@
 window.onload = function () {
+    $('.bas').click(function () {
 
     //COOKIES MOBILE
     //apparition
@@ -24,8 +25,7 @@ window.onload = function () {
 
     function timer(){
         cookiesConteneur.style.display = 'block';
-    }
-    setTimeout(timer, 1000);    
+    }setTimeout(timer, 1000);    
 
     //disparition
     $('#accepte').click(function(){
@@ -70,25 +70,4 @@ window.onload = function () {
     })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
+})} //FERMETURE DE WINDOW ONLOAD

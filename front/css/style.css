@@ -11,9 +11,20 @@ body{
 
 
 *{
-    box-sizing: border-box;
+    border-bottom: 0em;
 }
 
+a {
+    text-decoration: underline;
+}
+/*******************************
+CSS INFORMATIONS LÉGALES
+*******************************/
+
+
+.echange-scolaire{
+    color: #02C39A;
+}
 
 /*******************************
 HEADER NAV
@@ -37,7 +48,6 @@ HEADER NAV
     color: white;
     background-color: #02C39A;
     border-radius: 3px;
-
 }
 
 #search{
@@ -78,6 +88,7 @@ CSS Revenir Accueil et bg title
 }
 
 /*******************************
+CSS FOOTER 
 CSS FORMULAIRE DESKTOP ET MOBILE
 *******************************/
 .btn-form{
@@ -636,8 +647,6 @@ footer{
 
 }
 
-
-
 /*******************************
 MEDIA QUERIES
 *******************************/
@@ -646,7 +655,6 @@ MEDIA QUERIES
     .logo{
         width: 225px;
     }
-
 }
 
 /*MEDIUM*/
