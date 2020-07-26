@@ -65,7 +65,7 @@
     </nav>
     </header>
   <main>
-    <section class="bg-title">
+    <div class="bg-title">
       <nav class="container" aria-label="breadcrumb">
         <ol class="breadcrumb bg-transparent">
           <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
@@ -75,10 +75,10 @@
       <div class="container">
         <h1 class="text-center mb-4">Collège Stanislas</h1>
       </div>
-    </section>
+    </div>
 
 
-    <section class="container">
+    <div class="container">
       <div class="row mb-5 mt-5">
 
         <div class="col-sm 12 col-md-6 text-center">
@@ -86,26 +86,25 @@
         </div>
         <div class="col-sm-12 col-md-6 text-center">
           <p>Lorsqu’il s’agit d’apprendre un métier, nous faisons souvent référence à l’apprentissage « sur le tas ». Pour les langues, le même principe peut être appliqué. Il s’agit de vous mettre dans une situation concrète qui vous permet de placer une langue dans un contexte réel, facilitant ainsi l’apprentissage. L’immersion linguistique est associée aux séjours linguistiques. Rien ne vaut de s’immiscer dans la culture d’un pays et d’être immergé dans sa langue pour progresser.</p>
-          <button type="button" class="btn btn-lg bouton select-css">Ajouter au contact</button>
-          <button type="button" class="btn btn-lg bouton select-css">Envoyer un message</button>
+          <button type="button" class="btn btn-lg bouton">Ajouter au contact</button>
+          <button type="button" class="btn btn-lg bouton">Envoyer un message</button>
         </div>
       </div>
-      </form>
-    </section>
+    </div>
 
 
 
 
     <!-- Géolocalisation / Calendrier d'accueil / Capacités d'accueil /
             Numéro de téléphone / Boutton en "recherche d'échange" -->
-    <section class="container-fluid bg-light pt-2">
+    <div class="container-fluid bg-light pt-2">
       <div class="container">
         <div class="text-center">
           <div class="row text-left mt-4 mb-4">
             <div class="col-md-6 col-sm-12 pl-2">
               <p><i class="iconvsp fas fa-map-marker-alt mamakilge"></i> Crétail, France.</p>
               <i class="iconvsp far fa-calendar-alt mamakilge"></i><label for="start"> Choisissez une date :</label>
-              <input type="date" id="start" name="trip-start" value="12-07-20" min="2018-01-01" max="2100-12-31">
+              <input type="date" id="start" name="trip-start" value="2018-02-02" min="2018-01-01" max="2100-12-31">
               <p><i class="iconvsp fas fa-users mamakilge"></i>Capacité d'accueil : 15 élèves</p>
               <p><i class="iconvsp fas fa-phone mamakilge"></i> 01 47 52 36 19</p>
               <p><i class="iconvsp fas fa-toggle-on mamakilge" id="echange"></i><span id=js> Recherche d'échange.</span></p>
@@ -119,7 +118,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <!-- Historique du profil desktop-->
     <section class="d-none d-md-block container">
       <h2 class="text-center mt-4 pb-4">Historique du profil</h2>
@@ -163,7 +162,7 @@
         </div>
       </div>
       <div class="d-flex justify-content-center">
-        <button class="btn bouton mb-2 select-css" type="button" data-toggle="collapse" data-target="#" aria-expanded="false"
+        <button class="btn bouton mb-2" type="button" data-toggle="collapse" data-target="#" aria-expanded="false"
           aria-controls="avis">
           Voir plus
         </button>
@@ -217,9 +216,9 @@
         <h2 class="text-center mt-4 pb-4">Avis</h2>
         <div class="row d-flex justify-content-around">
           <p class="text-left border col-md-5 col-sm-12"><span>Hugo Clément </span><img src="img/5-etoiles.png"
-              class="stars"><br>Expérience incroyable. Henri Boudreault était extrêmement engageant, sympathique et compétent pour mes élèves.</p>
+              alt="5 étoiles" class="stars"><br>Expérience incroyable. Henri Boudreault était extrêmement engageant, sympathique et compétent pour mes élèves.</p>
           <p class="text-left border col-md-5 col-sm-12"><span>Sabryna Mongeon</span><img
-              src="img/5-etoiles.png" class="stars"><br>Henri propose une
+              src="img/5-etoiles.png" class="stars" alt="5 étoiles"><br>Henri propose une
               façon d’apprendre inédite avec dynamisme, pédagogie, et une grande envie de partager.
           </p>
         </div>
@@ -227,18 +226,18 @@
           <div>
             <div class="row d-flex justify-content-around">
               <p class="text-left border col-md-5 col-sm-12"><span>Gaston Hernandez</span><img
-                  src="img/5-etoiles.png" class="stars"><br>L'échange scolaire avec
+                  src="img/5-etoiles.png" class="stars" alt="5 étoiles"><br>L'échange scolaire avec
                   le professeur Henri Boudreault s'est super bien passer! mes élèves ont adoré étudier avec ce professeur
                   charismatique.</p>
               <p class="text-left border col-md-5 col-sm-12"><span>Steve Dacourt</span><img
-                  src="img/5-etoiles.png" class="stars"><br> Avec mes élèves de 5ème, nous avons intégré une classe en
+                  src="img/5-etoiles.png" class="stars" alt="5 étoiles"><br> Avec mes élèves de 5ème, nous avons intégré une classe en
                 spécialité langues. Mes élèves ont pu être initié au mandarin et on est tous revenu avec pleisn de
                 méthodes nouvelles d'apprentissage.</p>
             </div>
           </div>
         </div>
         <div class="d-flex justify-content-center mt-3 mb-5">
-          <button class="btn bouton select-css" type="button" data-toggle="collapse" data-target="#avis" aria-expanded="false"
+          <button class="btn bouton" type="button" data-toggle="collapse" data-target="#avis" aria-expanded="false"
             aria-controls="avis">
             Voir plus
           </button>
@@ -247,7 +246,7 @@
           <div class="mt-2 form-group text-center container">
             <label for="exampleFormControlTextarea1">Tapez votre commentaire ici</label>
             <textarea class="form-control commentaire" id="exampleFormControlTextarea1" rows="5"></textarea>
-            <button class="mt-3 btn bouton select-css" type="exampleFormControlTextarea1">Poster</button>
+            <button class="mt-3 btn bouton">Poster</button>
           </div>
         </form>
       </div>
@@ -262,10 +261,10 @@
           <div class="col-12 col-md-4 bas mx-auto" id="info">
               <h6 class="text-uppercase font-weight-bold pt-2">Mentions Légales</h6>
               <p class="cache">
-                  <a href="mentionsapropos.html#cgu" class="couleur">CGU</a> </br>
-                  <a href="mentionsapropos.html#politiqueconfidentialite" class="couleur">Politique de confidencialité</a></br>
-                  <a href="mentionsapropos.html#droits" class="couleur">Droits d'auteur et droits de reproduction</a></br>
-                  <a href="mentionsapropos.html#accessibilite" class="couleur">Accesibilité du site</a></br>
+                  <a href="mentionsapropos.html#cgu" class="couleur">CGU</a> <br>
+                  <a href="mentionsapropos.html#politiqueconfidentialite" class="couleur">Politique de confidencialité</a><br>
+                  <a href="mentionsapropos.html#droits" class="couleur">Droits d'auteur et droits de reproduction</a><br>
+                  <a href="mentionsapropos.html#accessibilite" class="couleur">Accesibilité du site</a><br>
               </p>
           </div>
           <hr class="w-100 clearfix d-block d-md-none">
@@ -273,8 +272,8 @@
           <div class="col-12 col-md-4 bas">
               <h6 class="text-uppercase font-weight-bold pt-2">À Propos</h6>
               <p class="cache">
-                  <a href="mentionsapropos.html#nous" class="couleur">Qui sommes-nous ?</a></br>
-                  <a href="mentionsapropos.html#rejoignez" class="couleur">Nous rejoindre</a></br>
+                  <a href="mentionsapropos.html#nous" class="couleur">Qui sommes-nous ?</a><br>
+                  <a href="mentionsapropos.html#rejoignez" class="couleur">Nous rejoindre</a><br>
                   <a href="mentionsapropos.html#contacter" class="couleur">Contactez-nous</a>
               </p>
           </div>
@@ -283,9 +282,9 @@
           <div class="col-12 col-md-4 mx-auto  bas">
               <h6 class="text-uppercase font-weight-bold pt-2">Contact</h6>
               <p class="cache">
-                  <i class="fas fa-home mr-3"></i> 18 Rue Geoffroy l'Asnier, 75004 Paris </br>
-                  <i class="fas fa-envelope mr-3"></i> echange-scolaire@gmail.com </br>
-                  <i class="fas fa-phone mr-3"></i> 01 42 58 75 88 </br>
+                  <i class="fas fa-home mr-3"></i> 18 Rue Geoffroy l'Asnier, 75004 Paris <br>
+                  <i class="fas fa-envelope mr-3"></i> echange-scolaire@gmail.com <br>
+                  <i class="fas fa-phone mr-3"></i> 01 42 58 75 88 <br>
               </p>
           </div>
       </div>
