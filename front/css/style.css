@@ -143,6 +143,30 @@ textarea{
     border-radius: 5px;
 }
 
+/***************
+FOOTER
+****************/
+footer hr{
+    width: 100%;
+}
+
+footer h3{
+    font-size: 1rem;
+}
+
+footer{
+    font-size: 0.8rem;
+    line-height: 30px;
+}
+
+.bas a, .bas a:hover, h6:hover{
+    color: #02C39A;
+}
+
+.cache{
+    display: none;
+}
+
 /***********
 MOBILE
 ***********/
