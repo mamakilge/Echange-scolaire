@@ -71,6 +71,20 @@
   </header>
 
   <main>
+    <section class="bg-title">
+      <nav class="container" aria-label="breadcrumb">
+        <ol class="breadcrumb bg-transparent">
+            <li class="breadcrumb-item"><a class="revenir-accueil" href="index.html">Accueil</a></li>
+            <li class="breadcrumb-item"><a class="revenir-accueil" href="profil.html">Profil</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Messagerie</li>
+        </ol>
+    </nav>
+    <div class="container">
+        <h1 class="title-search pt-5 pb-5">Contacts / Messagerie</h1>
+    </div>
+    </section>
+
+
     <section class="container">
 
       <!--DESKTOP-->
@@ -81,7 +95,7 @@
           <div class="scroll">
             <div class="list-group">
 
-              <div class="media" id="profil2">
+              <div class="media activeProfil">
                 <img src="img/prof5.jpg" class="align-self-center mx-2" alt="...">
                 <div class="media-body">
                   <div class="d-flex justify-content-between">
@@ -92,7 +106,7 @@
                 </div>
               </div>
 
-              <div class="media" id="profil1">
+              <div class="media">
                 <img src="img/classe1.jpg" class="align-self-center mx-2" alt="...">
                 <div class="media-body">
                   <div class="d-flex justify-content-between">
@@ -103,7 +117,7 @@
                 </div>
               </div>
 
-              <div class="media" id="profil3">
+              <div class="media">
                 <img src="img/user.png" class="align-self-center mx-2" alt="...">
                 <div class="media-body">
                   <div class="d-flex justify-content-between">
@@ -113,7 +127,7 @@
                   <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. </p>
                 </div>
               </div>
-              
+
               <div class="media">
                 <img src="img/classe2.jpg" class="align-self-center mx-2" alt="...">
                 <div class="media-body">
@@ -166,42 +180,44 @@
           <h2 class="text-center titre mt-2">Messagerie</h2>
 
           <div class="messages container scroll">
-            <div class="nom">
 
-            </div>
             <div class="card gauche">
-                This is some text within a card body. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto error consequuntur aliquam rem sapiente voluptatum aperiam et odio quas quaerat.
+              This is some text within a card body. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
+              error consequuntur aliquam rem sapiente voluptatum aperiam et odio quas quaerat.
             </div>
             <div class="card droite">
-                This is some text within a card body.
+              This is some text within a card body.
             </div>
             <div class="card gauche">
-                This is some text within a card body. nisi doloremque earum, obcaecati molestias minus mollitia quam, quod facere!
+              This is some text within a card body. nisi doloremque earum, obcaecati molestias minus mollitia quam, quod
+              facere!
             </div>
             <div class="card droite">
-                This is some text within a card body.
+              This is some text within a card body.
             </div>
             <div class="card gauche">
-                This is some text within a card body.
+              This is some text within a card body.
             </div>
             <div class="card droite">
-                This is some text within a card body. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officia enim.
+              This is some text within a card body. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+              officia enim.
             </div>
             <div class="card gauche">
               This is some text within a card body.
             </div>
             <div class="card droite">
               This is some text within a card body.
-          </div>
-          <div class="card gauche">
+            </div>
+            <div class="card gauche">
               This is some text within a card body.
-          </div>
-          <div class="card droite">
-              This is some text within a card body. nobis consectetur corrupti ducimus maxime architecto sequi incidunt eos numquam voluptatibus dolores repellat dicta nesciunt placeat harum accusantium possimus?
-          </div>
-          <div class="card gauche">
-            This is some text within a card body.
-          </div>
+            </div>
+            <div class="card droite">
+              This is some text within a card body. nobis consectetur corrupti ducimus maxime architecto sequi incidunt
+              eos numquam voluptatibus dolores repellat dicta nesciunt placeat harum accusantium possimus?
+            </div>
+            <div class="card gauche">
+              This is some text within a card body.
+            </div>
 
             <div class="ecrire text-center">
               <button class="icone"><i class="far fa-smile mr-2"></i></button>
@@ -262,7 +278,7 @@
                   <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. </p>
                 </div>
               </div>
-              
+
               <div class="media">
                 <img src="img/classe2.jpg" class="align-self-center mx-2" alt="...">
                 <div class="media-body">
@@ -309,53 +325,133 @@
             </div>
           </div>
 
-        <!--MESSAGES MOBILE-->
-        <div class="container messagesMob">
-          <div class="card gauche">
-            <div class="card-body">
-              This is some text within a card body.
+          <!--MESSAGES MOBILE-->
+          <div class="container messagesMob">
+            <div class="card gauche">
+              <div class="card-body">
+                This is some text within a card body.
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-body droite">
-              This is some text within a card body.
+            <div class="card">
+              <div class="card-body droite">
+                This is some text within a card body.
+              </div>
             </div>
-          </div>
-          <div class="card gauche">
-            <div class="card-body">
-              This is some text within a card body.
+            <div class="card gauche">
+              <div class="card-body">
+                This is some text within a card body.
+              </div>
             </div>
-          </div>
-          <div class="card droite">
-            <div class="card-body">
-              This is some text within a card body.
+            <div class="card droite">
+              <div class="card-body">
+                This is some text within a card body.
+              </div>
             </div>
-          </div>
-          <div class="card gauche">
-            <div class="card-body">
-              This is some text within a card body.
+            <div class="card gauche">
+              <div class="card-body">
+                This is some text within a card body.
+              </div>
             </div>
-          </div>
-          <div class="card droite">
-            <div class="card-body">
-              This is some text within a card body.
+            <div class="card droite">
+              <div class="card-body">
+                This is some text within a card body.
+              </div>
             </div>
-          </div>
 
-          <div class="ecrire text-center">
-            <a href=""><i class="far fa-smile mr-2"></i></a>
-            <textarea name="" id="" cols="55" rows="2" placeholder="Taper votre message" class="mt-4"></textarea>
-            <a href=""><i class="fab fa-telegram-plane ml-2"></i></a>
+            <div class="ecrire text-center">
+              <a href=""><i class="far fa-smile mr-2"></i></a>
+              <textarea name="" id="" cols="55" rows="2" placeholder="Taper votre message" class="mt-4"></textarea>
+              <a href=""><i class="fab fa-telegram-plane ml-2"></i></a>
+            </div>
           </div>
         </div>
-      </div>
-
-
-
-
-
     </section>
   </main>
+   <!-- FOOTER -->
+ <footer class="page-footer font-small mdb-color pt-2">
+  <div class="container text-center">
+      <div class="row text-center text-md-left d-flex justify-content-center">
+
+          <!-- Grid column -->
+          <div class="col-12 col-md-4 bas mx-auto" id="info">
+              <h6 class="text-uppercase font-weight-bold pt-2">Mentions Légales</h6>
+              <p class="cache">
+                  <p><a href="mentionsapropos.html#cgu" class="couleur">CGU</a></p>
+                  <p><a href="mentionsapropos.html#politiqueconfidentialite" class="couleur">Politique de confidencialité</a></p>
+                  <p><a href="mentionsapropos.html#droits" class="couleur">Droits d'auteur et droits de reproduction</a></p>
+                  <p><a href="mentionsapropos.html#accessibilite" class="couleur">Accesibilité du site</a></p>
+              </p>
+          </div>
+
+          <hr class="w-100 clearfix d-block d-md-none">
+
+          <!-- Grid column -->
+          <div class="col-12 col-md-4 bas">
+              <h6 class="text-uppercase font-weight-bold pt-2">À Propos</h6>
+              <p class="cache">
+                  <p><a href="mentionsapropos.html#nous" class="couleur">Qui sommes-nous ?</a></p>
+                  <p><a href="mentionsapropos.html#rejoignez" class="couleur">Nous rejoindre</a></p>
+                  <p><a href="mentionsapropos.html#contacter" class="couleur">Contactez-nous</a></p>
+              </p>
+          </div>
+
+          <hr class="w-100 clearfix d-block d-md-none">
+
+          <!-- Grid column -->
+          <div class="col-12 col-md-4 mx-auto  bas">
+              <h6 class="text-uppercase font-weight-bold pt-2">Contact</h6>
+              <p class="cache">
+                  <p><i class="fas fa-home mr-3"></i> 18 Rue Geoffroy l'Asnier, 75004 Paris</p>
+                  <p><i class="fas fa-envelope mr-3"></i> echange-scolaire@gmail.com</p>
+                  <p><i class="fas fa-phone mr-3"></i> 01 42 58 75 88</p>
+              </p>
+          </div>
+      </div>
+
+      <hr class="w-100 clearfix d-block d-md-none">
+
+      <!-- FIN DE PAGE -->
+      <div class="row d-flex align-items-center bg-transparent">
+          <div class="col-6 col-md-7 col-lg-8 pt-2">
+              <!--Copyright-->
+              <p class="text-center text-md-left">© 2020 Copyright:
+                  <a href="https://echange-scolaire.fr/" class="copyright couleur">
+                      <strong>echange-scolaire.fr</strong>
+                  </a>
+              </p>
+          </div>
+
+          <!-- Grid column -->
+          <div class="col-6 col-md-5 col-lg-4 ml-lg-0 pt-2">
+              <!-- Social buttons -->
+              <div class="text-center text-md-right">
+                  <ul class="list-unstyled list-inline">
+                      <li class="list-inline-item">
+                          <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                              <i class="fab fa-facebook-f"></i>
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                              <i class="fab fa-twitter"></i>
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                              <i class="fab fa-google-plus-g"></i>
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                              <i class="fab fa-linkedin-in"></i>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
 </body>
 
 </html>

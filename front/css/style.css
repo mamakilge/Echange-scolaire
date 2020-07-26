@@ -1,3 +1,51 @@
+/*/////////////////////////////
+COMMUN
+//////////////////////////////*/
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;700&display=swap');
+
+body{
+    font-family: 'Biryani', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.couleur{
+    color: #02C39A;
+}
+
+a{
+    text-decoration: underline;
+}
+
+/*//////////////////////////////
+NAVBAR
+////////////////////////////////*/
+.siteName{
+    color: #02C39A;
+    text-align: left;
+    font-weight: 600;
+}
+
+.logo{
+    width: 200px;
+}
+
+#search{
+    max-width: 80%;
+}
+
+:hover.btn-nav, :hover.btn-form{
+    background-color: #02C39A ;
+    border-radius: 5px;
+}
+
+.btn-form{
+    text-decoration: none;
+    color: white;
+    background-color: #02C39A;
+    border-radius: 3px;
+}
+
 .titre{
     background-color: rgb(233, 233, 233);
     padding: 2%;
@@ -8,6 +56,33 @@
     border-radius: 5px;
 }
 
+/*******************************
+CSS Revenir Accueil et bg title
+*******************************/
+
+.revenir-accueil:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: #02C39A;
+}
+.title-search{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 10%;
+
+
+}
+.bg-title{
+    background-image: url(../img/img1.jpg);
+    background-position-x: center;
+    height: 400px;
+
+}
+
+.title-annonce-desktop{
+    font-weight: 700;
+    font-size: 1.75rem;
+}
 /***********
 CONTACTS
 ***********/
@@ -16,32 +91,21 @@ CONTACTS
     overflow: auto; 
 }
 
-img{
-    width: 13%;
-
+.media img{
+    width: 15%;
     border-radius: 10%;
-}
-
-.photo{
-    position: relative;
-    top: 0;
-    left: 0%;
 }
 
 .media{
     border: 1px solid grey;
 }
 
-.media:hover{
-
+.media{
+    cursor: pointer;
 }
 
-#profil1{
-    background-color: white;
-}
-
-a:hover{
-
+.activeProfil{
+    background-color: #02C39A;
 }
 
 /*************

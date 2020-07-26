@@ -15,14 +15,22 @@ $('.lienContacts').click(function(){
 })
 
 //CONTACTS
+$(function() {
+    $( '.list-group > .media' ).on( 'click', function() {
+          $('.list-group > .media').removeClass('activeProfil');
+          $(this).addClass('activeProfil');
+    });
+});
 
-var profil = document.getElementById('profil1', 'profil2');
-console.log("getElementById")
 
-profil.addEventListener('click', function(){
-console.log("addEventListener")
-    this.style.backgroundColor = '#02C39A';
+//FOOTER RWD
+$('.bas').click(function(){
+    $('.cache').toggle();
 })
+
+
+
+
 
 
 
