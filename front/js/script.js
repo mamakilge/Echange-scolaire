@@ -1,21 +1,25 @@
 window.onload = function (){
 
-// MOBILE
-// LIENS
+// AFFICHER CONTACTS/MESSAGES MOBILE
 $('.lienMessages').click(function(){
-console.log("lienMessages")
     $('.contactMob').hide();
-    $('.messagesMob').show();
-    console.log("messagesMob")
+    $('.messagerieMob').show();
 })
 
 $('.lienContacts').click(function(){
-    console.log("lienContacts")
         $('.contactMob').show();
-        $('.messagesMob').hide();
+        $('.messagerieMob').hide();
 })
 
-//CONTACTS
+//COULEUR LIENS MOBILE
+$(function(){
+    $('.liens > .nav-item').on('click', function(){
+        $('.liens > .nav-item').removeClass('lien');
+        $(this).addClass('lien');
+    })
+})
+
+//CONTACTS CLIQUE
 $(function() {
     $( '.list-group > .media' ).on( 'click', function() {
           $('.list-group > .media').removeClass('activeProfil');
@@ -24,16 +28,11 @@ $(function() {
 });
 
 
-//FOOTER RWD
+
+//FOOTER MOBILE
 $('.bas').click(function(){
     $('.cache').toggle();
 })
-
-
-
-
-
-
 
 } //FERMETURE WINDOW ONLOAD
 

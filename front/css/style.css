@@ -102,7 +102,7 @@ CONTACTS
 }
 
 .activeProfil{
-    background-color: #02C39A;
+    background-color: #c9f8ee;
 }
 
 /*************
@@ -140,8 +140,6 @@ textarea{
     border-radius: 5px;
 }
 
-
-
 /***************
 FOOTER
 ****************/
@@ -177,16 +175,36 @@ MOBILE
 MEDIA QUERIES
 ***********************/
 @media screen and (max-width: 768px){
+    body{
+        font-size: 0.9rem;
+    }
+
+    h5{
+        font-size: 1.2rem;
+    }
     .bg-title{
         height: 100px;
         background-position: center;
+    }
+
+    .lien{
+        background-color: #02C39A;
+    }
+
+    .mobile a{
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    .mobile .nav-link{
+        border: none;
     }
 
     .mobile{
         display: block;
     }
 
-    .desktop, h1, .messagesMob{
+    .desktop, h1, .messagerieMob{
         display: none;
     }
 
@@ -199,23 +217,15 @@ MEDIA QUERIES
         width: 15%;
     }
 
-    .messagesMob{
-        display: flex;
-        flex-direction: column;
+    .messagerieMob{
         background-color: rgb(241, 234, 234);
+        padding: 1%;
     }
     
-    .gauche{
+    .gauche, .droite{
         width: 50%;
+        margin: 0;
     }
-
-    .droite{
-        width: 50%;
-        align-self: flex-end;
-        background-color: #c9f8ee;
-    }
-
-
 }
 
 
