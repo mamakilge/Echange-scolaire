@@ -69,14 +69,11 @@ CSS Revenir Accueil et bg title
     font-weight: 700;
     font-size: 2.5rem;
     margin-top: 10%;
-
-
 }
 .bg-title{
     background-image: url(../img/img1.jpg);
     background-position-x: center;
-    height: 400px;
-
+    height: 300px;
 }
 
 .title-annonce-desktop{
@@ -111,7 +108,7 @@ CONTACTS
 /*************
 MESSAGES
 *************/
-.messages{
+.messages, .messagesMob{
     display: flex;
     flex-direction: column;
     background-color: rgb(241, 234, 234);
@@ -131,17 +128,19 @@ MESSAGES
 
 .icone{
     font-size: 2rem;
-    transform: scaleX(-1);
-    filter: FlipH;
+    background-color: rgb(241, 234, 234);
     color: #02C39A;
     margin-bottom: 2%;
     border: none;
+    display: inline-block;
 }
 
 textarea{
     resize: none;
     border-radius: 5px;
 }
+
+
 
 /***************
 FOOTER
@@ -178,21 +177,44 @@ MOBILE
 MEDIA QUERIES
 ***********************/
 @media screen and (max-width: 768px){
-    .desktop{
-        display: none;
+    .bg-title{
+        height: 100px;
+        background-position: center;
     }
 
     .mobile{
         display: block;
     }
 
+    .desktop, h1, .messagesMob{
+        display: none;
+    }
+
+    .scroll{
+        height: 25rem;
+        overflow: auto; 
+    }
+
     .contactMob img{
-        width: 100px;
+        width: 15%;
     }
 
     .messagesMob{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(241, 234, 234);
     }
+    
+    .gauche{
+        width: 50%;
+    }
+
+    .droite{
+        width: 50%;
+        align-self: flex-end;
+        background-color: #c9f8ee;
+    }
+
 
 }
 

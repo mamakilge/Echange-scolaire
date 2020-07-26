@@ -6,6 +6,7 @@ $('.lienMessages').click(function(){
 console.log("lienMessages")
     $('.contactMob').hide();
     $('.messagesMob').show();
+    console.log("messagesMob")
 })
 
 $('.lienContacts').click(function(){
