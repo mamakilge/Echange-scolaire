@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;700&display=swap');
-
 /*/////////////////////////////
 COMMUN
 //////////////////////////////*/
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;700&display=swap');
+
 body{
     font-family: 'Biryani', sans-serif;
     font-size: 1.2rem;
@@ -24,14 +24,17 @@ CSS INFORMATIONS LÉGALES
     color: #02C39A;
 }
 
-/*******************************
-HEADER NAV
-*******************************/
-
+/*//////////////////////////////
+NAVBAR
+////////////////////////////////*/
 .siteName{
     color: #02C39A;
     text-align: left;
     font-weight: 600;
+}
+
+.couleur{
+    color: #02C39A;
 }
 
 .logo{
@@ -42,19 +45,31 @@ HEADER NAV
     background-color: #02C39A ;
     border-radius: 5px;
 }
-.btn-form{
-    color: white;
-    background-color: #02C39A;
-    border-radius: 3px;
-}
 
 #search{
     max-width: 80%;
 }
 
-.revenir-accueil{
+:hover.btn-nav, :hover.btn-form{
+    background-color: #02C39A ;
+    border-radius: 5px;
+}
+
+.btn-form{
     text-decoration: none;
-    color: #02C39A;
+    color: white;
+    background-color: #02C39A;
+    border-radius: 3px;
+}
+
+.titre{
+    background-color: rgb(233, 233, 233);
+    padding: 2%;
+}
+
+.conteneur{
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 /*******************************
@@ -70,14 +85,11 @@ CSS Revenir Accueil et bg title
     font-weight: 700;
     font-size: 2.5rem;
     margin-top: 10%;
-
-
 }
 .bg-title{
     background-image: url(../img/img1.jpg);
     background-position-x: center;
     height: 400px;
-
 }
 
 .title-annonce-desktop{
@@ -146,9 +158,8 @@ CSS FORMULAIRE DESKTOP ET MOBILE
     width: -webkit-fill-available;
 }
 
-
 /*******************************
-ANNONCES VERSION DESKTOP SEARCH
+SEARCH ANNONCES VERSION DESKTOP 
 *******************************/
 
 .btn-voirplus{
@@ -176,7 +187,7 @@ ANNONCES VERSION DESKTOP SEARCH
 }
 
 /*******************************
-ANNONCES SLIDER VERSION MOBILE SEARCH
+SEARCH ANNONCES SLIDER VERSION MOBILE
 *******************************/
 
 .btn-slider{
@@ -194,7 +205,7 @@ ANNONCES SLIDER VERSION MOBILE SEARCH
 }
 
 /*/////////////////////////////
-MAIN HEADER RECHERCHE
+ACCUEIL HEADER RECHERCHE
 ////////////////////////////// */
 
 /*NAV*/
@@ -264,7 +275,7 @@ h1{
 }
 
 /*/////////////////////////////
-MAIN SECTION INSCRIPTION ACCUEIL
+ACCUEIL INSCRIPTION 
 ///////////////////////////////*/
 
 h2{
@@ -291,7 +302,7 @@ h2{
 }
 
 /*//////////////////////////////
-MAIN SECTION ACTUALITES ACCUEIL
+ACCUEIL  ACTUALITES 
 ///////////////////////////////*/
 #post3, #post4{
     display: none;
@@ -327,9 +338,69 @@ MAIN SECTION ACTUALITES ACCUEIL
     font-weight: bold;
 }
 
-/*//////////////////////////////
-FOOTER 
-/////////////////////////////// */
+/***********
+MESSAGERIE CONTACTS
+***********/
+.scroll{
+    height: 40rem;
+    overflow: auto; 
+}
+
+.media img{
+    width: 15%;
+    border-radius: 10%;
+}
+
+.media{
+    border: 1px solid grey;
+}
+
+.media{
+    cursor: pointer;
+}
+
+.activeProfil{
+    background-color: #c9f8ee;
+}
+
+/*************
+MESSAGERIE MESSAGES
+*************/
+.messages, .messagesMob{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 234, 234);
+}
+
+.gauche{
+    width: 45%;
+    margin: 1%;
+}
+
+.droite{
+    width: 45%;
+    margin: 1%;
+    align-self: flex-end;
+    background-color: #c9f8ee;
+}
+
+.icone{
+    font-size: 2rem;
+    background-color: rgb(241, 234, 234);
+    color: #02C39A;
+    margin-bottom: 2%;
+    border: none;
+    display: inline-block;
+}
+
+textarea{
+    resize: none;
+    border-radius: 5px;
+}
+
+/***************
+FOOTER
+****************/
 footer hr{
     width: 100%;
 }
@@ -361,7 +432,7 @@ footer{
 }
 
 /*///////////////////////////
-MEDIA QUERIES ACCUEIL
+MEDIA QUERIES 
 /////////////////////////////*/
 @media screen and (min-width: 320px){
     #cookiesMobile{
@@ -539,3 +610,68 @@ MEDIA QUERIES ACCUEIL
         margin: 20px 0 0 70px;
     }
 }
+/***********
+MESSAGERIE MOBILE
+***********/
+.mobile{
+    display: none;
+}
+
+/***********************
+MEDIA QUERIES
+***********************/
+@media screen and (max-width: 768px){
+    body{
+        font-size: 0.9rem;
+    }
+
+    h5{
+        font-size: 1.2rem;
+    }
+    .bg-title{
+        height: 100px;
+        background-position: center;
+    }
+
+    .lien{
+        background-color: #02C39A;
+    }
+
+    .mobile a{
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    .mobile .nav-link{
+        border: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .desktop, h1, .messagerieMob{
+        display: none;
+    }
+
+    .scroll{
+        height: 25rem;
+        overflow: auto; 
+    }
+
+    .contactMob img{
+        width: 15%;
+    }
+
+    .messagerieMob{
+        background-color: rgb(241, 234, 234);
+        padding: 1%;
+    }
+    
+    .gauche, .droite{
+        width: 50%;
+        margin: 0;
+    }
+}
+
+
