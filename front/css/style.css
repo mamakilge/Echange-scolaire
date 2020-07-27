@@ -14,7 +14,20 @@ body{
 }
 
 a {
+    color: #02C39A;
     text-decoration: underline;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
 }
 /*******************************
 CSS INFORMATIONS LÉGALES
@@ -398,9 +411,59 @@ textarea{
     border-radius: 5px;
 }
 
-/***************
-FOOTER
-****************/
+/********************************************************
+CSS PRESENTATION
+********************************************************/
+
+.imgEcole{
+    width: 450px;
+}
+/********************************************************
+CSS LA VIE SUR PLACE
+********************************************************/
+.iconvsp{
+    margin-right: 15px;
+}
+.colorIcon{
+    color: #02C39A;
+}
+
+/********************************************************
+CSS HISTORIQUE DU PROFIL
+********************************************************/
+.hote-voy{
+    font-weight: bold;
+}
+
+.bcg-profile{
+    background-color: rgba(226, 245, 231, 0.75);
+    color:#202325;
+}
+/********************************************************
+CSS AVIS
+********************************************************/
+.stars{
+    width: 90px;
+}
+
+.form-control{
+    width: 70%;
+    margin: auto;
+}
+
+.commentaire{
+    resize : none; 
+}
+
+
+/*//////////
+FOOTER 
+//////////// */
+
+.page-footer{
+    border-top: 2.5px solid #02C39A;
+}
+
 footer hr{
     width: 100%;
 }
