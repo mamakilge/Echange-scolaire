@@ -30,15 +30,22 @@ h3{
     font-size: 1.5rem;
 }
 
-/*NAVBAR*/
+.vert{
+    background-color:#02C39A;
+}
+
+    
+    /********************************************************
+    CSS HEADER
+    ********************************************************/
+#search{
+    max-width: 80%;
+    }
+
 .siteName{
     color: #02C39A;
     text-align: left;
     font-weight: 600;
-}
-
-.couleur{
-    color: #02C39A;
 }
 
 .logo{
@@ -99,9 +106,74 @@ h3{
     font-size: 1.75rem;
 }
 
-
 /*FOOTER*/
 
+.btn-form{
+    color: white;
+    background-color: #02C39A;
+    border-radius: 3px;
+   
+}
+
+.revenir-accueil{
+    text-decoration: none;
+    color: #02C39A;
+}
+    
+    /********************************************************
+    CSS MAIN
+    ********************************************************/
+
+    .bg-title{
+        background-image: url(/front/fa-users\ Font\ Awesome\ Icons_fichiers/imgbcg.jpg);        
+        background-position: center;
+    }
+    .espace1{
+        margin-right: 30px;
+    }
+
+    .espace{
+        margin-right: 15px;
+    }
+
+    #btnNo{
+        color: #02C39A;
+        font-size: 3rem;
+    }
+    #modal{        
+        background-color:white;
+        height: 90%;
+        width: 100%;
+        position: fixed;
+        margin: auto;
+        display: none;
+        overflow: auto;
+        z-index: 1;
+    }
+    #btnNo2{
+        font-size: 0.75rem;
+    }
+    .colorIcon{
+        color: #02C39A;
+    }
+    
+    .avis{
+        height: 100px;
+    }
+    .img1{
+        background-image: url(/front/fa-users\ Font\ Awesome\ Icons_fichiers/doigt1.png);
+    }
+
+    .img{
+        width:90px; 
+    }
+    .bloquer{
+        resize : none;
+    }
+
+    /********************************************************
+    CSS FOOTER
+    ********************************************************/
 .page-footer{
     border-top: 2.5px solid #02C39A;
 }
