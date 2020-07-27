@@ -11,7 +11,13 @@ $('.lienContacts').click(function(){
         $('.messagerieMob').hide();
 })
 
-//COULEUR LIENS MOBILE
+//SCROLL BAS MESSAGERIE
+$('.lienMessages').click(function(){
+    $('#fin')[0].scrollIntoView(false);
+})
+
+
+//COULEUR LIENS CLIQUE MOBILE
 $(function(){
     $('.liens > .nav-item').on('click', function(){
         $('.liens > .nav-item').removeClass('lien');
