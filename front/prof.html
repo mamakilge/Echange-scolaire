@@ -4,20 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Annonce prof projet</title>
-  <!--Google font-->
-  <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200&display=swap" rel="stylesheet">
-  <!-- Link Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <!--Link style.css-->
-  <link rel="stylesheet" href="../css/style.css">
-
-  <!-- fontawesome icons-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-
+  <meta name="description"
+    content="Réseau social pour les enseignants et les établissements, ainsi que plateforme de recherche pour les voyages scolaires">
+  <title>Echange scolaire</title>
+  <!--JS - JQUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <!--FONT AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+  <!--BOOTSTRAP-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <!--FONT BIRYANI-->
+  <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200,300,700&display=swap" rel="stylesheet">
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -26,7 +36,7 @@
     <nav class="container navbar navbar-expand-lg navbar-light d-flex">
       <!--logo cliquable pour revenir sur la page d'accueil-->
       <a class="mr-lg-5 navbar-brand" href="index.html">
-        <img class="logo" src="img/logo.png" alt="logo site mamakilgé">
+        <img class="logo" src="img/logo.png" alt="logo site">
       </a>
 
       <!--à partir d'ici en version mobile c'est un Menu Hamburguer-->
@@ -94,9 +104,9 @@
           <p>Henri Boudreault Ph.D. professeur au collège Jean Mermoz, j'apporte des techniques agréables et efficaces,
             (originaire de Vosges-Alsace), et durant deux années- prof.assistant à l'université Humbolt de Berlin - 21
             ans professeur de collège.</p>
-          <button type="button" class="btn btn-lg vert btn-form" data-toggle="modal" data-target="#exampleModal"
+          <button type="button" href="inscription.html" class="btn btn-lg vert btn-form" data-toggle="modal" data-target="#exampleModal"
             data-whatever="@mdo">Ajouter au contact</button>
-          <button type="button" class="btn btn-lg vert btn-form" data-toggle="modal" data-target="#exampleModal"
+          <button type="button" href="inscription.html" class="btn btn-lg vert btn-form" data-toggle="modal" data-target="#exampleModal"
             data-whatever="@mdo">Envoyer un message</button>
         </div>
       </div>
@@ -115,9 +125,10 @@
             <input type="date" id="start" name="trip-start" value="2018-01-01" min="2018-01-01" max="2100-12-31">
             <p class="ml-5"><i class="fas fa-users verte espace"></i> 15 troisième à accueillir.</p>
             <p class="ml-5"><i class="fas fa-phone verte espace"></i> 07 85 25 69 52</p>
-            <p class="ml-5"><i id="echange" class="fas fa-toggle-on verte espace"></i><span id="js"> Recherche
-                d'échange.</span>
-            </p>
+            <div class="custom-control custom-switch ml-5">
+              <input type="checkbox" class="custom-control-input verte espace" id="customSwitch1">
+              <label class="custom-control-label" for="customSwitch1">Recherche d'échange</label>
+            </div>
           </div>
 
           <!-- Ma classe -->
@@ -183,7 +194,7 @@
       </div>
       <div class="d-none d-md-block">
         <div class="d-flex justify-content-center">
-          <button data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" class="btn vert btn-form"
+          <button data-toggle="modal" href="inscription.html" data-target="#exampleModal" data-whatever="@mdo" class="btn vert btn-form"
             type="button" aria-expanded="false">
             Voir plus
           </button>
@@ -278,7 +289,7 @@
           <div class="mt-2 form-group text-center container">
             <label for="exampleFormControlTextarea1">Tapez votre commentaire ici</label>
             <textarea class="form-control bloquer" id="exampleFormControlTextarea1" rows="5"></textarea>
-            <button data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" class="btn vert btn-form"
+            <button data-toggle="modal" href="inscription.html" data-target="#exampleModal" data-whatever="@mdo" class="btn vert btn-form"
               type="button" aria-expanded="false">
               Poster
             </button>
@@ -296,38 +307,38 @@
         <!-- Grid column -->
         <div class="col-12 col-md-4 bas mx-auto" id="info">
           <h6 class="text-uppercase font-weight-bold pt-2">Mentions Légales</h6>
-          <p class="cache">
-            <a href="mentionsapropos.html#cgu" class="couleur">CGU</a> <br>
-            <a href="mentionsapropos.html#politiqueconfidentialite" class="couleur">Politique de
-              confidencialité</a><br>
-            <a href="mentionsaproposhtml#droits" class="couleur">Droits d'auteur et droits de reproduction</a><br>
-            <a href="mentionsapropos.html#accessibilite" class="couleur">Accesibilité du site</a><br>
-        </p>
-      </div>
+          <div class="cache">
+            <p><a href="mentionsapropos.html#cgu" class="couleur">CGU</a></p>
+            <p><a href="mentionsapropos.html#politiqueconfidentialite" class="couleur">Politique de confidencialité</a>
+            </p>
+            <p><a href="mentionsapropos.html#droits" class="couleur">Droits d'auteur et droits de reproduction</a></p>
+            <p><a href="mentionsapropos.html#accessibilite" class="couleur">Accesibilité du site</a></p>
+          </div>
+        </div>
 
         <hr class="w-100 clearfix d-block d-md-none">
 
         <!-- Grid column -->
         <div class="col-12 col-md-4 bas">
           <h6 class="text-uppercase font-weight-bold pt-2">À Propos</h6>
-          <p class="cache">
-            <a href="mentionsapropos.html#nous" class="couleur">Qui sommes-nous ?</a><br>
-            <a href="mentionsapropos.html#rejoignez" class="couleur">Nous rejoindre</a><br>
-            <a href="mentionsapropos.html#contacter" class="couleur">Contactez-nous</a>
-         </p>
+          <div class="cache">
+            <p><a href="mentionsapropos.html#nous" class="couleur">Qui sommes-nous ?</a></p>
+            <p><a href="mentionsapropos.html#rejoignez" class="couleur">Nous rejoindre</a></p>
+            <p><a href="mentionsapropos.html#contacter" class="couleur">Contactez-nous</a></p>
+          </div>
         </div>
 
         <hr class="w-100 clearfix d-block d-md-none">
 
         <!-- Grid column -->
-        <div class="col-12 col-md-4 mx-auto  bas">
+        <div class="col-12 col-md-4 mx-auto bas">
           <h6 class="text-uppercase font-weight-bold pt-2">Contact</h6>
-          <p class="cache">
-            <i class="fas fa-home mr-3"></i> 18 Rue Geoffroy l'Asnier, 75004 Paris <br>
-            <i class="fas fa-envelope mr-3"></i> echange-scolaire@gmail.com <br>
-          <i class="fas fa-phone mr-3"></i> 01 42 58 75 88 <br>
-        </p>
-      </div>
+          <div class="cache">
+            <p><i class="fas fa-home mr-3"></i> 18 Rue Geoffroy l'Asnier, 75004 Paris</p>
+            <p><i class="fas fa-envelope mr-3"></i> echange-scolaire@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> 01 42 58 75 88</p>
+          </div>
+        </div>
       </div>
 
       <hr class="w-100 clearfix d-block d-md-none">
@@ -383,6 +394,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
   integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!--Script Javascript-->
-<script src="../js/script.js"></script>
+<script src="js/script.js"></script>
 
 </html>
