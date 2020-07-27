@@ -102,6 +102,38 @@ window.onload = function () {
         });
     });
 
+    ///////////////////////////// PROFIL ////////////////////////////////
+
+    //TEXT AREA DESCRIPTION
+    $('#btnDescModif').click(function(){
+        $('#descModif').css('border', 'solid').show();
+        $('#btnDescValider').show();
+        $('#btnDescModif').hide();
+    })
+
+    $('#btnDescValider').click(function(){
+        $('#descModif').css('border', 'none').show();
+        $('#btnDescValider').hide();
+        $('#btnDescModif').show();
+    })
+
+    //TEXT AREA VIE SUR PLACE
+    
+    $('#btnVieModif').click(function(){
+        $('#vieModif').css('border', 'solid').show();
+        $('#btnVieValider').show();
+        $('#btnVieModif').hide();
+    })
+
+    $('#btnVieValider').click(function(){
+        $('#vieModif').css('border', 'none').show();
+        $('#btnVieValider').hide();
+        $('#btnVieModif').show();
+    })
+
+
+
+
 
 } //FERMETURE WINDOW ONLOAD
 

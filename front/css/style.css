@@ -553,7 +553,22 @@ ECOLE
 }
 
 .commentaire{
-    resize : none; 
+    resize : none;
+}
+
+.imgEcole{
+    width: 450px;
+}
+
+/*//////////////////////////
+PROFIL
+////////////////////////////*/
+#descModif, #vieModif{
+    border: hidden;
+}
+
+#btnDescValider, #btnVieValider{
+    display: none;
 }
 
 
@@ -793,5 +808,3 @@ MEDIA QUERIES
         margin: 0;
     }
 }
-
-
