@@ -601,6 +601,21 @@ MEDIA QUERIES
         color: #202325;
         font-weight: bold;
     }
+
+    .imgEcole, .img1{
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    textarea[name = description] {
+        height: 180px;
+        width: 100%;
+    }
+
+    textarea[name = vie] {
+        height: 200px;
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px){
