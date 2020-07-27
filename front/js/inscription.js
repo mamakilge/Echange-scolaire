@@ -17,3 +17,4 @@ var btni3 = document.getElementById('btni3');function modalDisplay(){
 }btnNo2.onclick= function(){
 	modal.style.display= "none";
 }*/
+
