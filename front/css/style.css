@@ -402,8 +402,12 @@ textarea{
 PROFIL
 ********************/
 
-textarea{
+#descModif{
     border: hidden;
+}
+
+#btnDescValider{
+    display: none;
 }
 
 

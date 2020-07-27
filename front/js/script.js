@@ -103,13 +103,22 @@ window.onload = function () {
     });
 
     ///////////////////////////// PROFIL ////////////////////////////////
+
+    //TEXT AREA DESCRIPTION
     $('#btnDescModif').click(function(){
-    console.log("btnDescModif")
-        $('textarea').css('border', 'inherit').show();
-        console.log("textarea")
+        $('#descModif').css('border', 'solid').show();
+        $('#btnDescValider').show();
+        $('#btnDescModif').hide();
     })
 
+    $('#btnDescValider').click(function(){
+        $('#descModif').css('border', 'none').show();
+        $('#btnDescValider').hide();
+        $('#btnDescModif').show();
+    })
 
+    //TEXT AREA VIE SUR PLACE
+    
 
 
 
