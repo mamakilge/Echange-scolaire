@@ -104,9 +104,9 @@ window.onload = function () {
 
     ///////////////////////////// PROFIL ////////////////////////////////
     $('#btnDescModif').click(function(){
-    console.log("window.onload -> btnDescModif", btnDescModif)
+    console.log("btnDescModif")
         $('textarea').css('border', 'inherit').show();
-        console.log("window.onload -> textarea", textarea)
+        console.log("textarea")
     })
 
 
