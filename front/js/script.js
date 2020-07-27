@@ -81,12 +81,12 @@ window.onload = function () {
         $('.messagerieMob').hide();
     })
 
-    //SCROLL BAS MESSAGERIE
+    //SCROLL BAS MESSAGERIE MOBILE
     $('.lienMessages').click(function () {
         $('#fin')[0].scrollIntoView(false);
     })
 
-    //COULEUR LIENS CLIQUE MOBILE
+    //TITRES LIENS CLICK BACKGROUND COLOR MOBILE
     $(function () {
         $('.liens > .nav-item').on('click', function () {
             $('.liens > .nav-item').removeClass('lien');
@@ -94,7 +94,7 @@ window.onload = function () {
         })
     })
 
-    //CONTACTS CLIQUE
+    //CONTACTS CLICK BACKGROUND COLOR
     $(function () {
         $('.list-group > .media').on('click', function () {
             $('.list-group > .media').removeClass('activeProfil');
@@ -130,10 +130,6 @@ window.onload = function () {
         $('#btnVieValider').hide();
         $('#btnVieModif').show();
     })
-
-
-
-
 
 } //FERMETURE WINDOW ONLOAD
 
