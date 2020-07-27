@@ -33,23 +33,25 @@ window.onload = function () {
 
 ////////////////////////////////////////////////////
 
-    //TEXTE INSCRIPTION COLLAPSE RWD
+    //TEXTE INSCRIPTION COLLAPSE MOBILE
     $('#afficher').click(function () {
     console.log("afficher")
         $('#afficher').hide();
-        $('#masque').show();
+        $('.masque').show();
         $('#reduire').show();
+        $('#points').hide();
     })
 
     $('#reduire').click(function () {
-        $('#masque').hide();
+        $('.masque').hide();
         $('#afficher').show();
         $('#reduire').hide();
+        $('#points').show();
     })
 
 ////////////////////////////////////////////////////
 
-    //ACTUALITES RWD
+    //ACTUALITES MOBILE
     $('#voirPlus').click(function(){
         $('#post3, #post4').show();
         $('#voirMoins').show();
@@ -62,9 +64,9 @@ window.onload = function () {
         $('#voirPlus').show();
     })
 
-    ////////////////////////////////////////////////////
+////////////////////////////////////////////////////
 
-    //FOOTER RWD
+    //FOOTER MOBILE
     $('.bas').click(function(){
         $('.cache').toggle();
     })

@@ -499,7 +499,7 @@ MEDIA QUERIES ACCUEIL
         margin: 5% auto;
     }
 
-    #masque{
+    .masque{
         display: none;
     }
 
