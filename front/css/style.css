@@ -14,19 +14,23 @@ body{
 }
 
 a {
+    color: #02C39A;
     text-decoration: underline;
 }
-/*******************************
-CSS INFORMATIONS LÉGALES
-*******************************/
 
-.echange-scolaire{
-    color: #02C39A;
+h1{
+    font-size: 2.5rem;
 }
 
-/*//////////////////////////////
-NAVBAR
-////////////////////////////////*/
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+/*NAVBAR*/
 .siteName{
     color: #02C39A;
     text-align: left;
@@ -72,9 +76,7 @@ NAVBAR
     border-radius: 5px;
 }
 
-/*******************************
-CSS Revenir Accueil et bg title
-*******************************/
+/*CSS Revenir Accueil et bg title**/
 
 .revenir-accueil:hover{
     text-decoration: none;
@@ -97,116 +99,48 @@ CSS Revenir Accueil et bg title
     font-size: 1.75rem;
 }
 
-/*******************************
-CSS FORMULAIRE DESKTOP ET MOBILE
-*******************************/
-.btn-form{
-    color: white;
-    background-color: #02C39A;
-    border-radius: 3px;
 
+/*FOOTER*/
+
+.page-footer{
+    border-top: 2.5px solid #02C39A;
 }
 
-.titleForm{
-    font-weight: bold;
-
+footer hr{
+    width: 100%;
 }
 
-/*PETIT SEARCH ACCUEIL ET SEARCH MOBILE*/
-.select-css {
-    font-size: 16px;
-    font-family: 'Arial', sans-serif;
-    font-weight: 400;
-    color: #444;
-    line-height: 1.3;
-    padding: .4em 1.4em .3em .8em;
-    width: 200px;
-    max-width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    border: 1px solid #02C39A;
-    box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
-    border-radius: .3em;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: #fff;
-    background-image: url(../img/arrow_down.png),
-      linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
-    background-repeat: no-repeat, repeat;
-    background-position: right .7em top 50%, 0 0;
-    background-size: .65em auto, 100%;
-   }
-   .select-css::-ms-expand {
-    display: none;
-   }
-   .select-css:hover {
-    border-color: #02C39A;
-   }
-   .select-css:focus {
-    border-color: #aaa;
-    box-shadow: 0 0 1px 3px #02C39A;
-    box-shadow: 0 0 0 3px -moz-mac-focusring;
-    color: #222;
-    outline: none;
-   }
-   .select-css option {
-    font-weight:normal;
-   }
-
-.select-mobile{
-    width: -webkit-fill-available;
-}
-
-/*******************************
-SEARCH ANNONCES VERSION DESKTOP 
-*******************************/
-
-.btn-voirplus{
-    text-decoration: none;
-    color: #02C39A;
-}
-
-.btn-voirplus:hover{
-    background-color:#02C39A ;
-    color: white;
-    border-radius: 3px;
-    width: 50%;
-    display: block;
-    margin: 0 auto;
-}
-
-.pagination{
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-.page-link{
-    text-decoration: none;
-    color: #02C39A;
-}
-
-/*******************************
-SEARCH ANNONCES SLIDER VERSION MOBILE
-*******************************/
-
-.btn-slider{
-    text-decoration: none;
-    color: #02C39A;
-    font-size: 0.9rem;
-    border: none;
-}
-.carousel-inner h5{
+footer h3{
     font-size: 1rem;
 }
 
-.couleur{
+footer{
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+}
+
+.bas a, .bas a:hover, h6:hover{
     color: #02C39A;
 }
 
-/*/////////////////////////////
-ACCUEIL HEADER RECHERCHE
-////////////////////////////// */
+.cache{
+    display: none;
+}
+
+.page-footer{
+    border-top: 2.5px solid #02C39A;
+}
+
+.copyright{
+    text-decoration: none;
+    color: #02C39A;
+}
+
+/******************************
+ACCUEIL
+******************************/
+
+/*ACCUEIL HEADER RECHERCHE */
 
 /*NAV*/
 h1{
@@ -274,9 +208,7 @@ h1{
     padding: 10px;
 }
 
-/*/////////////////////////////
-ACCUEIL INSCRIPTION 
-///////////////////////////////*/
+/*ACCUEIL INSCRIPTION */
 
 h2{
     font-size: 2rem;
@@ -301,9 +233,7 @@ h2{
     background-color: white;
 }
 
-/*//////////////////////////////
-ACCUEIL  ACTUALITES 
-///////////////////////////////*/
+/*ACCUEIL  ACTUALITES */
 #post3, #post4{
     display: none;
 }
@@ -338,9 +268,123 @@ ACCUEIL  ACTUALITES
     font-weight: bold;
 }
 
-/***********
-MESSAGERIE CONTACTS
-***********/
+/**************************
+SEARCH
+*************************/
+
+/*FORMULAIRE DESKTOP ET MOBILE*/
+.btn-form{
+    color: white;
+    background-color: #02C39A;
+    border-radius: 3px;
+
+}
+
+.titleForm{
+    font-weight: bold;
+
+}
+
+/*CSS INFORMATIONS LÉGALES*/
+
+.echange-scolaire{
+    color: #02C39A;
+}
+
+/*PETIT SEARCH ACCUEIL ET SEARCH MOBILE*/
+.select-css {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    color: #444;
+    line-height: 1.3;
+    padding: .4em 1.4em .3em .8em;
+    width: 200px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #02C39A;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+    border-radius: .3em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url(../img/arrow_down.png),
+      linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+   }
+   .select-css::-ms-expand {
+    display: none;
+   }
+   .select-css:hover {
+    border-color: #02C39A;
+   }
+   .select-css:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px #02C39A;
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+   }
+   .select-css option {
+    font-weight:normal;
+   }
+
+.select-mobile{
+    width: -webkit-fill-available;
+}
+
+/*SEARCH ANNONCES VERSION DESKTOP*/
+
+.btn-voirplus{
+    text-decoration: none;
+    color: #02C39A;
+}
+
+.btn-voirplus:hover{
+    background-color:#02C39A ;
+    color: white;
+    border-radius: 3px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.pagination{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.page-link{
+    text-decoration: none;
+    color: #02C39A;
+}
+
+/*SEARCH ANNONCES SLIDER VERSION MOBILE**/
+
+.btn-slider{
+    text-decoration: none;
+    color: #02C39A;
+    font-size: 0.9rem;
+    border: none;
+}
+.carousel-inner h5{
+    font-size: 1rem;
+}
+
+.couleur{
+    color: #02C39A;
+}
+
+
+/*******************************
+MESSAGERIE 
+*******************************/
+
+/*MESSAGERIE CONTACTS*/
 .scroll{
     height: 40rem;
     overflow: auto; 
@@ -363,9 +407,7 @@ MESSAGERIE CONTACTS
     background-color: #c9f8ee;
 }
 
-/*************
-MESSAGERIE MESSAGES
-*************/
+/*MESSAGERIE MESSAGES*/
 .messages, .messagesMob{
     display: flex;
     flex-direction: column;
@@ -398,51 +440,61 @@ textarea{
     border-radius: 5px;
 }
 
-/*******************
-PROFIL
-********************/
+/*MESSAGERIE MOBILE*/
+.mobile{
+    display: none;
+}
+/*************************************
+ECOLE
+*************************************/
 
-#descModif{
+/*ECOLE PRESENTATION*/
+
+.imgEcole{
+    width: 450px;
+}
+/*ECOLE LA VIE SUR PLACE*/
+.iconvsp{
+    margin-right: 15px;
+}
+.colorIcon{
+    color: #02C39A;
+}
+
+/*ECOLE HISTORIQUE DU PROFIL*/
+.hote-voy{
+    font-weight: bold;
+}
+
+.bcg-profile{
+    background-color: rgba(226, 245, 231, 0.75);
+    color:#202325;
+}
+/*ECOLE AVIS*/
+.stars{
+    width: 90px;
+}
+
+.form-control{
+    width: 70%;
+    margin: auto;
+}
+
+.commentaire{
+    resize : none; 
+}
+
+/*//////////////////////////
+PROFIL
+////////////////////////////*/
+#descModif, #vieModif{
     border: hidden;
 }
 
-#btnDescValider{
+#btnDescValider, #btnVieValider{
     display: none;
 }
 
-
-/***************
-FOOTER
-****************/
-footer hr{
-    width: 100%;
-}
-
-footer h3{
-    font-size: 1rem;
-}
-
-footer{
-    font-size: 0.8rem;
-    line-height: 0.8rem;
-}
-
-.bas a, .bas a:hover, h6:hover{
-    color: #02C39A;
-}
-
-.cache{
-    display: none;
-}
-
-.page-footer{
-    border-top: 2.5px solid #02C39A;
-}
-
-.copyright{
-    text-decoration: none;
-    color: #02C39A;
-}
 
 /*///////////////////////////
 MEDIA QUERIES 
@@ -623,12 +675,6 @@ MEDIA QUERIES
         margin: 20px 0 0 70px;
     }
 }
-/***********
-MESSAGERIE MOBILE
-***********/
-.mobile{
-    display: none;
-}
 
 /***********************
 MEDIA QUERIES
@@ -686,5 +732,3 @@ MEDIA QUERIES
         margin: 0;
     }
 }
-
-

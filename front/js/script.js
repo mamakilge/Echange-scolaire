@@ -119,7 +119,17 @@ window.onload = function () {
 
     //TEXT AREA VIE SUR PLACE
     
+    $('#btnVieModif').click(function(){
+        $('#vieModif').css('border', 'solid').show();
+        $('#btnVieValider').show();
+        $('#btnVieModif').hide();
+    })
 
+    $('#btnVieValider').click(function(){
+        $('#vieModif').css('border', 'none').show();
+        $('#btnVieValider').hide();
+        $('#btnVieModif').show();
+    })
 
 
 
