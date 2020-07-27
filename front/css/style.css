@@ -398,6 +398,15 @@ textarea{
     border-radius: 5px;
 }
 
+/*******************
+PROFIL
+********************/
+
+textarea{
+    border: hidden;
+}
+
+
 /***************
 FOOTER
 ****************/

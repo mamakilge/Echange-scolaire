@@ -102,6 +102,19 @@ window.onload = function () {
         });
     });
 
+    ///////////////////////////// PROFIL ////////////////////////////////
+    $('#btnDescModif').click(function(){
+    console.log("window.onload -> btnDescModif", btnDescModif)
+        $('textarea').css('border', 'inherit').show();
+        console.log("window.onload -> textarea", textarea)
+    })
+
+
+
+
+
+
+
 
 } //FERMETURE WINDOW ONLOAD
 
