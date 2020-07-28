@@ -1,13 +1,17 @@
+
+
 window.onload = function () {
 
     ///////////////////////////////// COMMUN ///////////////////////////
 
     //FOOTER MOBILE
     $('.bas').click(function () {
-        $('.cache').toggle();
+        $('.tabcookieche').toggle();
     })
 
     //////////////////////////////// ACCUEIL /////////////////////////////
+
+
 
     //COOKIES DESKTOP + MOBILE
     var cookiesConteneur = document.getElementById('cookiesConteneur');
@@ -16,21 +20,21 @@ window.onload = function () {
     var accepteMob = document.getElementById('accepteMob');
 
 
+
     //CLICK DESKTOP = appeler les fonctions + paramètres du cookie + ne pas afficher mobile
     accepte.addEventListener('click', (function() {
         createCookie('cocokiki', 'en place', 1);
         readCookie(name);
-        console.log(name, 'read');
         eraseCookie(name);
         cookiesConteneur.style.display = 'none';
         cookiesMobile.style.display = 'none';
+        console.log(name);
     }))
 
     // CLICK MOBILE = appeler les fonctions + paramètres du cookie + ne pas afficher desktop
     accepteMob.addEventListener('click', (function(){
         createCookie('cocokiki', 'en place', 1);
         readCookie(name);
-        console.log(name, 'read');
         eraseCookie(name);
         cookiesMobile.style.display = 'none';
         cookiesConteneur.style.display = 'none';
@@ -44,20 +48,19 @@ window.onload = function () {
             var date = new Date();
             date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
             expires = "; expires=" + date.toGMTString();
-
         } else {
             expires = "0";
         }
+        //place cookie dans document.cookie
         document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + expires + "; path=/";
-        console.log(document.cookie)
     }
 
-    //
+    //LIT LE COOKIE, LE MET EN TABLEAU, VERIFIE LE NOM SANS ESPACE ET LE SAUVEGARDE POUR CHECK
     function readCookie(name) {
         var nameEQ = encodeURIComponent(name) + "=";
-        var ca = document.cookie.split(';');
-        for (var i = 0; i < ca.length; i++) {
-            var c = ca[i];
+        var tabcookie = document.cookie.split(';');
+        for (var i = 0; i < tabcookie.length; i++) {
+            var c = tabcookie[i];
             while (c.charAt(0) === ' ')
                 c = c.substring(1, c.length);
             if (c.indexOf(nameEQ) === 0)
@@ -82,8 +85,9 @@ window.onload = function () {
     //LANCER LA FONCTION CHECK
     checkCookie();
 
+    //CREATE COOKIE -1 POUR QU'IL SOIT EXPIRE ET QU'IL S'EFFACE 
     function eraseCookie(name) {
-        createCookie(name, "", 1);
+        createCookie(name, "", -1);
     };
 
 ////////////////////////////////////////////////////////////
