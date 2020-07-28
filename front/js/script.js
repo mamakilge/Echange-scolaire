@@ -1,4 +1,7 @@
 window.onload = function () {
+
+
+    
     if (readCookie('toto') != null) {
         console.log("Cookie présent");
         cookiesConteneur.style.display = 'none';
@@ -54,8 +57,6 @@ window.onload = function () {
 
     //disparition
 
-    var accepteMob = document.getElementById('accepteMob');
-
     function createCookie(name, value, days) {
         var expires;
         if (days) {
@@ -100,7 +101,6 @@ window.onload = function () {
 
     //TEXTE INSCRIPTION COLLAPSE MOBILE
     $('#afficher').click(function () {
-        console.log("afficher")
         $('#afficher').hide();
         $('.masque').show();
         $('#reduire').show();
@@ -116,6 +116,7 @@ window.onload = function () {
 
     //ACTUALITES MOBILE
     $('#voirPlus').click(function () {
+    console.log("voirPlus")
         $('#post3, #post4').show();
         $('#voirMoins').show();
         $('#voirPlus').hide();
