@@ -609,6 +609,10 @@ MEDIA QUERIES
         height: 200px;
         width: 100%;
     }
+
+    #btnDescModif, #btnDescValider, #btnVieModif, #btnVieValider{
+        margin: 5% 0;
+    }
 }
 
 @media screen and (min-width: 768px){

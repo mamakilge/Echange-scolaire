@@ -8,6 +8,7 @@ window.onload = function () {
         }
     }
     
+    /*
     var accepte = document.getElementById('accepte');
     var cookiesConteneur = document.getElementById('cookiesConteneur');
     accepte.addEventListener('click', (function() {
@@ -16,7 +17,7 @@ window.onload = function () {
         console.log(name, 'read');
         cookiesConteneur.style.display = 'none';
     }))
-
+    */
     ///////////////////////////////// COMMUN ///////////////////////////
 
     //FOOTER MOBILE
