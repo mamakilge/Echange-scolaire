@@ -1,23 +1,25 @@
 window.onload = function () {
 
+    var cookiesConteneur = document.getElementById('cookiesConteneur');
 
-    
-    if (readCookie('toto') != null) {
-        console.log("Cookie présent");
-        cookiesConteneur.style.display = 'none';
-    }
-    else {
-        console.log("Pas cookie");
-        var cookiesConteneur = document.getElementById('cookiesConteneur');
-        cookiesConteneur.style.display = 'block';
+    function checkCookie() {
+        if (readCookie('toto') != null) {
+            console.log("Cookie exist");
+            cookiesConteneur.style.display = 'none';
+        } else {
+            console.log("Cookie pas la");
+            cookiesConteneur.style.display = 'block';
+        }
     }
 
-    accepte.addEventListener('click', function() {
+    checkCookie();
+
+    accepte.addEventListener('click', (function() {
         createCookie('toto', 'test', 1);
         readCookie(name);
         console.log(name, 'read');
         cookiesConteneur.style.display = 'none';
-    })
+    }))
 
     ///////////////////////////////// COMMUN ///////////////////////////
 
@@ -48,14 +50,9 @@ window.onload = function () {
     */
     //COOKIES DESKTOP
     //apparition
-    var cookiesConteneur = document.getElementById('cookiesConteneur');
-
-    
-    function timer() {
-        cookiesConteneur.style.display = 'block';
-    } setTimeout(timer, 1000);
-
     //disparition
+
+    var accepteMob = document.getElementById('accepteMob');
 
     function createCookie(name, value, days) {
         var expires;
@@ -101,6 +98,7 @@ window.onload = function () {
 
     //TEXTE INSCRIPTION COLLAPSE MOBILE
     $('#afficher').click(function () {
+        console.log("afficher")
         $('#afficher').hide();
         $('.masque').show();
         $('#reduire').show();
@@ -116,7 +114,6 @@ window.onload = function () {
 
     //ACTUALITES MOBILE
     $('#voirPlus').click(function () {
-    console.log("voirPlus")
         $('#post3, #post4').show();
         $('#voirMoins').show();
         $('#voirPlus').hide();
