@@ -30,53 +30,54 @@ window.onload = function () {
     //apparition
     var cookiesConteneur = document.getElementById('cookiesConteneur');
 
+    /*
     function timer() {
         cookiesConteneur.style.display = 'block';
-    } setTimeout(timer, 1000);
+    } setTimeout(timer, 1000);*/
 
     //disparition
     var accepte = document.getElementById('accepte');
     cookiesConteneur = document.getElementById('cookiesConteneur');
 
+
+
+
+    function createCookie(name ='toto', value = 'test', days = 1) {
+        var expires;
+
+        console.log(name, value, days, 'cookie');
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toGMTString();
+        } else {
+            expires = "";
+        }
+        document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + expires + "; path=/";
+
+    }
+    
+    function readCookie(name) {
+        var nameEQ = encodeURIComponent(name) + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) === ' ')
+                c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) === 0)
+                return decodeURIComponent(c.substring(nameEQ.length, c.length));
+        }
+        return null;
+    }
+    
+    function eraseCookie(name) {
+        createCookie(name, "", -1);
+    }
+
     accepte.addEventListener('click', (function(){
-        function createCookie(name, value, days) {
-            var expires;
-        
-            if (days) {
-                var date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                expires = "; expires=" + date.toGMTString();
-            } else {
-                expires = "";
-            }
-            document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + expires + "; path=/";
-        }
-        
-        function readCookie(name) {
-            var nameEQ = encodeURIComponent(name) + "=";
-            var ca = document.cookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) === ' ')
-                    c = c.substring(1, c.length);
-                if (c.indexOf(nameEQ) === 0)
-                    return decodeURIComponent(c.substring(nameEQ.length, c.length));
-            }
-            return null;
-        }
-        
-        function eraseCookie(name) {
-            createCookie(name, "", -1);
-        }
-
-        console.log(name);
-
+        createCookie('toto', 'test', 1)
         cookiesConteneur.style.display = 'none';
     }))
-
-
-
-
 
 
     //TEXTE INSCRIPTION COLLAPSE MOBILE
