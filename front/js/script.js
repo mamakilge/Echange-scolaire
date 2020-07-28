@@ -12,12 +12,12 @@ window.onload = function () {
         cookiesConteneur.style.display = 'block';
     }
 
-    accepte.addEventListener('click', (function() {
+    accepte.addEventListener('click', function() {
         createCookie('toto', 'test', 1);
         readCookie(name);
         console.log(name, 'read');
         cookiesConteneur.style.display = 'none';
-    }))
+    })
 
     ///////////////////////////////// COMMUN ///////////////////////////
 
