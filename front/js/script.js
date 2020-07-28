@@ -6,7 +6,7 @@ window.onload = function () {
 
     //FOOTER MOBILE
     $('.bas').click(function () {
-        $('.tabcookieche').toggle();
+        $('.cache').toggle();
     })
 
     //////////////////////////////// ACCUEIL /////////////////////////////
