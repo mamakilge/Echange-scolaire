@@ -94,7 +94,7 @@ h3{
 }
 .bg-title{
     background-image: url(../img/img1-2.jpg);
-    background-position: center;
+    background-position-x: center;
     height: 350px;
 }
 
@@ -140,10 +140,11 @@ ACCUEIL
 ******************************/
 
 /*ACCUEIL HEADER RECHERCHE */
-h1{
+.titre-index{
     padding: 30px 0 0 20px;
     text-align: center;
     font-size: 2.5rem;
+    width: 50%;
 }
 
 .top{
@@ -507,6 +508,10 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 576px){
+    .titre-index{
+        width: 90%;
+    }
+
     .top{
         background-repeat: no-repeat;
         background-size: cover;
@@ -578,6 +583,10 @@ MEDIA QUERIES
         text-align: center;
     }
 
+    .inscrivez-vous{
+        font-size: 1.25rem;
+    }
+
     #afficher{
         display: block;
         color: #02C39A;
@@ -638,7 +647,7 @@ MEDIA QUERIES
         font-size: 1.2rem;
     }
     .bg-title{
-        height: 100px;
+        height: 200px;
         background-position: center;
     }
 
