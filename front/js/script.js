@@ -22,7 +22,6 @@ window.onload = function () {
         eraseCookie(name);
         cookiesConteneur.style.display = 'none';
         cookiesMobile.style.display = 'none';
-        console.log(name);
     }))
 
     // CLICK MOBILE = appeler les fonctions + paramètres du cookie + ne pas afficher desktop
@@ -65,11 +64,9 @@ window.onload = function () {
     //CHECK SI COOKIE EST LA (n'affiche pas div) OU PAS (affiche div)
     function checkCookie() {
         if (readCookie('cookiki') != null) {
-            console.log("Cookie exist");
             cookiesConteneur.style.display = 'none';
             cookiesMobile.style.display = 'none';
         } else {
-            console.log("Cookie pas la");
             cookiesConteneur.style.display = 'block';
             cookiesMobile.style.display = 'block';
         }
@@ -87,7 +84,6 @@ window.onload = function () {
     
     //TEXTE INSCRIPTION COLLAPSE MOBILE
     $('#afficher').click(function () {
-        console.log("afficher")
         $('#afficher').hide();
         $('.masque').show();
         $('#reduire').show();
