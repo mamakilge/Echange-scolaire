@@ -18,6 +18,7 @@ window.onload = function () {
     setTimeout(timerMob, 1000);
 
     //disparition
+    /*
     $('#accepteMob').click(function () {
         $('#cookiesMobile').hide();
     })
@@ -25,38 +26,35 @@ window.onload = function () {
     $('#croix').click(function () {
         $('#cookiesMobile').hide();
     })
-
+    */
     //COOKIES DESKTOP
     //apparition
     var cookiesConteneur = document.getElementById('cookiesConteneur');
 
-    /*
+    
     function timer() {
         cookiesConteneur.style.display = 'block';
-    } setTimeout(timer, 1000);*/
+    } setTimeout(timer, 1000);
 
     //disparition
     var accepte = document.getElementById('accepte');
-    cookiesConteneur = document.getElementById('cookiesConteneur');
+    var cookiesConteneur = document.getElementById('cookiesConteneur');
+    var accepteMob = document.getElementById('accepteMob');
 
-
-
-
-    function createCookie(name ='toto', value = 'test', days = 1) {
+    function createCookie(name, value, days) {
         var expires;
-
-        console.log(name, value, days, 'cookie');
         if (days) {
             var date = new Date();
             date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
             expires = "; expires=" + date.toGMTString();
+
         } else {
-            expires = "";
+            expires = "1";
         }
         document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + expires + "; path=/";
-
+        console.log(document.cookie)
     }
-    
+
     function readCookie(name) {
         var nameEQ = encodeURIComponent(name) + "=";
         var ca = document.cookie.split(';');
@@ -70,14 +68,28 @@ window.onload = function () {
         return null;
     }
     
+    /*
     function eraseCookie(name) {
-        createCookie(name, "", -1);
+        createCookie(name, "", 0);
+    };*/
+
+    function unPopCookie(name){
+        if(createCookie(name) !== " "){
+            console.log("createCookie", createCookie)
+            cookiesConteneur.style.display = 'none';
+        }else{
+            cookiesConteneur.style.display = 'block';
+        }
     }
 
     accepte.addEventListener('click', (function(){
-        createCookie('toto', 'test', 1)
-        cookiesConteneur.style.display = 'none';
+        createCookie('toto', 'test', 1);
+        readCookie(name);
+        console.log(name, 'read');
+        unPopCookie(name);
     }))
+
+
 
 
     //TEXTE INSCRIPTION COLLAPSE MOBILE
