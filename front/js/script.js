@@ -17,7 +17,7 @@ window.onload = function () {
 
     //CLICK DESKTOP = appeler les fonctions + paramètres du cookie + ne pas afficher mobile
     accepte.addEventListener('click', (function() {
-        createCookie('cocokiki', 'en place', 1);
+        createCookie('cookiki', 'en place', 0);
         readCookie(name);
         eraseCookie(name);
         cookiesConteneur.style.display = 'none';
@@ -27,13 +27,12 @@ window.onload = function () {
 
     // CLICK MOBILE = appeler les fonctions + paramètres du cookie + ne pas afficher desktop
     accepteMob.addEventListener('click', (function(){
-        createCookie('cocokiki', 'en place', 1);
+        createCookie('cookiki', 'en place', 0);
         readCookie(name);
         eraseCookie(name);
         cookiesMobile.style.display = 'none';
         cookiesConteneur.style.display = 'none';
     }))
-
 
     //CREER FONCTION COOKIE 
     function createCookie(name, value, days) {
@@ -43,7 +42,7 @@ window.onload = function () {
             date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
             expires = "; expires=" + date.toGMTString();
         } else {
-            expires = "0";
+            expires = "-1";
         }
         //place cookie dans document.cookie
         document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + expires + "; path=/";
@@ -65,7 +64,7 @@ window.onload = function () {
 
     //CHECK SI COOKIE EST LA (n'affiche pas div) OU PAS (affiche div)
     function checkCookie() {
-        if (readCookie('cocokiki') != null) {
+        if (readCookie('cookiki') != null) {
             console.log("Cookie exist");
             cookiesConteneur.style.display = 'none';
             cookiesMobile.style.display = 'none';

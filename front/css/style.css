@@ -226,6 +226,10 @@ h1{
     background-color: white;
 }
 
+#points{
+    display: none;
+}
+
 /*ACCUEIL  ACTUALITES */
 #post3, #post4{
     display: none;
@@ -363,72 +367,6 @@ SEARCH
     font-size: 1rem;
 }
 
-/*******************************
-MESSAGERIE 
-*******************************/
-
-/*MESSAGERIE CONTACTS*/
-.scroll{
-    height: 40rem;
-    overflow: auto; 
-}
-
-.media img{
-    width: 15%;
-    border-radius: 10%;
-}
-
-.media{
-    border: 1px solid grey;
-    cursor: pointer;
-}
-
-.activeProfil{
-    background-color: #c9f8ee;
-}
-/*MESSAGERIE MESSAGES*/
-.messages, .messagesMob{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(241, 234, 234);
-}
-
-.gauche{
-    width: 45%;
-    padding: 1%;
-}
-
-.droite{
-    width: 45%;
-    padding: 1%;
-    align-self: flex-end;
-    background-color: #c9f8ee;
-}
-
-.icone{
-    font-size: 2rem;
-    color: #02C39A;
-    margin-bottom: 2%;
-    border: none;
-    display: inline-block;
-    background-color: rgb(241, 234, 234);
-}
-
-textarea{
-    resize: none;
-    border-radius: 5px;
-}
-/*MESSAGERIE MOBILE*/
-.mobile{
-    display: none;
-}
-
-.ecrire{
-    position: sticky;
-    bottom: 0;
-    background-color: rgb(241, 234, 234);
-}
-
 /*************************************
 ECOLE
 *************************************/
@@ -471,17 +409,6 @@ ECOLE
 
 .imgEcole{
     width: 450px;
-}
-
-/*****************************
-PROFIL
-*******************************/
-#descModif, #vieModif{
-    border: hidden;
-}
-
-#btnDescValider, #btnVieValider{
-    display: none;
 }
 
 /**********************************
@@ -598,20 +525,6 @@ MEDIA QUERIES
     .imgEcole, .img1{
         width: 100%;
         margin: 0 !important;
-    }
-
-    textarea[name = description] {
-        height: 180px;
-        width: 100%;
-    }
-
-    textarea[name = vie] {
-        height: 200px;
-        width: 100%;
-    }
-
-    #btnDescModif, #btnDescValider, #btnVieModif, #btnVieValider{
-        margin: 5% 0;
     }
 }
 
@@ -742,26 +655,7 @@ MEDIA QUERIES
         display: block;
     }
 
-    .desktop, h1, .messagerieMob{
-        display: none;
-    }
-
-    .scroll{
-        height: 25rem;
-        overflow: auto; 
-    }
-
-    .contactMob img{
-        width: 15%;
-    }
-
-    .messagerieMob{
-        background-color: rgb(241, 234, 234);
-        padding: 1%;
-    }
-    
-    .gauche, .droite{
-        width: 50%;
-        margin: 0;
+    #points{
+        display: block;
     }
 }
