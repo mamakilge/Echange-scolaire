@@ -220,6 +220,10 @@ h1{
     width: 150px;
 }
 
+.inscrivez-vous{
+    font-size: 1.75rem;
+}
+
 #afficher, #reduire{
     display: none;
     border: none;
