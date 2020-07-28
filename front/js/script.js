@@ -1,5 +1,3 @@
-
-
 window.onload = function () {
 
     ///////////////////////////////// COMMUN ///////////////////////////
@@ -11,15 +9,11 @@ window.onload = function () {
 
     //////////////////////////////// ACCUEIL /////////////////////////////
 
-
-
     //COOKIES DESKTOP + MOBILE
     var cookiesConteneur = document.getElementById('cookiesConteneur');
     var accepte = document.getElementById('accepte');
     var cookiesMobile = document.getElementById('cookiesMobile');
     var accepteMob = document.getElementById('accepteMob');
-
-
 
     //CLICK DESKTOP = appeler les fonctions + paramètres du cookie + ne pas afficher mobile
     accepte.addEventListener('click', (function() {
