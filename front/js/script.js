@@ -1,19 +1,21 @@
 window.onload = function () {
-    
-    function checkCookies() {
-        if (readCookie('toto') != null) {
-            cookiesConteneur.style.display = 'none';
-        } else {
-            cookiesConteneur.style.display = 'block';
-        }
+    if (readCookie('toto') != null) {
+        console.log("Cookie présent");
+        cookiesConteneur.style.display = 'none';
     }
-    
+    else {
+        console.log("Pas cookie");
+        var cookiesConteneur = document.getElementById('cookiesConteneur');
+        cookiesConteneur.style.display = 'block';
+    }
+
     accepte.addEventListener('click', (function() {
         createCookie('toto', 'test', 1);
         readCookie(name);
         console.log(name, 'read');
         cookiesConteneur.style.display = 'none';
     }))
+
     ///////////////////////////////// COMMUN ///////////////////////////
 
     //FOOTER MOBILE
@@ -189,4 +191,3 @@ window.onload = function () {
     })
 
 } //FERMETURE WINDOW ONLOAD
-
