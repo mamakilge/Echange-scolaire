@@ -1,25 +1,6 @@
 window.onload = function () {
 
-    var cookiesConteneur = document.getElementById('cookiesConteneur');
 
-    function checkCookie() {
-        if (readCookie('toto') != null) {
-            console.log("Cookie exist");
-            cookiesConteneur.style.display = 'none';
-        } else {
-            console.log("Cookie pas la");
-            cookiesConteneur.style.display = 'block';
-        }
-    }
-
-    checkCookie();
-
-    accepte.addEventListener('click', (function() {
-        createCookie('toto', 'test', 1);
-        readCookie(name);
-        console.log(name, 'read');
-        cookiesConteneur.style.display = 'none';
-    }))
 
     ///////////////////////////////// COMMUN ///////////////////////////
 
@@ -80,6 +61,27 @@ window.onload = function () {
         }
         return null;
     }
+
+    var cookiesConteneur = document.getElementById('cookiesConteneur');
+
+    function checkCookie() {
+        if (readCookie('toto') != null) {
+            console.log("Cookie exist");
+            cookiesConteneur.style.display = 'none';
+        } else {
+            console.log("Cookie pas la");
+            cookiesConteneur.style.display = 'block';
+        }
+    }
+
+    checkCookie();
+
+    accepte.addEventListener('click', (function() {
+        createCookie('toto', 'test', 1);
+        readCookie(name);
+        console.log(name, 'read');
+        cookiesConteneur.style.display = 'none';
+    }))
     
     /*
     function eraseCookie(name) {
