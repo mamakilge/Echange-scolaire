@@ -1,7 +1,5 @@
 window.onload = function () {
 
-
-
     ///////////////////////////////// COMMUN ///////////////////////////
 
     //FOOTER MOBILE
@@ -10,31 +8,36 @@ window.onload = function () {
     })
 
     //////////////////////////////// ACCUEIL /////////////////////////////
-    //COOKIES MOBILE
-    //apparition
+
+    //COOKIES DESKTOP + MOBILE
+    var cookiesConteneur = document.getElementById('cookiesConteneur');
+    var accepte = document.getElementById('accepte');
     var cookiesMobile = document.getElementById('cookiesMobile');
-
-    function timerMob() {
-        cookiesMobile.style.display = 'block';
-    }
-    setTimeout(timerMob, 1000);
-
-    //disparition
-    /*
-    $('#accepteMob').click(function () {
-        $('#cookiesMobile').hide();
-    })
-
-    $('#croix').click(function () {
-        $('#cookiesMobile').hide();
-    })
-    */
-    //COOKIES DESKTOP
-    //apparition
-    //disparition
-
     var accepteMob = document.getElementById('accepteMob');
 
+
+    //CLICK DESKTOP = appeler les fonctions + paramètres du cookie + ne pas afficher mobile
+    accepte.addEventListener('click', (function() {
+        createCookie('cocokiki', 'en place', 1);
+        readCookie(name);
+        console.log(name, 'read');
+        eraseCookie(name);
+        cookiesConteneur.style.display = 'none';
+        cookiesMobile.style.display = 'none';
+    }))
+
+    // CLICK MOBILE = appeler les fonctions + paramètres du cookie + ne pas afficher desktop
+    accepteMob.addEventListener('click', (function(){
+        createCookie('cocokiki', 'en place', 1);
+        readCookie(name);
+        console.log(name, 'read');
+        eraseCookie(name);
+        cookiesMobile.style.display = 'none';
+        cookiesConteneur.style.display = 'none';
+    }))
+
+
+    //CREER FONCTION COOKIE 
     function createCookie(name, value, days) {
         var expires;
         if (days) {
@@ -43,12 +46,13 @@ window.onload = function () {
             expires = "; expires=" + date.toGMTString();
 
         } else {
-            expires = "7";
+            expires = "0";
         }
         document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + expires + "; path=/";
         console.log(document.cookie)
     }
 
+    //
     function readCookie(name) {
         var nameEQ = encodeURIComponent(name) + "=";
         var ca = document.cookie.split(';');
@@ -62,42 +66,28 @@ window.onload = function () {
         return null;
     }
 
-    var cookiesConteneur = document.getElementById('cookiesConteneur');
-
+    //CHECK SI COOKIE EST LA (n'affiche pas div) OU PAS (affiche div)
     function checkCookie() {
-        if (readCookie('toto') != null) {
+        if (readCookie('cocokiki') != null) {
             console.log("Cookie exist");
             cookiesConteneur.style.display = 'none';
+            cookiesMobile.style.display = 'none';
         } else {
             console.log("Cookie pas la");
             cookiesConteneur.style.display = 'block';
+            cookiesMobile.style.display = 'block';
         }
     }
 
+    //LANCER LA FONCTION CHECK
     checkCookie();
 
-    accepte.addEventListener('click', (function() {
-        createCookie('toto', 'test', 1);
-        readCookie(name);
-        console.log(name, 'read');
-        cookiesConteneur.style.display = 'none';
-    }))
-    
-    /*
     function eraseCookie(name) {
-        createCookie(name, "", 0);
-    };*/
+        createCookie(name, "", 1);
+    };
 
-    function unPopCookie(name){
-        if(createCookie(name) !== " "){
-            console.log("createCookie", createCookie)
-            cookiesConteneur.style.display = 'none';
-        }else{
-            cookiesConteneur.style.display = 'block';
-        }
-    }
-
-
+////////////////////////////////////////////////////////////
+    
     //TEXTE INSCRIPTION COLLAPSE MOBILE
     $('#afficher').click(function () {
         console.log("afficher")
