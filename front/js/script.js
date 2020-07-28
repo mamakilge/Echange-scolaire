@@ -1,6 +1,6 @@
 window.onload = function () {
-
-    function cookieOrNotCookie () {
+    
+    function checkCookies() {
         if (readCookie('toto') != null) {
             cookiesConteneur.style.display = 'none';
         } else {
@@ -8,16 +8,12 @@ window.onload = function () {
         }
     }
     
-    /*
-    var accepte = document.getElementById('accepte');
-    var cookiesConteneur = document.getElementById('cookiesConteneur');
     accepte.addEventListener('click', (function() {
         createCookie('toto', 'test', 1);
         readCookie(name);
         console.log(name, 'read');
         cookiesConteneur.style.display = 'none';
     }))
-    */
     ///////////////////////////////// COMMUN ///////////////////////////
 
     //FOOTER MOBILE
