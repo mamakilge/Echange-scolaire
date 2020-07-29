@@ -80,6 +80,11 @@ window.onload = function () {
         createCookie(name, "", -1);
     };
 
+    //CROIX EN MOBILE
+    $('#croix').click(function(){
+        $('#cookiesMobile').hide();
+    })
+
 ////////////////////////////////////////////////////////////
     
     //TEXTE INSCRIPTION COLLAPSE MOBILE
